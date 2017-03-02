@@ -1,0 +1,3299 @@
+{
+    "type": "Ext.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "defaults": [
+            "{",
+            "    flex: 1",
+            "}"
+        ],
+        "designer|userClassName": "Buttons",
+        "height": null,
+        "itemId": "Buttons",
+        "layout": "vbox",
+        "scrollable": null
+    },
+    "name": "MyContainer1",
+    "designerId": "e1496f00-20dc-4d8c-85c7-a8f5feb67011",
+    "cn": [
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout": "hbox"
+            },
+            "name": "MyContainer26",
+            "designerId": "b7b81bce-5063-4fb7-b1e2-a44b2c27d11a",
+            "cn": [
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "container|align": "center",
+                        "container|pack": "center",
+                        "defaults": [
+                            "{",
+                            "    margin: '0 3',",
+                            "    style: 'font-size: 0.8em;',",
+                            "    height: 45",
+                            "}"
+                        ],
+                        "height": "",
+                        "layout": "hbox",
+                        "layout|flex": 4,
+                        "width": "100%"
+                    },
+                    "name": "MyContainer2",
+                    "designerId": "83e4c2d4-421f-429b-9918-8d45e164ff1d",
+                    "cn": [
+                        {
+                            "type": "Ext.Spacer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "name": "MySpacer2",
+                            "designerId": "040190f7-1ecf-49cd-a0e2-171d7787a0c0"
+                        },
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|uiInterfaceName": "red",
+                                "text": "red",
+                                "ui": "red",
+                                "width": null
+                            },
+                            "name": "MyButton17",
+                            "designerId": "7909cede-72ae-4c67-b01b-8d504bf08f49"
+                        },
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|uiInterfaceName": "pink",
+                                "text": "pink",
+                                "ui": "pink"
+                            },
+                            "name": "MyButton19",
+                            "designerId": "c5a72dcf-7e52-441b-b164-d98dabd98ed9"
+                        },
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|uiInterfaceName": "purple",
+                                "text": "purple",
+                                "ui": "purple"
+                            },
+                            "name": "MyButton20",
+                            "designerId": "3db108b2-7988-429f-a766-4b72376d617f"
+                        },
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|uiInterfaceName": "deeppurple",
+                                "text": "deeppurple",
+                                "ui": "deeppurple"
+                            },
+                            "name": "MyButton21",
+                            "designerId": "1e6f356b-5e34-40ab-9966-e40b329f47d2"
+                        },
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|uiInterfaceName": "indigo",
+                                "text": "indigo",
+                                "ui": "indigo"
+                            },
+                            "name": "MyButton22",
+                            "designerId": "f07bebda-45e2-4710-a30b-a39e76220c80"
+                        },
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|uiInterfaceName": "blue",
+                                "text": "blue",
+                                "ui": "blue"
+                            },
+                            "name": "MyButton23",
+                            "designerId": "7f1db89e-e115-4a27-9851-2d3a77195aa7"
+                        },
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|uiInterfaceName": "lightblue",
+                                "text": "lightblue",
+                                "ui": "lightblue"
+                            },
+                            "name": "MyButton24",
+                            "designerId": "fadb17df-a353-4844-a638-00abb8b509d2"
+                        },
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|uiInterfaceName": "cyan",
+                                "text": "cyan",
+                                "ui": "cyan"
+                            },
+                            "name": "MyButton25",
+                            "designerId": "bc1969cc-0fbd-460a-83ac-89ed55d9beb1"
+                        },
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|uiInterfaceName": "teal",
+                                "height": null,
+                                "text": "teal",
+                                "ui": "teal"
+                            },
+                            "name": "MyButton",
+                            "designerId": "3f9066e9-4f30-4728-a0c0-23f85b361c60"
+                        },
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|uiInterfaceName": "green",
+                                "text": "green",
+                                "ui": "green"
+                            },
+                            "name": "MyButton26",
+                            "designerId": "2bd089d7-6842-48f6-b8a0-150e9483db3e"
+                        },
+                        {
+                            "type": "Ext.Spacer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "name": "MySpacer3",
+                            "designerId": "7725c116-c190-480c-8bf3-698527d838b7"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout": "hbox"
+            },
+            "name": "MyContainer44",
+            "designerId": "8622e5cd-a450-41e5-b76e-6291bbfdf617",
+            "cn": [
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "container|align": "center",
+                        "container|pack": "center",
+                        "defaults": [
+                            "{",
+                            "    margin: '0 3',",
+                            "    style: 'font-size: 0.8em;',",
+                            "    height: 45",
+                            "}"
+                        ],
+                        "height": "",
+                        "layout": "hbox",
+                        "layout|flex": 4,
+                        "width": "100%"
+                    },
+                    "name": "MyContainer2",
+                    "designerId": "da97459d-ab40-437a-917e-cd1db9aa99cc",
+                    "cn": [
+                        {
+                            "type": "Ext.Spacer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "name": "MySpacer2",
+                            "designerId": "4c08bcc2-1482-4a97-8257-0e1c8dd217db"
+                        },
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|uiInterfaceName": "lightgreen",
+                                "text": "lightgreen",
+                                "ui": "lightgreen"
+                            },
+                            "name": "MyButton27",
+                            "designerId": "ed458054-0828-48bc-97b2-907e3b9b0725"
+                        },
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|uiInterfaceName": "lime",
+                                "text": "lime",
+                                "ui": "lime"
+                            },
+                            "name": "MyButton28",
+                            "designerId": "2b7f7d69-0a7d-4a76-b5bb-f01ff2a3fb7e"
+                        },
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|uiInterfaceName": "yellow",
+                                "text": "yellow",
+                                "ui": "yellow"
+                            },
+                            "name": "MyButton29",
+                            "designerId": "3ecb0c2e-e6ad-444c-87fd-b622a94526f2"
+                        },
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|uiInterfaceName": "amber",
+                                "text": "amber",
+                                "ui": "amber"
+                            },
+                            "name": "MyButton30",
+                            "designerId": "670fa252-4d62-4969-8ed4-26282281fae3"
+                        },
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|uiInterfaceName": "orange",
+                                "text": "orange",
+                                "ui": "orange"
+                            },
+                            "name": "MyButton31",
+                            "designerId": "ec904e00-6a34-453e-81a9-1391e4ea5336"
+                        },
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|uiInterfaceName": "deeporange",
+                                "text": "deeporange",
+                                "ui": "deeporange"
+                            },
+                            "name": "MyButton32",
+                            "designerId": "f60c96dd-1f00-4143-863c-d6da56d62c75"
+                        },
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|uiInterfaceName": "brown",
+                                "text": "brown",
+                                "ui": "brown"
+                            },
+                            "name": "MyButton33",
+                            "designerId": "37dc549c-8eab-4af8-9d0d-58e72e946063"
+                        },
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|uiInterfaceName": "grey",
+                                "text": "grey",
+                                "ui": "grey"
+                            },
+                            "name": "MyButton34",
+                            "designerId": "57b7bb76-9e44-4eae-a427-84b92c37c4a2"
+                        },
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|uiInterfaceName": "bluegrey",
+                                "text": "bluegrey",
+                                "ui": "bluegrey"
+                            },
+                            "name": "MyButton35",
+                            "designerId": "8db40536-7b6b-4604-a18c-1a62aa8f4b4a"
+                        },
+                        {
+                            "type": "Ext.Spacer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "name": "MySpacer3",
+                            "designerId": "e238e7ea-dcd2-4cad-ba2e-173ee4c5f404"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout": "hbox"
+            },
+            "name": "MyContainer25",
+            "designerId": "f1ea5215-5dd9-40cb-8bbe-dfb945eaea85",
+            "cn": [
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "container|align": "center",
+                        "container|pack": "center",
+                        "height": "",
+                        "layout": "hbox",
+                        "layout|flex": 4,
+                        "width": "100%"
+                    },
+                    "name": "MyContainer2",
+                    "designerId": "aed70fb5-105c-405a-8fe4-103c7ed908ba",
+                    "cn": [
+                        {
+                            "type": "Ext.Spacer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "name": "MySpacer2",
+                            "designerId": "f4f0daf2-6269-4c9b-9685-47a576dfe996"
+                        },
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "text": "x-button",
+                                "ui": null
+                            },
+                            "name": "MyButton2",
+                            "designerId": "b2d2c307-b5bb-4f2e-acf9-e88b44054738"
+                        },
+                        {
+                            "type": "Ext.Spacer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "name": "MySpacer3",
+                            "designerId": "8dbf1e66-85d6-4217-95d7-065f932296d7"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "container|align": "center",
+                        "container|pack": "center",
+                        "defaults": [
+                            "{",
+                            "    cls: 'x-button-pressing'",
+                            "}"
+                        ],
+                        "height": "",
+                        "layout": "hbox",
+                        "layout|flex": 4,
+                        "width": "100%"
+                    },
+                    "name": "MyContainer1",
+                    "designerId": "5355c20b-e814-4378-8a5c-792f3ba91222",
+                    "cn": [
+                        {
+                            "type": "Ext.Spacer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "name": "MySpacer2",
+                            "designerId": "88ad4ddc-49fb-4aef-b0fd-b4570bd5bb46"
+                        },
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "text": "x-buton-pressing",
+                                "ui": null
+                            },
+                            "name": "MyButton2",
+                            "designerId": "f90a15f5-d6f5-4905-9b86-2832cdfcd377"
+                        },
+                        {
+                            "type": "Ext.Spacer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "name": "MySpacer3",
+                            "designerId": "13b74666-077d-4127-ac37-93c12a652ed0"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "container|align": "center",
+                        "container|pack": "center",
+                        "defaults": [
+                            "{",
+                            "    cls: 'x-button-pressed'",
+                            "}"
+                        ],
+                        "height": "",
+                        "layout": "hbox",
+                        "layout|flex": 4,
+                        "width": "100%"
+                    },
+                    "name": "MyContainer10",
+                    "designerId": "dfab5ecf-e460-4621-b83a-9a409fbe58e1",
+                    "cn": [
+                        {
+                            "type": "Ext.Spacer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "name": "MySpacer2",
+                            "designerId": "90402b16-5239-4119-81b8-1ea1a45620dc"
+                        },
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "text": "x-button-pressed",
+                                "ui": null
+                            },
+                            "name": "MyButton2",
+                            "designerId": "d1f6fc1e-85a5-48ce-8be7-525de81920df"
+                        },
+                        {
+                            "type": "Ext.Spacer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "name": "MySpacer3",
+                            "designerId": "d2d5970a-a8fa-4de0-9757-af8e6d6c5852"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "container|align": "center",
+                        "container|pack": "center",
+                        "defaults": [
+                            "{",
+                            "    disabled: true",
+                            "}"
+                        ],
+                        "height": "",
+                        "layout": "hbox",
+                        "layout|flex": 4,
+                        "width": "100%"
+                    },
+                    "name": "MyContainer15",
+                    "designerId": "828d3d0e-3b2f-4203-916e-93da07bef9a8",
+                    "cn": [
+                        {
+                            "type": "Ext.Spacer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "name": "MySpacer2",
+                            "designerId": "fa6410d6-fb7e-4f10-be10-fab0b76e0f6b"
+                        },
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "text": "x-item-disabled",
+                                "ui": null
+                            },
+                            "name": "MyButton2",
+                            "designerId": "57be7abf-b81a-43c7-8a1b-5fc1c524f4d3"
+                        },
+                        {
+                            "type": "Ext.Spacer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "name": "MySpacer3",
+                            "designerId": "910fc267-04ad-4f49-b917-aaf01d7718a8"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "defaults": null,
+                "layout": "hbox"
+            },
+            "name": "MyContainer27",
+            "designerId": "e461fc1a-480a-43b7-8330-1786c8edfe79",
+            "cn": [
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "container|align": "center",
+                        "container|pack": "center",
+                        "height": "",
+                        "layout": "hbox",
+                        "layout|flex": 4,
+                        "width": "100%"
+                    },
+                    "name": "MyContainer2",
+                    "designerId": "e4d73987-6c58-4c2d-886b-f3fb8c223059",
+                    "cn": [
+                        {
+                            "type": "Ext.Spacer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "name": "MySpacer2",
+                            "designerId": "0054c830-53a1-49ec-ba0d-ec274372f0bb"
+                        },
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|uiInterfaceName": "plain",
+                                "height": "",
+                                "text": "Plain",
+                                "ui": "plain"
+                            },
+                            "name": "MyButton",
+                            "designerId": "65a7f604-2539-4f51-b9d3-e6c99c45e693"
+                        },
+                        {
+                            "type": "Ext.Spacer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "name": "MySpacer",
+                            "designerId": "b5b10122-3710-4ded-b27d-3b2106a5983e"
+                        },
+                        {
+                            "type": "Ext.Spacer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "name": "MySpacer10",
+                            "designerId": "c6032551-98f0-4308-a8fe-caaf5833dbce"
+                        },
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "cls": [
+                                    "x-button-pressing"
+                                ],
+                                "designer|uiInterfaceName": "plain",
+                                "text": "Plain",
+                                "ui": "plain"
+                            },
+                            "name": "MyButton1",
+                            "designerId": "4ce3e20b-994b-4695-9385-95d7d40efea7"
+                        },
+                        {
+                            "type": "Ext.Spacer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "name": "MySpacer1",
+                            "designerId": "41b4c589-5904-4c65-b190-90f0543f5a75"
+                        },
+                        {
+                            "type": "Ext.Spacer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "name": "MySpacer11",
+                            "designerId": "c7c113fd-c53f-4a38-a2de-753f96ddadc6"
+                        },
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "cls": [
+                                    "x-button-pressed"
+                                ],
+                                "designer|uiInterfaceName": "plain",
+                                "text": "Plain",
+                                "ui": "plain"
+                            },
+                            "name": "MyButton2",
+                            "designerId": "22d0a926-79e6-4232-a9b2-521c236b0240"
+                        },
+                        {
+                            "type": "Ext.Spacer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "name": "MySpacer3",
+                            "designerId": "9fe502a8-b9e7-4bf3-9c16-01ceccb4bb3d"
+                        },
+                        {
+                            "type": "Ext.Spacer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "name": "MySpacer12",
+                            "designerId": "cecb4c3b-d294-4aba-b84a-4529455359a2"
+                        },
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|uiInterfaceName": "plain",
+                                "disabled": true,
+                                "text": "Plain",
+                                "ui": "plain"
+                            },
+                            "name": "MyButton18",
+                            "designerId": "b1d77eea-ffcb-4786-aeff-cc1af482e492"
+                        },
+                        {
+                            "type": "Ext.Spacer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "name": "MySpacer9",
+                            "designerId": "6e086741-f8eb-4675-8b86-858c199ef5b6"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout": "hbox"
+            },
+            "name": "MyContainer20",
+            "designerId": "85b51ae0-64ea-4c24-89d2-61b8054d5644",
+            "cn": [
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "container|align": "center",
+                        "container|pack": "center",
+                        "height": "",
+                        "layout": "hbox",
+                        "layout|flex": 4,
+                        "width": "100%"
+                    },
+                    "name": "MyContainer2",
+                    "designerId": "2479e146-de76-468a-8780-f30ba06b173b",
+                    "cn": [
+                        {
+                            "type": "Ext.Spacer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "name": "MySpacer2",
+                            "designerId": "d4268cba-3290-4031-9b45-812aa1c90bd0"
+                        },
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "height": "",
+                                "icon": null,
+                                "iconCls": null,
+                                "text": "Normal"
+                            },
+                            "name": "MyButton",
+                            "designerId": "64dd29e6-0ea3-410d-bb78-b1ce7ce09afe"
+                        },
+                        {
+                            "type": "Ext.Spacer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "name": "MySpacer",
+                            "designerId": "3a598afe-b112-4be3-a577-f358e94b7a88"
+                        },
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|uiInterfaceName": "round",
+                                "text": "Round",
+                                "ui": "round"
+                            },
+                            "name": "MyButton1",
+                            "designerId": "7a33b74d-ecc3-4cb1-9932-66353d700920"
+                        },
+                        {
+                            "type": "Ext.Spacer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "name": "MySpacer1",
+                            "designerId": "2ce9bb71-bf3c-43e6-87fa-c9f3920be483"
+                        },
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|uiInterfaceName": "small",
+                                "text": "Small",
+                                "ui": "small"
+                            },
+                            "name": "MyButton2",
+                            "designerId": "55b04672-2af1-48fc-a773-d12ec114803e"
+                        },
+                        {
+                            "type": "Ext.Spacer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "name": "MySpacer3",
+                            "designerId": "bc0a5193-b781-48aa-97c6-36e45a24b747"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "container|align": "center",
+                        "container|pack": "center",
+                        "defaults": [
+                            "{",
+                            "    cls: 'x-button-pressing'",
+                            "}"
+                        ],
+                        "height": "",
+                        "layout": "hbox",
+                        "layout|flex": 4,
+                        "width": "100%"
+                    },
+                    "name": "MyContainer1",
+                    "designerId": "15a9d42e-cdfe-48f9-85b4-f72d6c53ea2c",
+                    "cn": [
+                        {
+                            "type": "Ext.Spacer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "name": "MySpacer2",
+                            "designerId": "650d381d-ce79-4ea5-a60c-b7baeb0fdbf6"
+                        },
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "height": "",
+                                "text": "Normal"
+                            },
+                            "name": "MyButton",
+                            "designerId": "2e8cfb6f-7dd5-4e49-9fa4-421c56d6f911"
+                        },
+                        {
+                            "type": "Ext.Spacer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "name": "MySpacer",
+                            "designerId": "7561ac22-effa-4034-84f6-cc414cf03a5d"
+                        },
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|uiInterfaceName": "round",
+                                "text": "Round",
+                                "ui": "round"
+                            },
+                            "name": "MyButton1",
+                            "designerId": "631ec8d2-3720-498e-85a6-9da4ce678c29"
+                        },
+                        {
+                            "type": "Ext.Spacer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "name": "MySpacer1",
+                            "designerId": "d03b3a13-69b4-4dcb-bc80-5056d34e1c82"
+                        },
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|uiInterfaceName": "small",
+                                "text": "Small",
+                                "ui": "small"
+                            },
+                            "name": "MyButton2",
+                            "designerId": "d5fa1d27-afa8-49fe-94c6-2ca72b4bfc6a"
+                        },
+                        {
+                            "type": "Ext.Spacer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "name": "MySpacer3",
+                            "designerId": "1c2f2001-305b-4c96-b180-851c9e8e460d"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "container|align": "center",
+                        "container|pack": "center",
+                        "defaults": [
+                            "{",
+                            "    cls: 'x-button-pressed'",
+                            "}"
+                        ],
+                        "height": "",
+                        "layout": "hbox",
+                        "layout|flex": 4,
+                        "width": "100%"
+                    },
+                    "name": "MyContainer10",
+                    "designerId": "7c3bc44e-5b62-4e7a-b714-778c884e075b",
+                    "cn": [
+                        {
+                            "type": "Ext.Spacer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "name": "MySpacer2",
+                            "designerId": "19d62b6a-3197-4e38-9198-c3470f86ca10"
+                        },
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "height": "",
+                                "text": "Normal"
+                            },
+                            "name": "MyButton",
+                            "designerId": "bebbdffc-85f2-498f-a58e-0bbf4c401b7f"
+                        },
+                        {
+                            "type": "Ext.Spacer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "name": "MySpacer",
+                            "designerId": "ea475023-3e76-40b0-ba81-fa58f4a81b54"
+                        },
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|uiInterfaceName": "round",
+                                "text": "Round",
+                                "ui": "round"
+                            },
+                            "name": "MyButton1",
+                            "designerId": "1c2eac6e-d4ea-46a3-8763-549b081abe3f"
+                        },
+                        {
+                            "type": "Ext.Spacer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "name": "MySpacer1",
+                            "designerId": "a7130611-c31c-4ead-813c-3759cff0cd36"
+                        },
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|uiInterfaceName": "small",
+                                "text": "Small",
+                                "ui": "small"
+                            },
+                            "name": "MyButton2",
+                            "designerId": "0ff3af70-ba28-4efc-95b0-9f056de97ef2"
+                        },
+                        {
+                            "type": "Ext.Spacer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "name": "MySpacer3",
+                            "designerId": "c3762b90-b1f8-4340-a890-a44c46289ef3"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "container|align": "center",
+                        "container|pack": "center",
+                        "defaults": [
+                            "{",
+                            "    disabled: true",
+                            "}"
+                        ],
+                        "height": "",
+                        "layout": "hbox",
+                        "layout|flex": 4,
+                        "width": "100%"
+                    },
+                    "name": "MyContainer15",
+                    "designerId": "83618fd1-b7a5-4fbe-b77e-9c35d6d99d36",
+                    "cn": [
+                        {
+                            "type": "Ext.Spacer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "name": "MySpacer2",
+                            "designerId": "8c417ebb-ff3c-4c98-99e7-19e3cda476e5"
+                        },
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "height": "",
+                                "text": "Normal"
+                            },
+                            "name": "MyButton",
+                            "designerId": "b56e4105-0059-41d4-aba4-b8ea0a68b161"
+                        },
+                        {
+                            "type": "Ext.Spacer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "name": "MySpacer",
+                            "designerId": "41209c06-3315-4dd5-97a8-649d79969098"
+                        },
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|uiInterfaceName": "round",
+                                "text": "Round",
+                                "ui": "round"
+                            },
+                            "name": "MyButton1",
+                            "designerId": "9c4e9857-6976-4e53-9801-3a62ef799094"
+                        },
+                        {
+                            "type": "Ext.Spacer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "name": "MySpacer1",
+                            "designerId": "efacec5d-6b8e-4c3b-84d8-c50fc47f9c4a"
+                        },
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|uiInterfaceName": "small",
+                                "text": "Small",
+                                "ui": "small"
+                            },
+                            "name": "MyButton2",
+                            "designerId": "4af88533-c158-49bf-a818-f3e1b410eaa0"
+                        },
+                        {
+                            "type": "Ext.Spacer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "name": "MySpacer3",
+                            "designerId": "ccbcab47-48dd-46cd-af95-472f08c091d1"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout": "hbox"
+            },
+            "name": "MyContainer21",
+            "designerId": "28fe909e-2677-4258-902d-b767710d85a1",
+            "cn": [
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "container|align": "center",
+                        "container|pack": "center",
+                        "height": "",
+                        "layout": "hbox",
+                        "layout|flex": 4,
+                        "width": "100%"
+                    },
+                    "name": "MyContainer2",
+                    "designerId": "63d226f5-f6b6-4ae6-b208-baad842fc5b8",
+                    "cn": [
+                        {
+                            "type": "Ext.Spacer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "name": "MySpacer2",
+                            "designerId": "68cddfe2-0333-4dd3-9921-f08effbfdf7a"
+                        },
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|uiInterfaceName": "action",
+                                "height": "",
+                                "text": "Action",
+                                "ui": "action"
+                            },
+                            "name": "MyButton",
+                            "designerId": "cb5aaf3f-c563-4052-ba66-d53115437d38"
+                        },
+                        {
+                            "type": "Ext.Spacer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "name": "MySpacer",
+                            "designerId": "f0dd1a25-6626-4962-8944-4cc59e293542"
+                        },
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|uiInterfaceName": "action-round",
+                                "text": "Round",
+                                "ui": "action-round"
+                            },
+                            "name": "MyButton1",
+                            "designerId": "7b619310-db94-4c91-afcc-fc653288a90c"
+                        },
+                        {
+                            "type": "Ext.Spacer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "name": "MySpacer1",
+                            "designerId": "3cfef421-2b5c-4972-a455-5d90f18f372e"
+                        },
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|uiInterfaceName": "action-small",
+                                "text": "Small",
+                                "ui": "action-small"
+                            },
+                            "name": "MyButton2",
+                            "designerId": "8edf6d86-31d5-451d-bb37-6ac98398ee8f"
+                        },
+                        {
+                            "type": "Ext.Spacer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "name": "MySpacer3",
+                            "designerId": "7248752a-e8c1-4639-a194-e829855123d4"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "container|align": "center",
+                        "container|pack": "center",
+                        "defaults": [
+                            "{",
+                            "    cls: 'x-button-pressing'",
+                            "}"
+                        ],
+                        "height": "",
+                        "layout": "hbox",
+                        "layout|flex": 4,
+                        "width": "100%"
+                    },
+                    "name": "MyContainer6",
+                    "designerId": "6e668045-1fe4-4b22-b38d-ec072d5a52b0",
+                    "cn": [
+                        {
+                            "type": "Ext.Spacer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "name": "MySpacer2",
+                            "designerId": "6de2e13d-7aef-40c8-82cd-2c1211155b35"
+                        },
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|uiInterfaceName": "action",
+                                "height": "",
+                                "text": "Action",
+                                "ui": "action"
+                            },
+                            "name": "MyButton",
+                            "designerId": "55611f44-fb89-4091-a120-4e31b1c6e315"
+                        },
+                        {
+                            "type": "Ext.Spacer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "name": "MySpacer",
+                            "designerId": "b30a2379-8fc4-438c-aa22-1cf5712fbf90"
+                        },
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|uiInterfaceName": "action-round",
+                                "text": "Round",
+                                "ui": "action-round"
+                            },
+                            "name": "MyButton1",
+                            "designerId": "2b961f99-884d-4257-b14c-baa4cc50ab84"
+                        },
+                        {
+                            "type": "Ext.Spacer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "name": "MySpacer1",
+                            "designerId": "983fd190-bb00-4a40-9e0d-e3538603145d"
+                        },
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|uiInterfaceName": "action-small",
+                                "text": "Small",
+                                "ui": "action-small"
+                            },
+                            "name": "MyButton2",
+                            "designerId": "109bbf33-b699-4cfa-82e8-8d9218f6f867"
+                        },
+                        {
+                            "type": "Ext.Spacer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "name": "MySpacer3",
+                            "designerId": "c2d79409-92d4-4dc6-a4e6-f96c19c04db8"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "container|align": "center",
+                        "container|pack": "center",
+                        "defaults": [
+                            "{",
+                            "    cls: 'x-button-pressed'",
+                            "}"
+                        ],
+                        "height": "",
+                        "layout": "hbox",
+                        "layout|flex": 4,
+                        "width": "100%"
+                    },
+                    "name": "MyContainer11",
+                    "designerId": "0c70906a-d5ea-4830-afe5-170e123c6e70",
+                    "cn": [
+                        {
+                            "type": "Ext.Spacer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "name": "MySpacer2",
+                            "designerId": "ccd01f3d-ff14-4fa1-9a54-40cc443bf25d"
+                        },
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|uiInterfaceName": "action",
+                                "height": "",
+                                "text": "Action",
+                                "ui": "action"
+                            },
+                            "name": "MyButton",
+                            "designerId": "8a9a18d9-0287-436f-9dac-f5f31478ffb0"
+                        },
+                        {
+                            "type": "Ext.Spacer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "name": "MySpacer",
+                            "designerId": "b7b1c555-36a8-4172-b637-9622e34a2374"
+                        },
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|uiInterfaceName": "action-round",
+                                "text": "Round",
+                                "ui": "action-round"
+                            },
+                            "name": "MyButton1",
+                            "designerId": "e63f4c85-e357-49a0-8b9c-0aeff322964c"
+                        },
+                        {
+                            "type": "Ext.Spacer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "name": "MySpacer1",
+                            "designerId": "a4cf22a6-5f49-4620-abd5-049800cf3469"
+                        },
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|uiInterfaceName": "action-small",
+                                "text": "Small",
+                                "ui": "action-small"
+                            },
+                            "name": "MyButton2",
+                            "designerId": "5199feea-b461-41cd-baa3-9e8a3373244e"
+                        },
+                        {
+                            "type": "Ext.Spacer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "name": "MySpacer3",
+                            "designerId": "ea474539-cb27-4796-95b8-fca7958d93e2"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "container|align": "center",
+                        "container|pack": "center",
+                        "defaults": [
+                            "{",
+                            "    disabled: true",
+                            "}"
+                        ],
+                        "height": "",
+                        "layout": "hbox",
+                        "layout|flex": 4,
+                        "width": "100%"
+                    },
+                    "name": "MyContainer16",
+                    "designerId": "dbe4bfa3-d60f-432f-9eba-947b0545a3b9",
+                    "cn": [
+                        {
+                            "type": "Ext.Spacer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "name": "MySpacer2",
+                            "designerId": "2388febb-878a-4f83-a93c-da836dfc4c32"
+                        },
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|uiInterfaceName": "action",
+                                "height": "",
+                                "text": "Action",
+                                "ui": "action"
+                            },
+                            "name": "MyButton",
+                            "designerId": "288e6a20-0ba5-413f-a629-2dc7fea23c5c"
+                        },
+                        {
+                            "type": "Ext.Spacer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "name": "MySpacer",
+                            "designerId": "665f07ce-94c3-4994-b816-6b984e9c9591"
+                        },
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|uiInterfaceName": "action-round",
+                                "text": "Round",
+                                "ui": "action-round"
+                            },
+                            "name": "MyButton1",
+                            "designerId": "73b8092c-cc0b-40ff-8778-38efa858f8cc"
+                        },
+                        {
+                            "type": "Ext.Spacer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "name": "MySpacer1",
+                            "designerId": "cf7a70fc-e2ec-4a36-ba37-0395cc1c502f"
+                        },
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|uiInterfaceName": "action-small",
+                                "text": "Small",
+                                "ui": "action-small"
+                            },
+                            "name": "MyButton2",
+                            "designerId": "d278c862-5ad3-4898-bbad-fd030f47bebc"
+                        },
+                        {
+                            "type": "Ext.Spacer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "name": "MySpacer3",
+                            "designerId": "46fdfee9-dc99-4c2e-a09b-eeb5d388d2cc"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout": "hbox"
+            },
+            "name": "MyContainer22",
+            "designerId": "22870c35-4232-43f0-9095-9303b7e1ec85",
+            "cn": [
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "container|align": "center",
+                        "container|pack": "center",
+                        "height": "",
+                        "layout": "hbox",
+                        "layout|flex": 4,
+                        "width": "100%"
+                    },
+                    "name": "MyContainer2",
+                    "designerId": "6780eff7-441d-4268-8a2d-aa8919939418",
+                    "cn": [
+                        {
+                            "type": "Ext.Spacer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "name": "MySpacer2",
+                            "designerId": "3713849a-9006-46bf-9fbf-4d0ce1c2525d"
+                        },
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|uiInterfaceName": "decline",
+                                "height": "",
+                                "text": "Decline",
+                                "ui": "decline"
+                            },
+                            "name": "MyButton",
+                            "designerId": "365ff41a-df0f-45f0-8e8f-1dd77891c3a4"
+                        },
+                        {
+                            "type": "Ext.Spacer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "name": "MySpacer",
+                            "designerId": "acee6d49-a85c-4aff-97e3-3aeec6bc40b8"
+                        },
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|uiInterfaceName": "decline-round",
+                                "text": "Round",
+                                "ui": "decline-round"
+                            },
+                            "name": "MyButton1",
+                            "designerId": "7eb8704e-78c2-4603-914a-7cfc20cca493"
+                        },
+                        {
+                            "type": "Ext.Spacer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "name": "MySpacer1",
+                            "designerId": "3bd2b946-a257-4ba1-a2c9-fd71aea4435d"
+                        },
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|uiInterfaceName": "decline-small",
+                                "text": "Small",
+                                "ui": "decline-small"
+                            },
+                            "name": "MyButton2",
+                            "designerId": "c07fda00-a545-452e-adc7-52ecfa5ac9e9"
+                        },
+                        {
+                            "type": "Ext.Spacer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "name": "MySpacer3",
+                            "designerId": "f57612ac-d599-4c90-8eed-0fcb6a32cf3c"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "container|align": "center",
+                        "container|pack": "center",
+                        "defaults": [
+                            "{",
+                            "    cls: 'x-button-pressing'",
+                            "}"
+                        ],
+                        "height": "",
+                        "layout": "hbox",
+                        "layout|flex": 4,
+                        "width": "100%"
+                    },
+                    "name": "MyContainer7",
+                    "designerId": "b6b1d9ce-1203-4c3a-9cf3-8a685b46b7ed",
+                    "cn": [
+                        {
+                            "type": "Ext.Spacer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "name": "MySpacer2",
+                            "designerId": "e4ee1533-317a-48ff-beba-23acf4d2bd06"
+                        },
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|uiInterfaceName": "decline",
+                                "height": "",
+                                "text": "Decline",
+                                "ui": "decline"
+                            },
+                            "name": "MyButton",
+                            "designerId": "52e33ab7-3748-429c-a7f4-0e048fd6d933"
+                        },
+                        {
+                            "type": "Ext.Spacer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "name": "MySpacer",
+                            "designerId": "ced37152-4ffb-41ef-b971-83b1fa17cb3c"
+                        },
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|uiInterfaceName": "decline-round",
+                                "text": "Round",
+                                "ui": "decline-round"
+                            },
+                            "name": "MyButton1",
+                            "designerId": "f9450600-26d1-43bf-aa11-72a48a3b6ee7"
+                        },
+                        {
+                            "type": "Ext.Spacer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "name": "MySpacer1",
+                            "designerId": "c5d96890-b2b7-47c2-86e8-aa8c8b43b372"
+                        },
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|uiInterfaceName": "decline-small",
+                                "text": "Small",
+                                "ui": "decline-small"
+                            },
+                            "name": "MyButton2",
+                            "designerId": "cef17c45-40c2-4531-ac08-55c681655299"
+                        },
+                        {
+                            "type": "Ext.Spacer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "name": "MySpacer3",
+                            "designerId": "5e4b8adc-7c42-4a69-a598-3dac62f60928"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "container|align": "center",
+                        "container|pack": "center",
+                        "defaults": [
+                            "{",
+                            "    cls: 'x-button-pressed'",
+                            "}"
+                        ],
+                        "height": "",
+                        "layout": "hbox",
+                        "layout|flex": 4,
+                        "width": "100%"
+                    },
+                    "name": "MyContainer12",
+                    "designerId": "d7bfad06-961d-4e51-9c97-568421f18494",
+                    "cn": [
+                        {
+                            "type": "Ext.Spacer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "name": "MySpacer2",
+                            "designerId": "3ec518c6-fd99-42d5-a472-e182d726316c"
+                        },
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|uiInterfaceName": "decline",
+                                "height": "",
+                                "text": "Decline",
+                                "ui": "decline"
+                            },
+                            "name": "MyButton",
+                            "designerId": "0de675c4-7a55-4a04-a0fc-a7758b0a9d3b"
+                        },
+                        {
+                            "type": "Ext.Spacer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "name": "MySpacer",
+                            "designerId": "dda9a41a-6cb8-44b5-a8b2-1cefb09081ba"
+                        },
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|uiInterfaceName": "decline-round",
+                                "text": "Round",
+                                "ui": "decline-round"
+                            },
+                            "name": "MyButton1",
+                            "designerId": "826d5e8c-37be-42ff-958a-77ce37b8e09b"
+                        },
+                        {
+                            "type": "Ext.Spacer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "name": "MySpacer1",
+                            "designerId": "f59f2a71-fe32-45ee-b9a9-25e8b5290a9f"
+                        },
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|uiInterfaceName": "decline-small",
+                                "text": "Small",
+                                "ui": "decline-small"
+                            },
+                            "name": "MyButton2",
+                            "designerId": "9d77111e-0b0f-4313-bd95-1cea4fca587c"
+                        },
+                        {
+                            "type": "Ext.Spacer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "name": "MySpacer3",
+                            "designerId": "195dbaac-7813-4ef4-9eb8-2ab55addb14b"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "container|align": "center",
+                        "container|pack": "center",
+                        "defaults": [
+                            "{",
+                            "    disabled: true",
+                            "}"
+                        ],
+                        "height": "",
+                        "layout": "hbox",
+                        "layout|flex": 4,
+                        "width": "100%"
+                    },
+                    "name": "MyContainer17",
+                    "designerId": "b1959b56-688f-4e28-807b-acd751b1378e",
+                    "cn": [
+                        {
+                            "type": "Ext.Spacer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "name": "MySpacer2",
+                            "designerId": "14293392-fd24-4399-9b7e-8096c9a5338c"
+                        },
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|uiInterfaceName": "decline",
+                                "height": "",
+                                "text": "Decline",
+                                "ui": "decline"
+                            },
+                            "name": "MyButton",
+                            "designerId": "305b3ce6-77e7-4875-84ea-4769586cf0b4"
+                        },
+                        {
+                            "type": "Ext.Spacer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "name": "MySpacer",
+                            "designerId": "985d85d0-1466-4b8d-87bf-1016f812591e"
+                        },
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|uiInterfaceName": "decline-round",
+                                "text": "Round",
+                                "ui": "decline-round"
+                            },
+                            "name": "MyButton1",
+                            "designerId": "36837ce0-5ad0-409c-959d-97b816e4f433"
+                        },
+                        {
+                            "type": "Ext.Spacer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "name": "MySpacer1",
+                            "designerId": "2ff158a2-132e-49e2-99fd-cb57976ae9cc"
+                        },
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|uiInterfaceName": "decline-small",
+                                "text": "Small",
+                                "ui": "decline-small"
+                            },
+                            "name": "MyButton2",
+                            "designerId": "e7e6b6f4-b1ce-4b66-b1da-2beb929b7d6e"
+                        },
+                        {
+                            "type": "Ext.Spacer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "name": "MySpacer3",
+                            "designerId": "b6a744f1-530c-451d-bec0-f36689f58685"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout": "hbox"
+            },
+            "name": "MyContainer23",
+            "designerId": "c5713a4e-8156-4c2b-8cd2-e6be3367116a",
+            "cn": [
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "container|align": "center",
+                        "container|pack": "center",
+                        "height": "",
+                        "layout": "hbox",
+                        "layout|flex": 4,
+                        "width": "100%"
+                    },
+                    "name": "MyContainer2",
+                    "designerId": "b1873e65-248b-4f59-a825-fd6d941f768a",
+                    "cn": [
+                        {
+                            "type": "Ext.Spacer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "name": "MySpacer2",
+                            "designerId": "789e652b-fa31-4397-9868-094a6fa70b0a"
+                        },
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|uiInterfaceName": "confirm",
+                                "height": "",
+                                "text": "Confirm",
+                                "ui": "confirm"
+                            },
+                            "name": "MyButton",
+                            "designerId": "36933a19-0ea5-405a-a3ac-6272b0cb36d4"
+                        },
+                        {
+                            "type": "Ext.Spacer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "name": "MySpacer",
+                            "designerId": "22448afd-2171-45c8-af4b-2cd373ca0d71"
+                        },
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|uiInterfaceName": "confirm-round",
+                                "text": "Round",
+                                "ui": "confirm-round"
+                            },
+                            "name": "MyButton1",
+                            "designerId": "b1a879e1-707f-4fd0-94ca-cb937cf28601"
+                        },
+                        {
+                            "type": "Ext.Spacer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "name": "MySpacer1",
+                            "designerId": "66cdac4a-85f5-43c6-a81d-8797b0b7fb89"
+                        },
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|uiInterfaceName": "confirm-small",
+                                "text": "Small",
+                                "ui": "confirm-small"
+                            },
+                            "name": "MyButton2",
+                            "designerId": "ecea280c-6d4b-49fc-bfeb-49329854d588"
+                        },
+                        {
+                            "type": "Ext.Spacer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "name": "MySpacer3",
+                            "designerId": "fc4fae08-2d96-4122-bf5f-ef368abc88fa"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "container|align": "center",
+                        "container|pack": "center",
+                        "defaults": [
+                            "{",
+                            "    cls: 'x-button-pressing'",
+                            "}"
+                        ],
+                        "height": "",
+                        "layout": "hbox",
+                        "layout|flex": 4,
+                        "width": "100%"
+                    },
+                    "name": "MyContainer8",
+                    "designerId": "e63d3748-67b8-4cea-a5c5-bfed72f8af49",
+                    "cn": [
+                        {
+                            "type": "Ext.Spacer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "name": "MySpacer2",
+                            "designerId": "21b4e550-411c-4e00-9912-f8c084793649"
+                        },
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|uiInterfaceName": "confirm",
+                                "height": "",
+                                "text": "Confirm",
+                                "ui": "confirm"
+                            },
+                            "name": "MyButton",
+                            "designerId": "f63fb8b9-80a3-4e49-be14-9c0bf3f7f19f"
+                        },
+                        {
+                            "type": "Ext.Spacer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "name": "MySpacer",
+                            "designerId": "36427695-c3f6-4091-bf75-f5f727205e01"
+                        },
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|uiInterfaceName": "confirm-round",
+                                "text": "Round",
+                                "ui": "confirm-round"
+                            },
+                            "name": "MyButton1",
+                            "designerId": "9e144430-9d2b-477d-afc9-27e81a22b23a"
+                        },
+                        {
+                            "type": "Ext.Spacer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "name": "MySpacer1",
+                            "designerId": "9f1b8560-1e04-4a62-ae97-6dba307f79fc"
+                        },
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|uiInterfaceName": "confirm-small",
+                                "text": "Small",
+                                "ui": "confirm-small"
+                            },
+                            "name": "MyButton2",
+                            "designerId": "13af945a-84b3-410a-9d0c-0fb2d5cf2c54"
+                        },
+                        {
+                            "type": "Ext.Spacer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "name": "MySpacer3",
+                            "designerId": "6ba4bbea-e5da-4d80-82bc-edaf1f0b4b8c"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "container|align": "center",
+                        "container|pack": "center",
+                        "defaults": [
+                            "{",
+                            "    cls: 'x-button-pressed'",
+                            "}"
+                        ],
+                        "height": "",
+                        "layout": "hbox",
+                        "layout|flex": 4,
+                        "width": "100%"
+                    },
+                    "name": "MyContainer13",
+                    "designerId": "2ffb5911-2e56-4d27-bff0-489cd8a65c7b",
+                    "cn": [
+                        {
+                            "type": "Ext.Spacer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "name": "MySpacer2",
+                            "designerId": "d762e968-1901-44f2-b21f-511b762a5114"
+                        },
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|uiInterfaceName": "confirm",
+                                "height": "",
+                                "text": "Confirm",
+                                "ui": "confirm"
+                            },
+                            "name": "MyButton",
+                            "designerId": "925278c6-3f12-48d5-a61e-5583b41cc87b"
+                        },
+                        {
+                            "type": "Ext.Spacer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "name": "MySpacer",
+                            "designerId": "3fa8b5e4-95af-4e8f-af70-1ec6fbbeb887"
+                        },
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|uiInterfaceName": "confirm-round",
+                                "text": "Round",
+                                "ui": "confirm-round"
+                            },
+                            "name": "MyButton1",
+                            "designerId": "19051eaa-396b-476f-9d6b-9cae45f69bdb"
+                        },
+                        {
+                            "type": "Ext.Spacer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "name": "MySpacer1",
+                            "designerId": "b6059a16-135a-4d97-835a-6227e6198f48"
+                        },
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|uiInterfaceName": "confirm-small",
+                                "text": "Small",
+                                "ui": "confirm-small"
+                            },
+                            "name": "MyButton2",
+                            "designerId": "495d0af5-6d83-4478-ba56-6831d97285ac"
+                        },
+                        {
+                            "type": "Ext.Spacer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "name": "MySpacer3",
+                            "designerId": "aafed992-36c8-4de3-b6b8-5801de157146"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "container|align": "center",
+                        "container|pack": "center",
+                        "defaults": [
+                            "{",
+                            "    disabled: true",
+                            "}"
+                        ],
+                        "height": "",
+                        "layout": "hbox",
+                        "layout|flex": 4,
+                        "width": "100%"
+                    },
+                    "name": "MyContainer18",
+                    "designerId": "1b5c1fad-b187-4252-9133-21c2d252b84a",
+                    "cn": [
+                        {
+                            "type": "Ext.Spacer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "name": "MySpacer2",
+                            "designerId": "c4888dac-2ab2-4eb0-b366-2b7d1b29c2b6"
+                        },
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|uiInterfaceName": "confirm",
+                                "height": "",
+                                "text": "Confirm",
+                                "ui": "confirm"
+                            },
+                            "name": "MyButton",
+                            "designerId": "7d200cb8-460a-4f45-ac05-a599f8089493"
+                        },
+                        {
+                            "type": "Ext.Spacer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "name": "MySpacer",
+                            "designerId": "93a90443-fae9-4a79-8f0c-39bb84b2e87a"
+                        },
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|uiInterfaceName": "confirm-round",
+                                "text": "Round",
+                                "ui": "confirm-round"
+                            },
+                            "name": "MyButton1",
+                            "designerId": "bd227f2a-8179-4bcd-b83f-eedf6c1cd2bf"
+                        },
+                        {
+                            "type": "Ext.Spacer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "name": "MySpacer1",
+                            "designerId": "9df6ac03-9ec6-4397-bf37-36e862d12ba4"
+                        },
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|uiInterfaceName": "confirm-small",
+                                "text": "Small",
+                                "ui": "confirm-small"
+                            },
+                            "name": "MyButton2",
+                            "designerId": "8b6a549e-228b-4eb8-ad8a-a0ad07194116"
+                        },
+                        {
+                            "type": "Ext.Spacer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "name": "MySpacer3",
+                            "designerId": "6ae7119b-4886-459c-8ceb-8d605ab01a02"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout": "vbox",
+                "layout|flex": 4
+            },
+            "name": "MyContainer24",
+            "designerId": "e81c3f2f-62da-47fb-bae7-aa2db00b4c7d",
+            "cn": [
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "container|align": "center",
+                        "container|pack": "center",
+                        "height": "",
+                        "layout": "hbox",
+                        "layout|flex": 4,
+                        "width": "100%"
+                    },
+                    "name": "MyContainer2",
+                    "designerId": "88cfeb84-a326-47b7-b4a2-57608a070775",
+                    "cn": [
+                        {
+                            "type": "Ext.Spacer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "name": "MySpacer2",
+                            "designerId": "c2ee6d40-6d1e-454c-b9ae-a23470b1ab22"
+                        },
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|uiInterfaceName": "back",
+                                "height": "",
+                                "text": "Back",
+                                "ui": "back"
+                            },
+                            "name": "MyButton",
+                            "designerId": "6ca287dd-ae09-45ce-9b77-9afcf961a4e1"
+                        },
+                        {
+                            "type": "Ext.Spacer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "name": "MySpacer",
+                            "designerId": "51a8417e-be43-4ddb-a7a3-9160c8cb81c4"
+                        },
+                        {
+                            "type": "Ext.SegmentedButton",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "name": "MySegmentedButton1",
+                            "designerId": "31786eae-d149-42b8-a06b-f4e4e413ce55",
+                            "cn": [
+                                {
+                                    "type": "Ext.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "pressed": true,
+                                        "text": "Left"
+                                    },
+                                    "name": "MyButton13",
+                                    "designerId": "b4311fa0-ce17-4169-aaf2-060dde0912eb"
+                                },
+                                {
+                                    "type": "Ext.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "text": "Center"
+                                    },
+                                    "name": "MyButton13",
+                                    "designerId": "83a8abbb-90ec-4d78-a7c2-46273cd8dc25"
+                                },
+                                {
+                                    "type": "Ext.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "text": "Right"
+                                    },
+                                    "name": "MyButton14",
+                                    "designerId": "2ed2a19c-b5aa-40a2-9fe7-1304df561ec6"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.Spacer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "name": "MySpacer8",
+                            "designerId": "2bfee562-bf6d-4259-b599-d2d79fce9241"
+                        },
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|uiInterfaceName": "forward",
+                                "text": "Forward",
+                                "ui": "forward"
+                            },
+                            "name": "MyButton1",
+                            "designerId": "28d87f9f-a42b-4edb-b511-a9b738f03706"
+                        },
+                        {
+                            "type": "Ext.Spacer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "name": "MySpacer1",
+                            "designerId": "4ea4adf6-9b5a-45d3-9ba8-3dc9a6dd1ba3"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "container|align": "center",
+                        "container|pack": "center",
+                        "defaults": [
+                            "{",
+                            "    cls: 'x-button-pressing'",
+                            "}"
+                        ],
+                        "height": "",
+                        "layout": "hbox",
+                        "layout|flex": 4,
+                        "width": "100%"
+                    },
+                    "name": "MyContainer9",
+                    "designerId": "e4aeb97b-b319-46c1-bc93-e6ea0438d0e3",
+                    "cn": [
+                        {
+                            "type": "Ext.Spacer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "name": "MySpacer2",
+                            "designerId": "7241d573-a752-4515-b5c7-089922b63786"
+                        },
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|uiInterfaceName": "back",
+                                "height": "",
+                                "text": "Back",
+                                "ui": "back"
+                            },
+                            "name": "MyButton",
+                            "designerId": "05cea09a-98f0-4a02-9b32-a8f12f03b97c"
+                        },
+                        {
+                            "type": "Ext.Spacer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "name": "MySpacer",
+                            "designerId": "e7bf11c2-bc57-41fd-a3e2-6b0c6fea450c"
+                        },
+                        {
+                            "type": "Ext.SegmentedButton",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "defaults": [
+                                    "{",
+                                    "    cls: 'x-button-pressing'",
+                                    "}"
+                                ]
+                            },
+                            "name": "MySegmentedButton1",
+                            "designerId": "fa5c2b01-ec2e-4529-ab9e-f4c7cfaf75b6",
+                            "cn": [
+                                {
+                                    "type": "Ext.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "pressed": true,
+                                        "text": "Left"
+                                    },
+                                    "name": "MyButton13",
+                                    "designerId": "94c8f2de-d607-42a7-bb17-acd3d038ef41"
+                                },
+                                {
+                                    "type": "Ext.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "text": "Center"
+                                    },
+                                    "name": "MyButton13",
+                                    "designerId": "e220f07d-1138-4dfd-9dbe-48330a5859f3"
+                                },
+                                {
+                                    "type": "Ext.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "text": "Right"
+                                    },
+                                    "name": "MyButton14",
+                                    "designerId": "05f3ab28-5eff-4fca-9181-0ecca00a8194"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.Spacer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "name": "MySpacer8",
+                            "designerId": "7e55babb-84d9-4ffd-a7ec-fb5474d5272a"
+                        },
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|uiInterfaceName": "forward",
+                                "text": "Forward",
+                                "ui": "forward"
+                            },
+                            "name": "MyButton1",
+                            "designerId": "a16f346c-0ce7-4291-bdaf-3928949d0f8c"
+                        },
+                        {
+                            "type": "Ext.Spacer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "name": "MySpacer1",
+                            "designerId": "85769a4b-28e7-4515-81eb-995170fc992d"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "container|align": "center",
+                        "container|pack": "center",
+                        "defaults": [
+                            "{",
+                            "    cls: 'x-button-pressed'",
+                            "}"
+                        ],
+                        "height": "",
+                        "layout": "hbox",
+                        "layout|flex": 4,
+                        "width": "100%"
+                    },
+                    "name": "MyContainer14",
+                    "designerId": "c80eaba4-b686-4003-ad6f-9b099cd669ab",
+                    "cn": [
+                        {
+                            "type": "Ext.Spacer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "name": "MySpacer2",
+                            "designerId": "7d5f5e63-dd7d-4409-a106-5849d5c96086"
+                        },
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|uiInterfaceName": "back",
+                                "height": "",
+                                "text": "Back",
+                                "ui": "back"
+                            },
+                            "name": "MyButton",
+                            "designerId": "3a51cef9-e425-4837-8fe1-5b353747748f"
+                        },
+                        {
+                            "type": "Ext.Spacer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "name": "MySpacer",
+                            "designerId": "5eff6846-9906-471f-8b71-64cf0079ca2e"
+                        },
+                        {
+                            "type": "Ext.SegmentedButton",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "defaults": [
+                                    "{",
+                                    "    cls: 'x-button-pressed'",
+                                    "}"
+                                ]
+                            },
+                            "name": "MySegmentedButton1",
+                            "designerId": "0d6d592e-f83c-4e49-9693-836af2a70ad7",
+                            "cn": [
+                                {
+                                    "type": "Ext.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "pressed": true,
+                                        "text": "Left"
+                                    },
+                                    "name": "MyButton13",
+                                    "designerId": "2426b257-0eef-4979-87f5-7a6d6b0ef943"
+                                },
+                                {
+                                    "type": "Ext.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "text": "Center"
+                                    },
+                                    "name": "MyButton13",
+                                    "designerId": "20fe2781-52bc-43cb-ad2a-c2ea4b958537"
+                                },
+                                {
+                                    "type": "Ext.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "text": "Right"
+                                    },
+                                    "name": "MyButton14",
+                                    "designerId": "b81bb3ff-f50e-4fa0-afef-d5c9d8e3b394"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.Spacer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "name": "MySpacer8",
+                            "designerId": "ef13951a-dce0-4b36-a415-788a294fccdf"
+                        },
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|uiInterfaceName": "forward",
+                                "text": "Forward",
+                                "ui": "forward"
+                            },
+                            "name": "MyButton1",
+                            "designerId": "c7bbcf11-4169-4c1d-8f3e-758ee8ea37d5"
+                        },
+                        {
+                            "type": "Ext.Spacer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "name": "MySpacer1",
+                            "designerId": "0d7f13b1-4989-45d0-980a-fffff440d95e"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "container|align": "center",
+                        "container|pack": "center",
+                        "defaults": [
+                            "{",
+                            "    disabled: true",
+                            "}"
+                        ],
+                        "height": "",
+                        "layout": "hbox",
+                        "layout|flex": 4,
+                        "width": "100%"
+                    },
+                    "name": "MyContainer19",
+                    "designerId": "f76c98b6-5230-460b-8669-cede544f1fe8",
+                    "cn": [
+                        {
+                            "type": "Ext.Spacer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "name": "MySpacer2",
+                            "designerId": "75599678-9527-4735-8032-6ee3ddc61d85"
+                        },
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|uiInterfaceName": "back",
+                                "height": "",
+                                "text": "Back",
+                                "ui": "back"
+                            },
+                            "name": "MyButton",
+                            "designerId": "b8e6e958-c3d4-4e13-8150-046d1ad9dbb6"
+                        },
+                        {
+                            "type": "Ext.Spacer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "name": "MySpacer",
+                            "designerId": "4893c1be-e7f7-4008-bd61-6f0b16c6bdfb"
+                        },
+                        {
+                            "type": "Ext.SegmentedButton",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "defaults": [
+                                    "{",
+                                    "    disabled: true",
+                                    "}"
+                                ]
+                            },
+                            "name": "MySegmentedButton1",
+                            "designerId": "4afd738f-66fe-4cd1-96f4-8af5fa8bf3bd",
+                            "cn": [
+                                {
+                                    "type": "Ext.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "pressed": true,
+                                        "text": "Left"
+                                    },
+                                    "name": "MyButton13",
+                                    "designerId": "3c9a0b98-b6fd-42fd-b5f6-6490ff6d751f"
+                                },
+                                {
+                                    "type": "Ext.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "text": "Center"
+                                    },
+                                    "name": "MyButton13",
+                                    "designerId": "9dbb3692-e64b-4c9b-8e80-435883d82bfe"
+                                },
+                                {
+                                    "type": "Ext.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "text": "Right"
+                                    },
+                                    "name": "MyButton14",
+                                    "designerId": "f2f7ed78-eaaf-4efa-8dc5-4c5b5618ff24"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.Spacer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "name": "MySpacer8",
+                            "designerId": "f9e55282-08ef-4ac0-9fe1-52358776c1d7"
+                        },
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|uiInterfaceName": "forward",
+                                "text": "Forward",
+                                "ui": "forward"
+                            },
+                            "name": "MyButton1",
+                            "designerId": "220eaaab-f2ae-4758-9009-50150f4b50a5"
+                        },
+                        {
+                            "type": "Ext.Spacer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "name": "MySpacer1",
+                            "designerId": "c85d5507-7913-4220-8130-03647f6bb0dd"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

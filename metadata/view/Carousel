@@ -1,0 +1,210 @@
+{
+    "type": "Ext.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Carousel",
+        "layout": "vbox"
+    },
+    "name": "MyContainer28",
+    "designerId": "9fb3a604-290b-4308-a4fd-2e196fd373a4",
+    "cn": [
+        {
+            "type": "Ext.carousel.Carousel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|flex": 1
+            },
+            "name": "MyCarousel",
+            "designerId": "cf1090d1-af24-48b5-ba5a-5b156f724c41",
+            "cn": [
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "centered": null,
+                        "html": null
+                    },
+                    "name": "MyContainer28",
+                    "designerId": "fee399aa-8222-4644-8eef-ccee4a462356",
+                    "cn": [
+                        {
+                            "type": "Ext.Label",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "centered": true,
+                                "html": "Test"
+                            },
+                            "name": "MyLabel",
+                            "designerId": "8350888f-f245-4090-a290-83db0148530f"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "name": "MyContainer29",
+                    "designerId": "3274b874-39ca-4699-85d5-ffa37f301832",
+                    "cn": [
+                        {
+                            "type": "Ext.Label",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "centered": true,
+                                "html": "Test"
+                            },
+                            "name": "MyLabel1",
+                            "designerId": "a0711c06-a846-464a-b7da-065d0ef58879"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "name": "MyContainer30",
+                    "designerId": "adacac06-f4c0-4fa0-898b-2805e6988f8a",
+                    "cn": [
+                        {
+                            "type": "Ext.Label",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "centered": true,
+                                "html": "Test"
+                            },
+                            "name": "MyLabel2",
+                            "designerId": "0812482a-69cb-4302-bfc5-820cb0b1824e"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Ext.carousel.Carousel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "direction": "vertical",
+                "layout|flex": 1
+            },
+            "name": "MyCarousel1",
+            "designerId": "904fe3a4-e839-480b-8cf3-067e74c5bfb5",
+            "cn": [
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "name": "MyContainer31",
+                    "designerId": "2cb8a5e7-a6a4-4cfa-8b9d-9fbe1ab45893",
+                    "cn": [
+                        {
+                            "type": "Ext.Label",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "centered": true,
+                                "html": "Test"
+                            },
+                            "name": "MyLabel3",
+                            "designerId": "d3798018-a37f-4dbf-9da0-a1832cdc35e5"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "name": "MyContainer32",
+                    "designerId": "6bcd073b-a2d0-446f-aa43-eb832200e1cb",
+                    "cn": [
+                        {
+                            "type": "Ext.Label",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "centered": true,
+                                "html": "Test"
+                            },
+                            "name": "MyLabel4",
+                            "designerId": "2c0d94e1-db52-4087-b8a6-e4fcdbad52ed"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "ui": null
+                    },
+                    "name": "MyContainer33",
+                    "designerId": "5e5b7562-42c6-4d4a-a487-4bc24de64896",
+                    "cn": [
+                        {
+                            "type": "Ext.Label",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "centered": true,
+                                "html": "Test"
+                            },
+                            "name": "MyLabel5",
+                            "designerId": "85f28e6d-4329-4f04-ac6d-cd2e69152901"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

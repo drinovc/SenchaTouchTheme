@@ -1,0 +1,77 @@
+{
+    "type": "Ext.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Grid",
+        "layout": "fit"
+    },
+    "name": "MyContainer26",
+    "designerId": "f3334ccd-283a-4198-b896-3406d080b62d",
+    "cn": [
+        {
+            "type": "grid",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "store": "countryStore",
+                "title": "Grid"
+            },
+            "name": "MyGrid",
+            "designerId": "2213f800-ab26-49d2-b3c2-149d3b811cc3",
+            "cn": [
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "name",
+                        "text": "String",
+                        "width": 300
+                    },
+                    "name": "MyColumn",
+                    "designerId": "bda9c123-ce44-46d5-a374-16d5c27df919"
+                },
+                {
+                    "type": "Ext.grid.column.Date",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "date",
+                        "text": "Date",
+                        "width": 110
+                    },
+                    "name": "MyDate",
+                    "designerId": "a87204a3-8a33-48ea-8412-b388f499c072"
+                },
+                {
+                    "type": "Ext.grid.column.Boolean",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "bool",
+                        "text": "Boolean",
+                        "width": 110
+                    },
+                    "name": "MyBoolean",
+                    "designerId": "adc56631-1a4e-4df6-97a5-c31e27f0ef25"
+                }
+            ]
+        }
+    ]
+}

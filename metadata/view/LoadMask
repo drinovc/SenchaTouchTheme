@@ -1,0 +1,19 @@
+{
+    "type": "Ext.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "LoadMask",
+        "masked": [
+            "{",
+            "    xtype: 'loadmask',",
+            "    message: 'Loading...'",
+            "}"
+        ]
+    },
+    "name": "MyContainer28",
+    "designerId": "edaf8d2d-dbf9-4681-a2ad-925397f1c3ad"
+}

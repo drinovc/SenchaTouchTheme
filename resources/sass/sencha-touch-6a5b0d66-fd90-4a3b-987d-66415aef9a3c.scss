@@ -1,0 +1,631 @@
+/********** MATERIAL COLORS **********/
+
+/* V1 - http://materialcolors.com/ */
+/* V2 - https://www.materialpalette.com/ */
+$red:        #f44336;
+$pink:       #e91e63;
+$purple:     #9c27b0;
+$deeppurple: #673ab7;
+$indigo:     #3f51b5;
+$blue:       #2196f3;
+$lightblue:  #03a9f4;
+$cyan:       #00bcd4;
+$teal:       #009688;
+$green:      #4caf50;
+$lightgreen: #8bc34a;
+$lime:       #cddc39;
+$yellow:     #ffeb3b;
+$amber:      #ffc107;
+$orange:     #ff9800;
+$deeporange: #ff5722;
+$brown:      #795548;
+$grey:       #9e9e9e;
+$bluegrey:   #607d8b;
+
+
+/********** OTHER COLORS **********/
+
+$black: #000;
+$almostblack: #111111;
+$white: #fff;
+$almostwhite: #f7f7f7;
+
+
+/********** THEME SETTINGS **********/
+
+/* $active-color: $orange; */
+
+$my-base-color: $white;
+$my-active-color: $lightblue;
+$my-alert-color: $red;
+$my-confirm-color: $green;
+
+$my-toolbar-dark-color: $bluegrey;
+$my-toolbar-light-color: $almostwhite;
+$my-toolbar-neutral-color: #e0e0e0;
+
+$my-toolbar-field-border-color: #a6a6a6;
+$badge-bg-color: #e51c23;
+$button-gradient: glossy;
+$button-radius: 0.2em;
+$active-color: $my-active-color;
+$alert-color: $my-alert-color;
+$base-color: $my-base-color;
+$confirm-color: $my-confirm-color;
+$list-active-gradient: flat;
+$list-header-gradient: flat;
+$list-pressed-color: $active-color;
+$form-field-label-border-top-color: transparent;
+$form-field-label-text-shadow: false;
+$form-fieldset-radius: 0em;
+$form-fieldset-title-text-shadow: false;
+$form-bg-color: rgba(0,0,0,0);
+$panel-border-radius: 0em;
+$sheet-bg-color: $base-color;
+$sheet-bg-gradient: flat;
+$tabs-bar-gradient: flat;
+$tabs-bottom-active-gradient: flat;
+$tabs-dark-active-color: $active-color;
+$toolbar-gradient: flat;
+$toolbar-input-border-color: transparent;
+@mixin my-transition($transition) {
+    -webkit-transition: $transition;
+    -moz-transition: $transition;
+    -o-transition: $transition;
+    transition: $transition;
+}
+
+@mixin my-color-styles($name, $color) {
+    .bg-#{$name},
+    .background-#{$name},
+    .#{$name}-bg,
+    .#{$name}-background {
+        background-color: $color;
+    }
+
+    .font-#{$name},
+    .text-#{$name},
+    .#{$name}-font,
+    .#{$name}-text {
+        color: $color;
+    }
+
+    .x-hasbadge {
+        &.#{$name}-badge, 
+        &.badge-#{$name} {
+            .x-badge {
+                background-color: $color;
+                @include color-by-background($color);
+            }
+        }
+    }
+}
+
+@import 'sencha-touch/default';
+@import 'sencha-touch/default/all';
+
+
+/********** DYNAMIC CREATION OF STYLES FOR COLORS **********/
+/* $all-colors: (
+    ('red', $red),
+    ('pink', $pink),
+    ('purple', $purple),
+    ('deeppurple', $deeppurple),
+    ('indigo', $indigo),
+    ('blue', $blue),
+    ('lightblue', $lightblue),
+    ('cyan', $cyan),
+    ('teal', $teal),
+    ('green', $green),
+    ('lightgreen', $lightgreen),
+    ('lime', $lime),
+    ('yellow', $yellow),
+    ('amber', $amber),
+    ('orange', $orange),
+    ('deeporange', $deeporange),
+    ('brown', $brown),
+    ('grey', $grey),
+    ('bluegrey', $bluegrey),
+    ('black', $black),
+    ('almostblack', $almostblack),
+    ('white', $white),
+    ('almostwhite', $almostwhite)
+);
+
+@each $color in $all-colors {
+    .bg-#{nth($color, 1)},
+    .background-#{nth($color, 1)},
+    .#{nth($color, 1)}-bg,
+    .#{nth($color, 1)}-background {
+        background-color: nth($color, 2);
+    }
+    .font-#{nth($color, 1)},
+    .text-#{nth($color, 1)},
+    .#{nth($color, 1)}-font,
+    .#{nth($color, 1)}-text {
+        color: nth($color, 2);
+    }
+} */
+
+@include my-color-styles('red', $red);
+@include my-color-styles('pink', $pink);
+@include my-color-styles('purple', $purple);
+@include my-color-styles('deeppurple', $deeppurple);
+@include my-color-styles('indigo', $indigo);
+@include my-color-styles('blue', $blue);
+@include my-color-styles('lightblue', $lightblue);
+@include my-color-styles('cyan', $cyan);
+@include my-color-styles('teal', $teal);
+@include my-color-styles('green', $green);
+@include my-color-styles('lightgreen', $lightgreen);
+@include my-color-styles('lime', $lime);
+@include my-color-styles('yellow', $yellow);
+@include my-color-styles('amber', $amber);
+@include my-color-styles('orange', $orange);
+@include my-color-styles('deeporange', $deeporange);
+@include my-color-styles('brown', $brown);
+@include my-color-styles('grey', $grey);
+@include my-color-styles('bluegrey', $bluegrey);
+@include my-color-styles('black', $black);
+@include my-color-styles('almostblack', $almostblack);
+@include my-color-styles('white', $white);
+@include my-color-styles('almostwhite', $almostwhite);
+/* don not darker confirm and decline buttons colors */
+@if $include-button-uis {
+    @include sencha-button-ui('action', $active-color);
+    /*@include sencha-button-ui('confirm', desaturate(darken($confirm-color, 10%), 5%));*/
+    @include sencha-button-ui('confirm', $confirm-color);
+    /*@include sencha-button-ui('decline', desaturate(darken($alert-color, 10%), 5%));*/
+    @include sencha-button-ui('decline', $alert-color);
+}
+
+/* fix for weird pink background */
+.x-container.x-layout-box-item {
+    background-color: transparent !important;
+}
+
+/* loading mask */
+.x-mask .x-mask-message {
+    color: white;
+    font-weight: normal;
+}
+
+/* mouse cursor */
+.cursor-pointer,
+.x-button,
+.x-list-item,
+.x-tab,
+.x-field-checkbox /*.x-component-outer*/,
+.x-field-radio /*.x-component-outer*/,
+.x-field-select .x-component-outer,
+.x-toggle,
+.x-slider-inner,
+.x-spinner-button {
+    cursor: pointer;
+}
+.x-item-disabled {
+    cursor: not-allowed;
+}
+.x-loading-mask {
+    cursor: wait;
+}
+
+/* badge */
+.x-hasbadge .x-badge {
+    border: none;
+    background-image: none;
+}
+/********** MATERIAL DESING **********/
+
+/* material styles */
+.md-shadow {
+    @include box-shadow(0 2px 5px 0 rgba(0,0,0,0.26));
+}
+
+/* base */
+#ext-viewport > .x-body {
+    background-color: white;
+    background-image: url('../images/background.jpg');
+    background-size: cover;
+}
+.x-layout-card-item {
+    background-color: transparent;
+}
+
+/* buttons */
+.x-button {
+    &:not(.x-button-plain) {
+        @include box-shadow(0 2px 5px 0 rgba(0,0,0,.26));
+        background-image: none !important;
+        border: none !important;
+    }
+    background-color: #f7f7f7;
+    @include my-transition(all 0.2s ease);
+
+}
+.x-button:hover {
+	@include box-shadow(0 2px 10px 0 rgba(0,0,0,0.36));
+}
+.x-button.x-button-pressing,
+.x-button.x-button-pressed {
+    background-color: #f0f0f0;
+    @include box-shadow(0 2px 1px 0 rgba(0,0,0,.26));
+}
+.x-button.x-button-plain.x-button-pressing,
+.x-button.x-button-plain.x-button-pressed,
+.x-toolbar .x-button.x-button-plain.x-button-pressing,
+.x-toolbar .x-button.x-button-plain.x-button-pressed {
+    background-color: transparent;
+    background-image: none;
+}
+.x-button-label,
+.x-badge,
+.x-hasbadge .x-badge {
+    font-weight: normal;
+}
+
+.x-webkit {
+    .x-button-forward:before,
+    .x-button-forward:after,
+    .x-button-back:before,
+    .x-button-back:after {
+        content: none;
+    }
+}
+
+/* fields */
+.x-field-select .x-component-outer:after {
+    display: none;
+}
+.x-toggle-on {
+    background-image: none;
+    background-color: $active-color;
+}
+
+/* title */
+.x-title {
+    font-size: 1.0em;
+    text-shadow: none !important;
+    font-weight: normal;
+}
+
+/* toolbar and titlebar and tab bar */
+.x-toolbar {
+    border: none !important;
+}
+.x-toolbar-dark {
+    background-color: $my-toolbar-dark-color;
+    &:not(.x-msgbox-title) .x-title {
+        @include color-by-background($my-toolbar-dark-color);
+    }
+}
+.x-toolbar-light {
+    background-color: $my-toolbar-light-color;
+    .x-title {
+        @include color-by-background($my-toolbar-light-color);
+    }
+}
+.x-toolbar-neutral {
+    background-color: $my-toolbar-neutral-color;
+    .x-title {
+        @include color-by-background($my-toolbar-neutral-color);
+    }
+}
+
+
+/* toolbar buttons */
+.x-body .x-toolbar .x-button-back,
+.x-body .x-toolbar .x-button-forward {
+    margin: 6px .2em;
+    padding: 0 .6em;
+}
+
+/* toolbar fields */
+.x-toolbar {
+    .x-field-textarea .x-component-outer,
+    .x-field-text .x-component-outer,
+    .x-field-number .x-component-outer,
+    .x-field-search .x-component-outer,
+    .x-field-select .x-component-outer {
+        @include box-shadow(none);
+        border: 1px solid $my-toolbar-field-border-color;
+        @include border-radius(0.2em);
+    }
+    .x-field-search .x-field-input:before {
+        top: .25em;
+        left: .2em;
+    }
+    .x-field-select .x-component-outer {
+        background-color: white;
+        color: #000;
+    }
+    .x-field-select .x-input-text {
+        color: #000;
+    }
+    .x-field-select .x-input-el {
+        -webkit-text-fill-color: #000;
+    }
+}
+
+.x-tabbar.x-docked-top .x-tab {
+    @include border-radius(0);
+    margin-bottom: -14px;
+    border-top-left-radius: 0.2em;
+    border-top-right-radius: 0.2em;
+    height: 2.4em;
+}
+.x-tabbar {
+    &.x-docked-bottom .x-tab {
+        @include border-radius(0.2em);
+    }
+    > .x-tabbar-inner {
+        overflow: hidden;
+    }
+    &.x-docked-top .x-tab-active:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 0.5em;
+        background-color: $active-color;
+    }
+}
+
+/* list */
+.x-list {
+    background-color: rgba(255,255,255,.5);
+}
+.x-list-round {
+    background-color: transparent;
+    .x-scroll-view {
+        background-color: transparent;
+    }
+    &.x-list-ungrouped .x-list-item-tpl {
+        background-color: rgba(255,255,255,.5);
+    }
+}
+
+/* msgbox and floating panels */
+.x-msgbox {
+    border: none;
+    border-radius: 0px;
+    background-color: $almostwhite;
+
+    .x-field-input {
+        background-color: white;
+    }
+}
+.x-panel.x-floating,
+.x-form.x-floating {
+    background-color: #fff;
+    box-shadow: rgba(0,0,0,0.4) 0 0.1em 0.5em;
+}
+.x-webkit .x-anchor.x-anchor-top {
+    background-color: #fff;
+}
+/* this ripple effect origin is always in the center, to change that you have to use javascript */
+.x-button:not(.x-item-disabled),
+.x-list-item {
+  position: relative;
+/*   overflow: hidden; */
+  transform: translate3d(0, 0, 0);
+
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    background-image: radial-gradient(circle, #000 10%, transparent 10.01%);
+    //background-image: radial-gradient(circle, #fff 10%, transparent 10.01%);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    transform: scale(10,10);
+    opacity: 0;
+    transition: transform .5s, opacity 1s;
+  }
+
+  &:active:after {
+    transform: scale(0,0);
+    opacity: .2;
+    transition: 0s;
+  }
+}
+.x-list-item {
+    overflow: hidden;
+}
+$font-files: url('../font-awesome/fonts/fontawesome-webfont.woff') format("woff");
+
+@include icon-font('FontAwesome', $font-files);
+
+@include icon('my-fa-save', '\f0c7', 'FontAwesome');
+@include icon('my-fa-file-o', '\f016', 'FontAwesome');
+@include icon('my-fa-trash-o', '\f014', 'FontAwesome');
+@include icon('my-fa-copy', '\f0c5', 'FontAwesome');
+@include icon('my-fa-paste', '\f0ea', 'FontAwesome');
+
+.x-button .fa:before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    text-align: center
+}
+
+/* font awesome disclosure */
+.x-list {
+    .x-list-disclosure {
+        background: transparent;
+        &:before {
+            font-family: 'FontAwesome';
+            content: '\f105';
+            margin-left: 0.2em;
+            color: silver;
+            line-height: 32px;
+        }
+    }
+}
+
+/* font awesome spinner buttons */
+.x-spinner {
+    .x-spinner-button {
+        color: transparent;
+        position: relative;
+        background-image: none;
+        &:before {
+            font-family: 'FontAwesome';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            text-align: center;
+            line-height: 36px;
+            color: black;
+        }
+    }
+    .x-spinner-button-up:before {
+        content: '\f067';
+    }
+    .x-spinner-button-down:before {
+        content: '\f068';
+    }
+}
+/* ui mixin: teal for of type: sencha-button-ui */
+
+@include sencha-button-ui(
+  $ui-label:"teal",
+    $color: $teal,
+    $gradient: $button-gradient
+);
+/* ui mixin: red for of type: sencha-button-ui */
+
+@include sencha-button-ui(
+  $ui-label:"red",
+    $color: $red,
+    $gradient: $button-gradient
+);
+/* ui mixin: pink for of type: sencha-button-ui */
+
+@include sencha-button-ui(
+  $ui-label:"pink",
+    $color: $pink,
+    $gradient: $button-gradient
+);
+/* ui mixin: purple for of type: sencha-button-ui */
+
+@include sencha-button-ui(
+  $ui-label:"purple",
+    $color: $purple,
+    $gradient: $button-gradient
+);
+/* ui mixin: deeppurple for of type: sencha-button-ui */
+
+@include sencha-button-ui(
+  $ui-label:"deeppurple",
+    $color: $deeppurple,
+    $gradient: $button-gradient
+);
+/* ui mixin: indigo for of type: sencha-button-ui */
+
+@include sencha-button-ui(
+  $ui-label:"indigo",
+    $color: $indigo,
+    $gradient: $button-gradient
+);
+/* ui mixin: blue for of type: sencha-button-ui */
+
+@include sencha-button-ui(
+  $ui-label:"blue",
+    $color: $blue,
+    $gradient: $button-gradient
+);
+/* ui mixin: lightblue for of type: sencha-button-ui */
+
+@include sencha-button-ui(
+  $ui-label:"lightblue",
+    $color: $lightblue,
+    $gradient: $button-gradient
+);
+/* ui mixin: cyan for of type: sencha-button-ui */
+
+@include sencha-button-ui(
+  $ui-label:"cyan",
+    $color: $cyan,
+    $gradient: $button-gradient
+);
+/* ui mixin: green for of type: sencha-button-ui */
+
+@include sencha-button-ui(
+  $ui-label:"green",
+    $color: $green,
+    $gradient: $button-gradient
+);
+/* ui mixin: lightgreen for of type: sencha-button-ui */
+
+@include sencha-button-ui(
+  $ui-label:"lightgreen",
+    $color: $lightgreen,
+    $gradient: $button-gradient
+);
+/* ui mixin: lime for of type: sencha-button-ui */
+
+@include sencha-button-ui(
+  $ui-label:"lime",
+    $color: $lime,
+    $gradient: $button-gradient
+);
+/* ui mixin: yellow for of type: sencha-button-ui */
+
+@include sencha-button-ui(
+  $ui-label:"yellow",
+    $color: $yellow,
+    $gradient: $button-gradient
+);
+/* ui mixin: amber for of type: sencha-button-ui */
+
+@include sencha-button-ui(
+  $ui-label:"amber",
+    $color: $amber,
+    $gradient: $button-gradient
+);
+/* ui mixin: orange for of type: sencha-button-ui */
+
+@include sencha-button-ui(
+  $ui-label:"orange",
+    $color: $orange,
+    $gradient: $button-gradient
+);
+/* ui mixin: deeporange for of type: sencha-button-ui */
+
+@include sencha-button-ui(
+  $ui-label:"deeporange",
+    $color: $deeporange,
+    $gradient: $button-gradient
+);
+/* ui mixin: brown for of type: sencha-button-ui */
+
+@include sencha-button-ui(
+  $ui-label:"brown",
+    $color: $brown,
+    $gradient: $button-gradient
+);
+/* ui mixin: grey for of type: sencha-button-ui */
+
+@include sencha-button-ui(
+  $ui-label:"grey",
+    $color: $grey,
+    $gradient: $button-gradient
+);
+/* ui mixin: bluegrey for of type: sencha-button-ui */
+
+@include sencha-button-ui(
+  $ui-label:"bluegrey",
+    $color: $bluegrey,
+    $gradient: $button-gradient
+);

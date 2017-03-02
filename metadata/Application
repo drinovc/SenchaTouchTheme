@@ -1,0 +1,40 @@
+{
+    "type": "Ext.app.Application",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "controllers": [
+            "MainView"
+        ],
+        "name": "SenchaTouchTheme",
+        "requires": [
+            "Ext.MessageBox"
+        ],
+        "stores": [
+            "countryStore"
+        ],
+        "views": [
+            "MainView",
+            "Buttons",
+            "FieldsAndRadios",
+            "Toolbars",
+            "List",
+            "ListGrouped",
+            "Tabs",
+            "Overlays",
+            "ListDisclosure",
+            "ListRound",
+            "LoadMask",
+            "Carousel",
+            "Grid",
+            "Login",
+            "FontAwesome",
+            "ListBuffered"
+        ]
+    },
+    "name": "Application",
+    "designerId": "application"
+}

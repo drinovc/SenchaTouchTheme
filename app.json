@@ -1,0 +1,63 @@
+{
+   "name": "SenchaTouchTheme",
+   "indexHtmlPath": "index.html",
+   "framework": "touch",
+   "url": null,
+   "js": [
+      {
+         "path": "touch/sencha-touch.js",
+         "x-bootstrap": true
+      },
+      {
+         "path": "bootstrap.js",
+         "x-bootstrap": true
+      },
+      {
+         "path": "app.js",
+         "bundle": true,
+         "update": "delta"
+      }
+   ],
+   "css": [
+      {
+         "path": "resources/font-awesome/css/font-awesome.css"
+      },
+      {
+         "update": "delta",
+         "platform": [
+            "phone",
+            "tablet",
+            "desktop"
+         ],
+         "theme": "Default",
+         "path": "resources/css/sencha-touch-6a5b0d66-fd90-4a3b-987d-66415aef9a3c.css"
+      }
+   ],
+   "appCache": {
+      "cache": [
+         "index.html"
+      ],
+      "network": [
+         "*"
+      ],
+      "fallback": []
+   },
+   "resources": [
+      "resources/images",
+      "resources/icons",
+      "resources/startup",
+      "resources/font-awesome/css/font-awesome.css"
+   ],
+   "ignore": [
+      ".svn$"
+   ],
+   "archivePath": "archive",
+   "requires": [
+      "sencha-touch-grid"
+   ],
+   "cache": {
+      "enable": true,
+      "deltas": "deltas"
+   },
+   "id": "13ae4238-c32d-440a-bfee-0ec197fa62a8"
+}

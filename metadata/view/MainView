@@ -1,0 +1,149 @@
+{
+    "type": "Ext.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "border": null,
+        "designer|initialView": true,
+        "designer|userAlias": "mainview",
+        "designer|userClassName": "MainView",
+        "layout": "hbox"
+    },
+    "designerId": "04b3ce3f-3430-414d-b170-eacda58a02a6",
+    "cn": [
+        {
+            "type": "Ext.TitleBar",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "cls": [
+                    "md-shadow"
+                ],
+                "container|align": null,
+                "designer|displayName": "Toolbar",
+                "docked": "top",
+                "title": "Custom Theme",
+                "ui": null,
+                "zIndex": 1
+            },
+            "name": "MyTitleBar1",
+            "designerId": "024f5b5a-e4fe-40da-9097-5a5202d8f302"
+        },
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "border": null,
+                "designer|displayName": "SideMenu",
+                "layout|flex": null,
+                "maxWidth": null,
+                "style": "background-color: #ddf; border-right: 1px solid #ddd;",
+                "ui": "dark",
+                "width": 300
+            },
+            "name": "MyContainer",
+            "designerId": "73273ae8-24a4-4278-97a7-945a8a6d7188",
+            "cn": [
+                {
+                    "type": "Ext.dataview.List",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "data": [
+                            "[",
+                            "    {title: 'Buttons', view: 'Buttons'},",
+                            "    {title: 'Carousel', view: 'Carousel'},",
+                            "    {title: 'Fields and Radios', view: 'FieldsAndRadios'},",
+                            "    {title: 'Font Awesome', view: 'FontAwesome'},",
+                            "    {title: 'Grid', view: 'Grid'},",
+                            "    {title: 'List', view: 'List'},",
+                            "    {title: 'List Buffered', view: 'ListBuffered'},",
+                            "    {title: 'List Disclosure', view: 'ListDisclosure'},",
+                            "    {title: 'List Grouped', view: 'ListGrouped'},",
+                            "    {title: 'List Round', view: 'ListRound'},",
+                            "    {title: 'Login', view: 'Login'},",
+                            "    {title: 'Load Mask', view: 'LoadMask'},",
+                            "    {title: 'Overlays', view: 'Overlays'},",
+                            "    {title: 'Tabs', view: 'Tabs'},",
+                            "    {title: 'Toolbars', view: 'Toolbars'}",
+                            "    ",
+                            "]"
+                        ],
+                        "height": "100%",
+                        "itemId": "navList",
+                        "maxWidth": null,
+                        "width": null
+                    },
+                    "name": "MyList",
+                    "designerId": "5f78e268-b8c8-4811-b011-882e987261ce",
+                    "cn": [
+                        {
+                            "type": "Ext.XTemplate",
+                            "reference": {
+                                "name": "itemTpl",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "itemTpl",
+                                "implHandler": [
+                                    "<div>{title}</div>"
+                                ]
+                            },
+                            "name": "itemTpl",
+                            "designerId": "4cd42aa8-f280-4b7e-8c37-a8e0d6f07cfe"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Ext.navigation.View",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "container|animation": false,
+                "container|animation.direction": "down",
+                "container|animation.duration": null,
+                "itemId": "mainContent",
+                "layout|flex": 3,
+                "margin": 20,
+                "padding": null
+            },
+            "name": "MyNavigationView",
+            "designerId": "d2fc6b82-b613-4027-a375-f09a50afc457",
+            "cn": [
+                {
+                    "type": "Ext.navigation.Bar",
+                    "reference": {
+                        "name": "navigationBar",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "docked": "bottom",
+                        "hidden": true
+                    },
+                    "name": "MyNavigationBar",
+                    "designerId": "b19104cc-ec79-4db8-87c6-e052f4674216"
+                }
+            ]
+        }
+    ]
+}

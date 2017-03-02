@@ -1,0 +1,386 @@
+{
+    "type": "Ext.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "defaults": [
+            "{",
+            "    margin: 10",
+            "}"
+        ],
+        "designer|userClassName": "FontAwesome"
+    },
+    "name": "MyContainer41",
+    "designerId": "2f699c15-3fb8-448d-8c05-85c860945cbf",
+    "cn": [
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "defaults": [
+                    "{",
+                    "    margin: 5",
+                    "}"
+                ],
+                "layout": "hbox"
+            },
+            "name": "MyContainer41",
+            "designerId": "1d5bf989-ec3b-44ab-ae0b-1efb64347cc2",
+            "cn": [
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "iconCls": "my-fa-file-o",
+                        "text": "New"
+                    },
+                    "name": "MyButton40",
+                    "designerId": "64f6169d-a81e-417e-8160-198fd699a426"
+                },
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "iconCls": "my-fa-save",
+                        "text": "Save"
+                    },
+                    "name": "MyButton39",
+                    "designerId": "522393b3-935c-4d0c-87e3-3145c1aa8f4d"
+                },
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "iconCls": "my-fa-trash-o",
+                        "text": "Delete"
+                    },
+                    "name": "MyButton41",
+                    "designerId": "1ff68cde-99ed-41d1-83da-44b64cec82c0"
+                },
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "iconCls": "my-fa-copy",
+                        "text": "Copy"
+                    },
+                    "name": "MyButton43",
+                    "designerId": "26b7b7ed-6da6-43b1-b657-116d8258983c"
+                },
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "iconCls": "my-fa-paste",
+                        "text": "Paste"
+                    },
+                    "name": "MyButton42",
+                    "designerId": "6d9621fc-d28c-47c3-8f30-525fb1bcaf87"
+                },
+                {
+                    "type": "Ext.Label",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "html": "added to theme"
+                    },
+                    "name": "MyLabel6",
+                    "designerId": "fae495d2-ab71-4029-8027-b38356ce2825"
+                }
+            ]
+        },
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "defaults": [
+                    "{",
+                    "    margin: 5",
+                    "}"
+                ],
+                "layout": "hbox"
+            },
+            "name": "MyContainer35",
+            "designerId": "712af490-98fb-4f4b-a8fd-b2f3703f8a7b",
+            "cn": [
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "iconCls": "fa fa-file-o",
+                        "text": "New"
+                    },
+                    "name": "MyButton40",
+                    "designerId": "847457e3-d084-4156-8ff9-660f20dd5ffe"
+                },
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "iconCls": "fa fa-save",
+                        "text": "Save"
+                    },
+                    "name": "MyButton39",
+                    "designerId": "f91cff00-354c-4514-a266-43623e954c37"
+                },
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "iconCls": "fa fa-trash-o",
+                        "text": "Delete"
+                    },
+                    "name": "MyButton41",
+                    "designerId": "959035d3-9123-4c29-aeec-90cd43adf122"
+                },
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "iconCls": "fa fa-copy",
+                        "text": "Copy"
+                    },
+                    "name": "MyButton43",
+                    "designerId": "b7509994-4570-489d-8925-39467cf9b2a7"
+                },
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "iconCls": "fa fa-paste",
+                        "text": "Paste"
+                    },
+                    "name": "MyButton42",
+                    "designerId": "7a70d181-c854-401f-85b7-bc952147a220"
+                },
+                {
+                    "type": "Ext.Label",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "html": "from font awesome css"
+                    },
+                    "name": "MyLabel7",
+                    "designerId": "c492e6fb-7472-4a9b-9a12-5645706e8023"
+                }
+            ]
+        },
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "defaults": [
+                    "{",
+                    "    margin: 5",
+                    "}"
+                ],
+                "layout": "hbox"
+            },
+            "name": "MyContainer42",
+            "designerId": "0ff3cded-5455-4b15-97a1-997d9c8eca3b",
+            "cn": [
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "iconCls": "fa fa-plus",
+                        "text": ""
+                    },
+                    "name": "MyButton44",
+                    "designerId": "433f7b29-3e89-49e0-8253-89824d0aa911"
+                },
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "iconCls": "fa fa-minus",
+                        "text": ""
+                    },
+                    "name": "MyButton45",
+                    "designerId": "00a88041-dab5-413f-8c99-c04ce2c91ea8"
+                },
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "iconCls": "fa fa-times",
+                        "text": ""
+                    },
+                    "name": "MyButton48",
+                    "designerId": "501e4daa-fa04-4225-a091-4309d18c1de6"
+                },
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "iconCls": "fa fa-chevron-left",
+                        "text": ""
+                    },
+                    "name": "MyButton46",
+                    "designerId": "e1b90faa-18a1-4e25-8eb2-6f5b760eea66"
+                },
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "iconCls": "fa fa-chevron-right",
+                        "text": ""
+                    },
+                    "name": "MyButton47",
+                    "designerId": "385cb690-2427-4d91-97cc-6cff9c04da95"
+                },
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "iconCls": "fa fa-crosshairs",
+                        "text": ""
+                    },
+                    "name": "MyButton49",
+                    "designerId": "dea6de8c-fd54-48be-8778-f49442583200"
+                },
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "iconCls": "fa fa-lock",
+                        "text": ""
+                    },
+                    "name": "MyButton50",
+                    "designerId": "f01975b4-6769-4b85-9930-5f451505130b"
+                },
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "iconCls": "fa fa-unlock",
+                        "text": ""
+                    },
+                    "name": "MyButton51",
+                    "designerId": "63bc6095-1632-486c-ac24-c7706ab31d4d"
+                },
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "iconCls": "fa fa-square-o",
+                        "text": ""
+                    },
+                    "name": "MyButton52",
+                    "designerId": "26ff396b-9a64-4856-821e-9ba549bec8ee"
+                },
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "iconCls": "fa fa-check-square-o",
+                        "text": ""
+                    },
+                    "name": "MyButton53",
+                    "designerId": "c7fe4154-4f0a-4d60-aa3a-12a1df518f48"
+                }
+            ]
+        }
+    ]
+}
