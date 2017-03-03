@@ -1,4 +1,7 @@
 /* _arch-vars-start */
+/******************************************************************************/
+/* ThemeSettings */
+
 /********** MATERIAL COLORS **********/
 
 /* V1 - http://materialcolors.com/ */
@@ -30,23 +33,48 @@ $black: #000;
 $almostblack: #111111;
 $white: #fff;
 $almostwhite: #f7f7f7;
+$almostwhite2: #f0f0f0;
+
+
+/********** MATERIAL SETTINGS **********/
+
+/* $md-shadow: 0 2px 5px 0 rgba(0,0,0,0.26); */
+$md-shadow: 0 1px 2px 0 rgba(0,0,0,0.2);
+/* $md-shadow-hover: 0 2px 10px 0 rgba(0,0,0,0.36); */
+$md-shadow-hover: 0 1px 10px 0 rgba(0,0,0,0.35);
+/* $md-shadow-pressed: 0 2px 1px 0 rgba(0,0,0,.26); */
+$md-shadow-pressed: 0 1px 2px 0 rgba(0,0,0,0.2);
+
+$md-shadow-floating: 0 0.1em 0.5em rgba(0,0,0,0.4);
 
 
 /********** THEME SETTINGS **********/
-
-/* $active-color: $orange; */
 
 $my-base-color: $white;
 $my-active-color: $lightblue;
 $my-alert-color: $red;
 $my-confirm-color: $green;
 
+$my-theme: 'light';
+
+$my-page-bg-color: $white;
+$my-page-bg-image: url('../images/background.jpg');
+
 $my-toolbar-dark-color: $bluegrey;
 $my-toolbar-light-color: $almostwhite;
 $my-toolbar-neutral-color: #e0e0e0;
 
 $my-toolbar-field-border-color: #a6a6a6;
-$badge-bg-color: #e51c23;
+
+$my-button-color: $almostwhite;
+$my-button-pressed-color: $almostwhite2;
+
+$my-list-bg-color: rgba(255,255,255,.5);
+
+
+/********** SENCHA THEME VARIABLES **********/
+
+$badge-bg-color: $deeporange;
 $button-gradient: glossy;
 $button-radius: 0.2em;
 $active-color: $my-active-color;
@@ -69,6 +97,10 @@ $tabs-bottom-active-gradient: flat;
 $tabs-dark-active-color: $active-color;
 $toolbar-gradient: flat;
 $toolbar-input-border-color: transparent;
+//$list-active-color: rgba(0,0,0,0.1);
+/******************************************************************************/
+/* Mixins */
+
 @mixin my-transition($transition) {
     -webkit-transition: $transition;
     -moz-transition: $transition;
@@ -77,6 +109,7 @@ $toolbar-input-border-color: transparent;
 }
 
 @mixin my-color-styles($name, $color) {
+    /* custom */
     .bg-#{$name},
     .background-#{$name},
     .#{$name}-bg,
@@ -91,8 +124,21 @@ $toolbar-input-border-color: transparent;
         color: $color;
     }
 
+    /* colors for custom styles */
+    .triangle.#{$name} {
+        &.top-left, 
+        &.top-right {
+            border-top-color: $color;
+        }
+        &.bottom-left, 
+        &.bottom-right {
+            border-bottom-color: $color;
+        }
+    }
+
+    /* sencha overrides */
     .x-hasbadge {
-        &.#{$name}-badge, 
+        &.#{$name}-badge,
         &.badge-#{$name} {
             .x-badge {
                 background-color: $color;
@@ -100,6 +146,13 @@ $toolbar-input-border-color: transparent;
             }
         }
     }
+
+    /* sencha components */
+    @include sencha-button-ui(
+        $ui-label: $name,
+        $color: $color,
+        $gradient: $button-gradient
+    );
 }
 
 @import 'sencha-touch/default';
@@ -107,44 +160,20 @@ $toolbar-input-border-color: transparent;
 
 
 /* _arch-other-start */
-/********** DYNAMIC CREATION OF STYLES FOR COLORS **********/
+/******************************************************************************/
+/* ColorStyles */
+
 /* $all-colors: (
     ('red', $red),
-    ('pink', $pink),
-    ('purple', $purple),
-    ('deeppurple', $deeppurple),
-    ('indigo', $indigo),
-    ('blue', $blue),
-    ('lightblue', $lightblue),
-    ('cyan', $cyan),
-    ('teal', $teal),
     ('green', $green),
-    ('lightgreen', $lightgreen),
-    ('lime', $lime),
-    ('yellow', $yellow),
-    ('amber', $amber),
-    ('orange', $orange),
-    ('deeporange', $deeporange),
-    ('brown', $brown),
-    ('grey', $grey),
-    ('bluegrey', $bluegrey),
-    ('black', $black),
-    ('almostblack', $almostblack),
-    ('white', $white),
-    ('almostwhite', $almostwhite)
+    ('blue', $blue),
 );
 
 @each $color in $all-colors {
-    .bg-#{nth($color, 1)},
-    .background-#{nth($color, 1)},
-    .#{nth($color, 1)}-bg,
-    .#{nth($color, 1)}-background {
+    .bg-#{nth($color, 1)} {
         background-color: nth($color, 2);
     }
-    .font-#{nth($color, 1)},
-    .text-#{nth($color, 1)},
-    .#{nth($color, 1)}-font,
-    .#{nth($color, 1)}-text {
+    .font-#{nth($color, 1)} {
         color: nth($color, 2);
     }
 } */
@@ -172,6 +201,9 @@ $toolbar-input-border-color: transparent;
 @include my-color-styles('almostblack', $almostblack);
 @include my-color-styles('white', $white);
 @include my-color-styles('almostwhite', $almostwhite);
+/******************************************************************************/
+/* Fixes */
+
 /* don not darker confirm and decline buttons colors */
 @if $include-button-uis {
     @include sencha-button-ui('action', $active-color);
@@ -217,18 +249,47 @@ $toolbar-input-border-color: transparent;
     border: none;
     background-image: none;
 }
+
+/* scroller */
+.x-scroll-indicator.rounded > * {
+	background-color: #000;
+}
+.x-scroll-indicator.rounded > :nth-child(2) {
+	content: none;
+	background-color: #000;
+}
+.x-scroll-indicator {
+	opacity: 0.2 !important;
+}
+
+/* title */
+.x-title {
+    font-size: 1.0em;
+    text-shadow: none !important;
+    font-weight: normal;
+}
+
+/* button */
+.x-button .x-button-icon {
+    text-align: center;
+}
+/******************************************************************************/
+/* ThemeOverrides */
+
 /********** MATERIAL DESING **********/
 
 /* material styles */
 .md-shadow {
-    @include box-shadow(0 2px 5px 0 rgba(0,0,0,0.26));
+    @include box-shadow($md-shadow);
 }
 
 /* base */
 #ext-viewport > .x-body {
-    background-color: white;
-    background-image: url('../images/background.jpg');
-    background-size: cover;
+    background: {
+        color: $my-page-bg-color;
+        image: $my-page-bg-image;
+        size: cover;
+    }
 }
 .x-layout-card-item {
     background-color: transparent;
@@ -237,21 +298,22 @@ $toolbar-input-border-color: transparent;
 /* buttons */
 .x-button {
     &:not(.x-button-plain) {
-        @include box-shadow(0 2px 5px 0 rgba(0,0,0,.26));
+        @include box-shadow($md-shadow);
         background-image: none !important;
         border: none !important;
     }
-    background-color: #f7f7f7;
+    background-color: $my-button-color;
     @include my-transition(all 0.2s ease);
 
 }
 .x-button:hover {
-	@include box-shadow(0 2px 10px 0 rgba(0,0,0,0.36));
+	@include box-shadow($md-shadow-hover);
+/*     z-index: 2; */
 }
 .x-button.x-button-pressing,
 .x-button.x-button-pressed {
-    background-color: #f0f0f0;
-    @include box-shadow(0 2px 1px 0 rgba(0,0,0,.26));
+    background-color: $my-button-pressed-color;
+    @include box-shadow($md-shadow-pressed);
 }
 .x-button.x-button-plain.x-button-pressing,
 .x-button.x-button-plain.x-button-pressed,
@@ -282,13 +344,6 @@ $toolbar-input-border-color: transparent;
 .x-toggle-on {
     background-image: none;
     background-color: $active-color;
-}
-
-/* title */
-.x-title {
-    font-size: 1.0em;
-    text-shadow: none !important;
-    font-weight: normal;
 }
 
 /* toolbar and titlebar and tab bar */
@@ -352,8 +407,8 @@ $toolbar-input-border-color: transparent;
 .x-tabbar.x-docked-top .x-tab {
     @include border-radius(0);
     margin-bottom: -14px;
-    border-top-left-radius: 0.2em;
-    border-top-right-radius: 0.2em;
+    @include border-top-left-radius(0.2em);
+    @include border-top-right-radius(0.2em);
     height: 2.4em;
 }
 .x-tabbar {
@@ -376,7 +431,7 @@ $toolbar-input-border-color: transparent;
 
 /* list */
 .x-list {
-    background-color: rgba(255,255,255,.5);
+    background-color: $my-list-bg-color;
 }
 .x-list-round {
     background-color: transparent;
@@ -384,14 +439,14 @@ $toolbar-input-border-color: transparent;
         background-color: transparent;
     }
     &.x-list-ungrouped .x-list-item-tpl {
-        background-color: rgba(255,255,255,.5);
+        background-color: $my-list-bg-color;
     }
 }
 
 /* msgbox and floating panels */
 .x-msgbox {
     border: none;
-    border-radius: 0px;
+    @include border-radius(0);
     background-color: $almostwhite;
 
     .x-field-input {
@@ -401,11 +456,15 @@ $toolbar-input-border-color: transparent;
 .x-panel.x-floating,
 .x-form.x-floating {
     background-color: #fff;
-    box-shadow: rgba(0,0,0,0.4) 0 0.1em 0.5em;
+    @include box-shadow($md-shadow-floating);
+    padding: 0;
 }
 .x-webkit .x-anchor.x-anchor-top {
     background-color: #fff;
 }
+/******************************************************************************/
+/* RippleEffect */
+
 /* this ripple effect origin is always in the center, to change that you have to use javascript */
 .x-button:not(.x-item-disabled),
 .x-list-item {
@@ -440,6 +499,9 @@ $toolbar-input-border-color: transparent;
 .x-list-item {
     overflow: hidden;
 }
+/******************************************************************************/
+/* FontAwesome */
+
 $font-files: url('../font-awesome/fonts/fontawesome-webfont.woff') format("woff");
 
 @include icon-font('FontAwesome', $font-files);
@@ -450,7 +512,7 @@ $font-files: url('../font-awesome/fonts/fontawesome-webfont.woff') format("woff"
 @include icon('my-fa-copy', '\f0c5', 'FontAwesome');
 @include icon('my-fa-paste', '\f0ea', 'FontAwesome');
 
-.x-button .fa:before {
+.x-button .x-button-icon .fa:before {
     position: absolute;
     top: 0;
     right: 0;
@@ -496,6 +558,50 @@ $font-files: url('../font-awesome/fonts/fontawesome-webfont.woff') format("woff"
     }
     .x-spinner-button-down:before {
         content: '\f068';
+    }
+}
+.strip {
+    display: inline-block;
+    position: absolute;
+    width: 5px;
+    height: 80%;
+    top: 10%;
+    &.left {
+        left: 0;
+    }
+    &.right {
+        right: 0;
+    }
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    position: absolute;
+    background: transparent !important;
+    &.top-left {
+        border-top: 20px solid $active-color;
+        border-right: 20px solid transparent;
+        top: 0;
+        left: 0;
+    }
+    &.top-right {
+        border-top: 20px solid $active-color;
+        border-left: 20px solid transparent;
+        top: 0;
+        right: 0;
+    }
+    &.bottom-left {
+        border-bottom: 20px solid $active-color;
+        border-right: 20px solid transparent;
+        bottom: 0;
+        left: 0;
+    }
+    &.bottom-right {
+        border-bottom: 20px solid $active-color;
+        border-left: 20px solid transparent;
+        bottom: 0;
+        right: 0;
     }
 }
 /* ui mixin: teal for of type: sencha-button-ui */

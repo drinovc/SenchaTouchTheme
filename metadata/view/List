@@ -38,7 +38,11 @@
                     "userConfig": {
                         "designer|displayName": "itemTpl",
                         "implHandler": [
-                            "<div>{name} ({code})</div>"
+                            "<div class=\"strip left bg-{color1}\"></div>",
+                            "<div>{name} ({code})</div>",
+                            "<div class=\"strip right bg-{color2}\"></div>",
+                            "",
+                            "<tpl if=\"cls\"><div class=\"{cls}\"></div></tpl>"
                         ]
                     },
                     "name": "itemTpl",

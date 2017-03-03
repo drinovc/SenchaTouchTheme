@@ -28,7 +28,11 @@ Ext.define('SenchaTouchTheme.view.List', {
                 xtype: 'list',
                 height: '100%',
                 itemTpl: [
-                    '<div>{name} ({code})</div>'
+                    '<div class="strip left bg-{color1}"></div>',
+                    '<div>{name} ({code})</div>',
+                    '<div class="strip right bg-{color2}"></div>',
+                    '',
+                    '<tpl if="cls"><div class="{cls}"></div></tpl>'
                 ],
                 store: 'countryStore',
                 grouped: false

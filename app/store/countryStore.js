@@ -25,7 +25,8 @@ Ext.define('SenchaTouchTheme.store.countryStore', {
         data: [
             {
                 name: 'Afghanistan',
-                code: 'AF'
+                code: 'AF',
+                cls: 'triangle bottom-left red'
             },
             {
                 name: 'Åland Islands',
@@ -37,7 +38,8 @@ Ext.define('SenchaTouchTheme.store.countryStore', {
             },
             {
                 name: 'Algeria',
-                code: 'DZ'
+                code: 'DZ',
+                cls: 'triangle top-left teal'
             },
             {
                 name: 'American Samoa',
@@ -45,7 +47,8 @@ Ext.define('SenchaTouchTheme.store.countryStore', {
             },
             {
                 name: 'Andorra',
-                code: 'AD'
+                code: 'AD',
+                cls: 'triangle bottom-right orange'
             },
             {
                 name: 'Angola',
@@ -53,7 +56,8 @@ Ext.define('SenchaTouchTheme.store.countryStore', {
             },
             {
                 name: 'Anguilla',
-                code: 'AI'
+                code: 'AI',
+                cls: 'triangle top-right lime'
             },
             {
                 name: 'Antarctica',
@@ -81,7 +85,9 @@ Ext.define('SenchaTouchTheme.store.countryStore', {
             },
             {
                 name: 'Austria',
-                code: 'AT'
+                code: 'AT',
+                color1: 'red',
+                color2: 'red'
             },
             {
                 name: 'Azerbaijan',
@@ -145,7 +151,9 @@ Ext.define('SenchaTouchTheme.store.countryStore', {
             },
             {
                 name: 'Brazil',
-                code: 'BR'
+                code: 'BR',
+                color1: 'green',
+                color2: 'green'
             },
             {
                 name: 'British Indian Ocean Territory',
@@ -1003,6 +1011,15 @@ Ext.define('SenchaTouchTheme.store.countryStore', {
             },
             {
                 name: 'code'
+            },
+            {
+                name: 'color1'
+            },
+            {
+                name: 'color2'
+            },
+            {
+                name: 'cls'
             }
         ],
         grouper: {

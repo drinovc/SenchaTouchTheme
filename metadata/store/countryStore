@@ -8,21 +8,21 @@
     "userConfig": {
         "data": [
             "[ ",
-            "  {name: 'Afghanistan', code: 'AF'}, ",
+            "  {name: 'Afghanistan', code: 'AF', cls:'triangle bottom-left red'}, ",
             "  {name: 'Åland Islands', code: 'AX'}, ",
             "  {name: 'Albania', code: 'AL'}, ",
-            "  {name: 'Algeria', code: 'DZ'}, ",
+            "  {name: 'Algeria', code: 'DZ', cls:'triangle top-left teal'}, ",
             "  {name: 'American Samoa', code: 'AS'}, ",
-            "  {name: 'Andorra', code: 'AD'}, ",
+            "  {name: 'Andorra', code: 'AD', cls:'triangle bottom-right orange'}, ",
             "  {name: 'Angola', code: 'AO'}, ",
-            "  {name: 'Anguilla', code: 'AI'}, ",
+            "  {name: 'Anguilla', code: 'AI', cls:'triangle top-right lime'}, ",
             "  {name: 'Antarctica', code: 'AQ'}, ",
             "  {name: 'Antigua and Barbuda', code: 'AG'}, ",
             "  {name: 'Argentina', code: 'AR'}, ",
             "  {name: 'Armenia', code: 'AM'}, ",
             "  {name: 'Aruba', code: 'AW'}, ",
             "  {name: 'Australia', code: 'AU'}, ",
-            "  {name: 'Austria', code: 'AT'}, ",
+            "  {name: 'Austria', code: 'AT', color1: 'red', color2: 'red'}, ",
             "  {name: 'Azerbaijan', code: 'AZ'}, ",
             "  {name: 'Bahamas', code: 'BS'}, ",
             "  {name: 'Bahrain', code: 'BH'}, ",
@@ -38,7 +38,7 @@
             "  {name: 'Bosnia and Herzegovina', code: 'BA'}, ",
             "  {name: 'Botswana', code: 'BW'}, ",
             "  {name: 'Bouvet Island', code: 'BV'}, ",
-            "  {name: 'Brazil', code: 'BR'}, ",
+            "  {name: 'Brazil', code: 'BR', color1: 'green', color2: 'green'}, ",
             "  {name: 'British Indian Ocean Territory', code: 'IO'}, ",
             "  {name: 'Brunei Darussalam', code: 'BN'}, ",
             "  {name: 'Bulgaria', code: 'BG'}, ",
@@ -285,6 +285,45 @@
             },
             "name": "field1",
             "designerId": "88374298-54b4-46c6-a169-4cb259338689"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "color1"
+            },
+            "name": "field2",
+            "designerId": "839168ba-5140-4960-a97d-26e50fdf5f67"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "color2"
+            },
+            "name": "field3",
+            "designerId": "eb5a538f-dd96-4853-887d-ec394bf4b52c"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "cls"
+            },
+            "name": "field4",
+            "designerId": "20a7f493-9260-41b0-aedc-6c2b6ce18f9f"
         },
         {
             "type": "Ext.util.Grouper",
