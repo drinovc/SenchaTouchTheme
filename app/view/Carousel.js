@@ -61,6 +61,10 @@ Ext.define('SenchaTouchTheme.view.Carousel', {
                 ]
             },
             {
+                xtype: 'container',
+                height: 20
+            },
+            {
                 xtype: 'carousel',
                 flex: 1,
                 direction: 'vertical',

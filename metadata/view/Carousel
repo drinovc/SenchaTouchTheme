@@ -34,7 +34,8 @@
                     "codeClass": null,
                     "userConfig": {
                         "centered": null,
-                        "html": null
+                        "html": null,
+                        "margin": null
                     },
                     "name": "MyContainer28",
                     "designerId": "fee399aa-8222-4644-8eef-ccee4a462356",
@@ -110,6 +111,19 @@
             ]
         },
         {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "height": 20
+            },
+            "name": "MyContainer47",
+            "designerId": "c13d8ffa-28f6-4a6a-9e64-bb7a1bb7c07c"
+        },
+        {
             "type": "Ext.carousel.Carousel",
             "reference": {
                 "name": "items",
@@ -130,6 +144,9 @@
                         "type": "array"
                     },
                     "codeClass": null,
+                    "userConfig": {
+                        "margin": null
+                    },
                     "name": "MyContainer31",
                     "designerId": "2cb8a5e7-a6a4-4cfa-8b9d-9fbe1ab45893",
                     "cn": [

@@ -18,10 +18,14 @@ Ext.define('SenchaTouchTheme.view.Tabs', {
 
     requires: [
         'Ext.tab.Panel',
-        'Ext.tab.Bar'
+        'Ext.tab.Bar',
+        'Ext.SegmentedButton',
+        'Ext.Button',
+        'Ext.Spacer'
     ],
 
     config: {
+        layout: 'vbox',
         items: [
             {
                 xtype: 'tabpanel',
@@ -173,6 +177,189 @@ Ext.define('SenchaTouchTheme.view.Tabs', {
                     docked: 'bottom',
                     ui: 'neutral'
                 }
+            },
+            {
+                xtype: 'container',
+                flex: 1
+            },
+            {
+                xtype: 'container',
+                items: [
+                    {
+                        xtype: 'toolbar',
+                        docked: 'top',
+                        title: 'Dark',
+                        items: [
+                            {
+                                xtype: 'segmentedbutton',
+                                cls: 'tabbar-style',
+                                items: [
+                                    {
+                                        xtype: 'button',
+                                        pressed: true,
+                                        text: 'Left'
+                                    },
+                                    {
+                                        xtype: 'button',
+                                        text: 'Center'
+                                    },
+                                    {
+                                        xtype: 'button',
+                                        text: 'Right'
+                                    }
+                                ]
+                            },
+                            {
+                                xtype: 'segmentedbutton',
+                                margin: '0 5',
+                                items: [
+                                    {
+                                        xtype: 'button',
+                                        pressed: true,
+                                        text: 'Left'
+                                    },
+                                    {
+                                        xtype: 'button',
+                                        text: 'Center'
+                                    },
+                                    {
+                                        xtype: 'button',
+                                        text: 'Right'
+                                    }
+                                ]
+                            },
+                            {
+                                xtype: 'button',
+                                text: 'Action 1'
+                            },
+                            {
+                                xtype: 'spacer'
+                            },
+                            {
+                                xtype: 'button',
+                                text: 'Action 2'
+                            }
+                        ]
+                    },
+                    {
+                        xtype: 'toolbar',
+                        docked: 'top',
+                        ui: 'light',
+                        title: 'Light',
+                        items: [
+                            {
+                                xtype: 'segmentedbutton',
+                                cls: 'tabbar-style',
+                                items: [
+                                    {
+                                        xtype: 'button',
+                                        text: 'Left'
+                                    },
+                                    {
+                                        xtype: 'button',
+                                        pressed: true,
+                                        text: 'Center'
+                                    },
+                                    {
+                                        xtype: 'button',
+                                        text: 'Right'
+                                    }
+                                ]
+                            },
+                            {
+                                xtype: 'segmentedbutton',
+                                margin: '0 5',
+                                items: [
+                                    {
+                                        xtype: 'button',
+                                        text: 'Left'
+                                    },
+                                    {
+                                        xtype: 'button',
+                                        pressed: true,
+                                        text: 'Center'
+                                    },
+                                    {
+                                        xtype: 'button',
+                                        text: 'Right'
+                                    }
+                                ]
+                            },
+                            {
+                                xtype: 'button',
+                                text: 'Action 1'
+                            },
+                            {
+                                xtype: 'spacer'
+                            },
+                            {
+                                xtype: 'button',
+                                text: 'Action 2'
+                            }
+                        ]
+                    },
+                    {
+                        xtype: 'toolbar',
+                        docked: 'top',
+                        ui: 'neutral',
+                        title: 'Neutral',
+                        items: [
+                            {
+                                xtype: 'segmentedbutton',
+                                cls: 'tabbar-style',
+                                items: [
+                                    {
+                                        xtype: 'button',
+                                        text: 'Left'
+                                    },
+                                    {
+                                        xtype: 'button',
+                                        text: 'Center'
+                                    },
+                                    {
+                                        xtype: 'button',
+                                        pressed: true,
+                                        text: 'Right'
+                                    }
+                                ]
+                            },
+                            {
+                                xtype: 'segmentedbutton',
+                                margin: '0 5',
+                                items: [
+                                    {
+                                        xtype: 'button',
+                                        text: 'Left'
+                                    },
+                                    {
+                                        xtype: 'button',
+                                        text: 'Center'
+                                    },
+                                    {
+                                        xtype: 'button',
+                                        pressed: true,
+                                        text: 'Right'
+                                    }
+                                ]
+                            },
+                            {
+                                xtype: 'button',
+                                text: 'Action 1'
+                            },
+                            {
+                                xtype: 'spacer'
+                            },
+                            {
+                                xtype: 'button',
+                                text: 'Action 2'
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                xtype: 'container',
+                flex: 1
             }
         ]
     }

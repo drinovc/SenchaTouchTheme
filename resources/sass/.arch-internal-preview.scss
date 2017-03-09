@@ -234,7 +234,8 @@ $toolbar-input-border-color: transparent;
 .x-field-select .x-component-outer,
 .x-toggle,
 .x-slider-inner,
-.x-spinner-button {
+.x-spinner-button,
+.x-carousel-indicator {
     cursor: pointer;
 }
 .x-item-disabled {
@@ -272,6 +273,59 @@ $toolbar-input-border-color: transparent;
 /* button */
 .x-button .x-button-icon {
     text-align: center;
+}
+
+/* unserstandable carousel */
+.x-carousel-indicator {
+    background-color: rgba(0,0,0,0.1);
+
+    >.span {
+        width: 1em;
+        height: 1em;
+        @include border-radius(0.25em);
+    }
+
+    &:before,
+    &:after {
+        content: '';
+        position: absolute;
+        height: 20px;
+        width: 20px;
+        text-align: center;
+        line-height: 20px;
+        font-family: 'FontAwesome';
+        border-radius: 0.2em;
+        font-size: 1.5em;
+        color: rgba(0,0,0,0.3);
+    }
+    &.x-carousel-indicator-horizontal {
+        &:before {
+            content: '\f104';
+            top: 50%;
+            margin-top: -10px;
+            left: 5px;
+        }
+        &:after {
+            content: '\f105';
+            top: 50%;
+            margin-top: -10px;
+            right: 5px;
+        }
+    }
+    &.x-carousel-indicator-vertical {
+        &:before {
+            content: '\f106';
+            left: 50%;
+            margin-left: -10px;
+            top: 5px;
+        }
+        &:after {
+            content: '\f107';
+            left: 50%;
+            margin-left: -10px;
+            bottom: 5px;
+        }
+    }
 }
 /******************************************************************************/
 /* ThemeOverrides */
@@ -427,6 +481,17 @@ $toolbar-input-border-color: transparent;
         height: 0.5em;
         background-color: $active-color;
     }
+}
+
+/* segmented button */
+.x-segmentedbutton .x-button-pressed:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0.2em;
+    background-color: $active-color;
 }
 
 /* list */
@@ -602,6 +667,30 @@ $font-files: url('../font-awesome/fonts/fontawesome-webfont.woff') format("woff"
         border-left: 20px solid transparent;
         bottom: 0;
         right: 0;
+    }
+}
+
+.tabbar-style.x-segmentedbutton {
+    margin-bottom: -14px;
+    .x-button {
+        height: 2.4em;
+        @include border-bottom-left-radius(0);
+        @include border-bottom-right-radius(0);
+
+        &.x-button-pressed:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 0.5em;
+            background-color: $active-color;
+        }
+
+        .x-button-label {
+            position: relative;
+            top: -7px;
+        }
     }
 }
 /* ui mixin: teal for of type: sencha-button-ui */

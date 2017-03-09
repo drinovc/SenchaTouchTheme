@@ -315,6 +315,7 @@
                             },
                             "codeClass": null,
                             "userConfig": {
+                                "pressed": true,
                                 "text": "Left"
                             },
                             "name": "MyButton8",
@@ -328,11 +329,24 @@
                             },
                             "codeClass": null,
                             "userConfig": {
-                                "pressed": true,
-                                "text": "Right"
+                                "pressed": null,
+                                "text": "Center"
                             },
                             "name": "MyButton9",
                             "designerId": "c11bd500-13f2-4716-b27a-1ae1d0ee36d4"
+                        },
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "text": "Right"
+                            },
+                            "name": "MyButton68",
+                            "designerId": "c9febfd7-c501-4442-a0e2-9f923574eb4b"
                         }
                     ]
                 },
@@ -514,10 +528,23 @@
                             "codeClass": null,
                             "userConfig": {
                                 "pressed": true,
-                                "text": "Right"
+                                "text": "Center"
                             },
                             "name": "MyButton9",
                             "designerId": "88d15105-0695-4dc7-8aa0-570ffccf71cf"
+                        },
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "text": "Right"
+                            },
+                            "name": "MyButton69",
+                            "designerId": "ff26893b-c554-401d-8958-896263bdf67d"
                         }
                     ]
                 },
@@ -689,6 +716,19 @@
                             },
                             "name": "MyButton8",
                             "designerId": "71ded0db-938e-4e11-a6f5-3c3d1b0c8aee"
+                        },
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "text": "Center"
+                            },
+                            "name": "MyButton72",
+                            "designerId": "38fd8fea-3795-4d17-850f-58b46e15f670"
                         },
                         {
                             "type": "Ext.Button",

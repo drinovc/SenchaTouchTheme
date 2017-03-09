@@ -160,11 +160,15 @@ Ext.define('SenchaTouchTheme.view.Toolbars', {
                         items: [
                             {
                                 xtype: 'button',
+                                pressed: true,
                                 text: 'Left'
                             },
                             {
                                 xtype: 'button',
-                                pressed: true,
+                                text: 'Center'
+                            },
+                            {
+                                xtype: 'button',
                                 text: 'Right'
                             }
                         ]
@@ -228,6 +232,10 @@ Ext.define('SenchaTouchTheme.view.Toolbars', {
                             {
                                 xtype: 'button',
                                 pressed: true,
+                                text: 'Center'
+                            },
+                            {
+                                xtype: 'button',
                                 text: 'Right'
                             }
                         ]
@@ -287,6 +295,10 @@ Ext.define('SenchaTouchTheme.view.Toolbars', {
                             {
                                 xtype: 'button',
                                 text: 'Left'
+                            },
+                            {
+                                xtype: 'button',
+                                text: 'Center'
                             },
                             {
                                 xtype: 'button',
