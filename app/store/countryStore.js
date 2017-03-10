@@ -61,23 +61,28 @@ Ext.define('SenchaTouchTheme.store.countryStore', {
             },
             {
                 name: 'Antarctica',
-                code: 'AQ'
+                code: 'AQ',
+                cls: 'triangle bottom-left bluegrey'
             },
             {
                 name: 'Antigua and Barbuda',
-                code: 'AG'
+                code: 'AG',
+                cls: 'triangle bottom-left bluegrey'
             },
             {
                 name: 'Argentina',
-                code: 'AR'
+                code: 'AR',
+                cls: 'triangle bottom-left bluegrey'
             },
             {
                 name: 'Armenia',
-                code: 'AM'
+                code: 'AM',
+                cls: 'triangle bottom-left bluegrey'
             },
             {
                 name: 'Aruba',
-                code: 'AW'
+                code: 'AW',
+                cls: 'triangle bottom-left bluegrey'
             },
             {
                 name: 'Australia',

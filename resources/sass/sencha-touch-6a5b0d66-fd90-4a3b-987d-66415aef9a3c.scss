@@ -37,11 +37,8 @@ $almostwhite2: #f0f0f0;
 
 /********** MATERIAL SETTINGS **********/
 
-/* $md-shadow: 0 2px 5px 0 rgba(0,0,0,0.26); */
 $md-shadow: 0 1px 2px 0 rgba(0,0,0,0.2);
-/* $md-shadow-hover: 0 2px 10px 0 rgba(0,0,0,0.36); */
 $md-shadow-hover: 0 1px 10px 0 rgba(0,0,0,0.35);
-/* $md-shadow-pressed: 0 2px 1px 0 rgba(0,0,0,.26); */
 $md-shadow-pressed: 0 1px 2px 0 rgba(0,0,0,0.2);
 
 $md-shadow-floating: 0 0.1em 0.5em rgba(0,0,0,0.4);
@@ -49,27 +46,59 @@ $md-shadow-floating: 0 0.1em 0.5em rgba(0,0,0,0.4);
 
 /********** THEME SETTINGS **********/
 
+$my-theme: 'dark';
+
+/* LIGHT THEME */
 $my-base-color: $white;
 $my-active-color: $lightblue;
 $my-alert-color: $red;
 $my-confirm-color: $green;
 
-$my-theme: 'light';
+$my-text-color: $black;
 
-$my-page-bg-color: $white;
+$my-page-bg-color: $my-base-color;
 $my-page-bg-image: url('../images/background.jpg');
 
 $my-toolbar-dark-color: $bluegrey;
 $my-toolbar-light-color: $almostwhite;
 $my-toolbar-neutral-color: #e0e0e0;
 
+$my-border-color: #dedede;
+$my-list-separator-color: #dedede;
 $my-toolbar-field-border-color: #a6a6a6;
+$my-toolbar-border-width: 0;
 
 $my-button-color: $almostwhite;
 $my-button-pressed-color: $almostwhite2;
 
 $my-list-bg-color: rgba(255,255,255,.5);
 
+/* DARK THEME */
+@if $my-theme == 'dark' {
+    $my-base-color: #2f63a3;
+    $my-active-color: $lightblue;
+    $my-alert-color: $red;
+    $my-confirm-color: $green;
+
+    $my-text-color: $white;
+
+    $my-page-bg-color: $my-base-color;
+    $my-page-bg-image: url('../images/background-dark.jpg');
+
+    $my-toolbar-dark-color: rgba(0, 0, 0, 0.23); // rgba(9, 52, 95, 0.27);
+    $my-toolbar-light-color: rgba(0, 0, 0, 0.23); // rgba(9, 52, 95, 0.27);
+    $my-toolbar-neutral-color: rgba(0, 0, 0, 0.23); // rgba(9, 52, 95, 0.27);
+
+    $my-border-color: rgba(255, 255, 255, 0.4);
+    $my-list-separator-color: rgba(255, 255, 255, 0.4);
+    $my-toolbar-field-border-color: rgba(255, 255, 255, 0.4);
+    $my-toolbar-border-width: 1px;
+
+    $my-button-color: $almostwhite;
+    $my-button-pressed-color: $almostwhite2;
+
+    $my-list-bg-color: rgba(0, 0, 0, 0.23);
+}
 
 /********** SENCHA THEME VARIABLES **********/
 
@@ -212,9 +241,11 @@ $toolbar-input-border-color: transparent;
 }
 
 /* fix for weird pink background */
+/* 
 .x-container.x-layout-box-item {
     background-color: transparent !important;
 }
+*/
 
 /* loading mask */
 .x-mask .x-mask-message {
@@ -358,7 +389,7 @@ $toolbar-input-border-color: transparent;
     @include my-transition(all 0.2s ease);
 
 }
-.x-button:hover {
+.x-desktop .x-button:hover {
 	@include box-shadow($md-shadow-hover);
 /*     z-index: 2; */
 }
@@ -379,6 +410,9 @@ $toolbar-input-border-color: transparent;
 .x-hasbadge .x-badge {
     font-weight: normal;
 }
+.x-button-plain {
+    color: $my-text-color;
+}
 
 .x-webkit {
     .x-button-forward:before,
@@ -398,26 +432,42 @@ $toolbar-input-border-color: transparent;
     background-color: $active-color;
 }
 
+/* fieldset */
+.x-form-fieldset-title {
+    font-weight: normal;
+    color: $my-text-color;
+}
+
 /* toolbar and titlebar and tab bar */
 .x-toolbar {
-    border: none !important;
+    border-color: $my-border-color !important;
+    border-width: $my-toolbar-border-width !important;
 }
 .x-toolbar-dark {
     background-color: $my-toolbar-dark-color;
     &:not(.x-msgbox-title) .x-title {
         @include color-by-background($my-toolbar-dark-color);
+        @if $my-theme == 'dark' {
+            color: $white;
+        }
     }
 }
 .x-toolbar-light {
     background-color: $my-toolbar-light-color;
     .x-title {
         @include color-by-background($my-toolbar-light-color);
+        @if $my-theme == 'dark' {
+            color: $white;
+        }
     }
 }
 .x-toolbar-neutral {
     background-color: $my-toolbar-neutral-color;
     .x-title {
         @include color-by-background($my-toolbar-neutral-color);
+        @if $my-theme == 'dark' {
+            color: $white;
+        }
     }
 }
 
@@ -495,6 +545,16 @@ $toolbar-input-border-color: transparent;
 /* list */
 .x-list {
     background-color: $my-list-bg-color;
+    .x-list-item {
+        color: $my-text-color;
+        &.x-list-item-tpl,
+        &.x-list-item-tpl.x-list-footer-wrap {
+            border-color: $my-list-separator-color;
+        }
+        &.x-list-item-tpl.x-list-header-wrap {
+            border-top-width: 0;
+        }
+    }
 }
 .x-list-round {
     background-color: transparent;
@@ -503,6 +563,9 @@ $toolbar-input-border-color: transparent;
     }
     &.x-list-ungrouped .x-list-item-tpl {
         background-color: $my-list-bg-color;
+    }
+    .x-list-item.x-list-item-tpl.x-list-header-wrap {
+        border-top-width: 1px;
     }
 }
 
@@ -513,17 +576,31 @@ $toolbar-input-border-color: transparent;
     background-color: $almostwhite;
 
     .x-field-input {
-        background-color: white;
+        background-color: $white;
+    }
+    .x-msgbox-text,
+    .x-title {
+        color: $black;
+        text-shadow: none;
     }
 }
 .x-panel.x-floating,
 .x-form.x-floating {
-    background-color: #fff;
+    background-color: $white;
     @include box-shadow($md-shadow-floating);
     padding: 0;
+    .x-list {
+        background-color: $white;
+        .x-list-item {
+            color: $black;
+        }
+        .x-list-item.x-item-selected {
+            @include color-by-background($active-color);
+        }
+    }
 }
 .x-webkit .x-anchor.x-anchor-top {
-    background-color: #fff;
+    background-color: $white;
 }
 /******************************************************************************/
 /* RippleEffect */
@@ -623,6 +700,19 @@ $font-files: url('../font-awesome/fonts/fontawesome-webfont.woff') format("woff"
         content: '\f068';
     }
 }
+.border-top {
+    border-right: 1px solid $my-border-color;
+}
+.border-right {
+    border-right: 1px solid $my-border-color;
+}
+.border-bottom {
+    border-right: 1px solid $my-border-color;
+}
+.border-left {
+    border-right: 1px solid $my-border-color;
+}
+
 .strip {
     display: inline-block;
     position: absolute;

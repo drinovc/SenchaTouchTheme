@@ -36,7 +36,7 @@ Ext.define('SenchaTouchTheme.view.MainView', {
             },
             {
                 xtype: 'container',
-                style: 'background-color: #ddf; border-right: 1px solid #ddd;',
+                cls: 'border-right',
                 ui: 'dark',
                 width: 300,
                 items: [
@@ -58,6 +58,10 @@ Ext.define('SenchaTouchTheme.view.MainView', {
                             {
                                 title: 'Font Awesome',
                                 view: 'FontAwesome'
+                            },
+                            {
+                                title: 'Forms and Panels',
+                                view: 'FormsAndPanels'
                             },
                             {
                                 title: 'Grid',

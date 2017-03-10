@@ -44,10 +44,13 @@
             "codeClass": null,
             "userConfig": {
                 "border": null,
+                "cls": [
+                    "border-right"
+                ],
                 "designer|displayName": "SideMenu",
                 "layout|flex": null,
                 "maxWidth": null,
-                "style": "background-color: #ddf; border-right: 1px solid #ddd;",
+                "style": null,
                 "ui": "dark",
                 "width": 300
             },
@@ -68,6 +71,7 @@
                             "    {title: 'Carousel', view: 'Carousel'},",
                             "    {title: 'Fields and Radios', view: 'FieldsAndRadios'},",
                             "    {title: 'Font Awesome', view: 'FontAwesome'},",
+                            "    {title: 'Forms and Panels', view: 'FormsAndPanels'},",
                             "    {title: 'Grid', view: 'Grid'},",
                             "    {title: 'List', view: 'List'},",
                             "    {title: 'List Buffered', view: 'ListBuffered'},",

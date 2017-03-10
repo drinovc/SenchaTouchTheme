@@ -701,6 +701,7 @@ Ext.ClassManager.addNameAlternateMappings({
   "SenchaTouchTheme.view.Carousel": [],
   "SenchaTouchTheme.view.FieldsAndRadios": [],
   "SenchaTouchTheme.view.FontAwesome": [],
+  "SenchaTouchTheme.view.FormsAndPanels": [],
   "SenchaTouchTheme.view.Grid": [],
   "SenchaTouchTheme.view.List": [],
   "SenchaTouchTheme.view.ListBuffered": [],
@@ -1509,6 +1510,7 @@ Ext.ClassManager.addNameAliasMappings({
     "widget.fieldsandradios"
   ],
   "SenchaTouchTheme.view.FontAwesome": [],
+  "SenchaTouchTheme.view.FormsAndPanels": [],
   "SenchaTouchTheme.view.Grid": [],
   "SenchaTouchTheme.view.List": [],
   "SenchaTouchTheme.view.ListBuffered": [],

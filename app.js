@@ -48,7 +48,8 @@ Ext.application({
         'Grid',
         'Login',
         'FontAwesome',
-        'ListBuffered'
+        'ListBuffered',
+        'FormsAndPanels'
     ],
     controllers: [
         'MainView'

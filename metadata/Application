@@ -32,7 +32,8 @@
             "Grid",
             "Login",
             "FontAwesome",
-            "ListBuffered"
+            "ListBuffered",
+            "FormsAndPanels"
         ]
     },
     "name": "Application",
