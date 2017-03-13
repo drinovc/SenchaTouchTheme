@@ -24,7 +24,7 @@ Ext.define('SenchaTouchTheme.store.countryStore', {
     config: {
         data: [
             {
-                name: 'Afghanistan',
+                name: 'Afghanistan<br>2 lines',
                 code: 'AF',
                 cls: 'triangle bottom-left red'
             },
@@ -62,27 +62,27 @@ Ext.define('SenchaTouchTheme.store.countryStore', {
             {
                 name: 'Antarctica',
                 code: 'AQ',
-                cls: 'triangle bottom-left bluegrey'
+                cls: 'triangle bottom-left deeporange'
             },
             {
                 name: 'Antigua and Barbuda',
                 code: 'AG',
-                cls: 'triangle bottom-left bluegrey'
+                cls: 'triangle bottom-left orange'
             },
             {
                 name: 'Argentina',
                 code: 'AR',
-                cls: 'triangle bottom-left bluegrey'
+                cls: 'triangle bottom-left lime'
             },
             {
                 name: 'Armenia',
                 code: 'AM',
-                cls: 'triangle bottom-left bluegrey'
+                cls: 'triangle bottom-left pink'
             },
             {
                 name: 'Aruba',
                 code: 'AW',
-                cls: 'triangle bottom-left bluegrey'
+                cls: 'triangle bottom-left lime'
             },
             {
                 name: 'Australia',

@@ -26,16 +26,33 @@ Ext.define('SenchaTouchTheme.view.List', {
         items: [
             {
                 xtype: 'list',
+                cls: [
+                    'with-person-image',
+                    'with-markers',
+                    'flexbox'
+                ],
                 height: '100%',
                 itemTpl: [
+                    '<div class="flex1">{code}</div>',
+                    '<div class="flex3">{name}</div>',
+                    '',
                     '<div class="strip left bg-{color1}"></div>',
-                    '<div>{name} ({code})</div>',
                     '<div class="strip right bg-{color2}"></div>',
+                    '',
+                    '<div class="markers-container">',
+                    '    <div class="markers">',
+                    '        <div class="fa fa-info-circle"></div>',
+                    '        <div class="fa fa-minus-circle font-deeporange"></div>',
+                    '    </div>',
+                    '</div>',
+                    '',
+                    '<div class="person-image" style="background-image: url(\'resources/images/person.png\');"></div>',
                     '',
                     '<tpl if="cls"><div class="{cls}"></div></tpl>'
                 ],
                 store: 'countryStore',
-                grouped: false
+                grouped: false,
+                itemHeight: 68
             }
         ]
     }

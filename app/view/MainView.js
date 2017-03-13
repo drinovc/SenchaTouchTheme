@@ -18,6 +18,7 @@ Ext.define('SenchaTouchTheme.view.MainView', {
     alias: 'widget.mainview',
 
     requires: [
+        'Ext.Button',
         'Ext.dataview.List',
         'Ext.XTemplate',
         'Ext.navigation.View',
@@ -32,7 +33,17 @@ Ext.define('SenchaTouchTheme.view.MainView', {
                 cls: 'md-shadow',
                 docked: 'top',
                 zIndex: 1,
-                title: 'Custom Theme'
+                title: 'Custom Theme',
+                items: [
+                    {
+                        xtype: 'button',
+                        align: 'right',
+                        itemId: 'btnHelp',
+                        ui: 'plain',
+                        iconCls: 'fa fa-question',
+                        text: ''
+                    }
+                ]
             },
             {
                 xtype: 'container',

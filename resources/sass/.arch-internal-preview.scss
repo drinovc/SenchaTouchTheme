@@ -40,14 +40,14 @@ $almostwhite2: #f0f0f0;
 
 $md-shadow: 0 1px 2px 0 rgba(0,0,0,0.2);
 $md-shadow-hover: 0 1px 10px 0 rgba(0,0,0,0.35);
-$md-shadow-pressed: 0 1px 2px 0 rgba(0,0,0,0.2);
+$md-shadow-pressed: 0 1px 2px 0 rgba(0,0,0,0.1);
 
 $md-shadow-floating: 0 0.1em 0.5em rgba(0,0,0,0.4);
 
 
 /********** THEME SETTINGS **********/
 
-$my-theme: 'dark';
+$my-theme: 'light';
 
 /* LIGHT THEME */
 $my-base-color: $white;
@@ -73,6 +73,7 @@ $my-button-color: $almostwhite;
 $my-button-pressed-color: $almostwhite2;
 
 $my-list-bg-color: rgba(255,255,255,.5);
+$my-list-active-color: $my-active-color;
 
 /* DARK THEME */
 @if $my-theme == 'dark' {
@@ -99,7 +100,9 @@ $my-list-bg-color: rgba(255,255,255,.5);
     $my-button-pressed-color: $almostwhite2;
 
     $my-list-bg-color: rgba(0, 0, 0, 0.23);
+    $my-list-active-color: $my-active-color;
 }
+
 
 /********** SENCHA THEME VARIABLES **********/
 
@@ -126,7 +129,7 @@ $tabs-bottom-active-gradient: flat;
 $tabs-dark-active-color: $active-color;
 $toolbar-gradient: flat;
 $toolbar-input-border-color: transparent;
-//$list-active-color: rgba(0,0,0,0.1);
+$list-active-color: $my-list-active-color;
 /******************************************************************************/
 /* Mixins */
 
@@ -135,6 +138,22 @@ $toolbar-input-border-color: transparent;
     -moz-transition: $transition;
     -o-transition: $transition;
     transition: $transition;
+}
+
+@mixin flexbox() {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+@mixin flex($values) {
+    -webkit-box-flex: $values;
+    -moz-box-flex: $values;
+    -webkit-flex: $values;
+    -ms-flex: $values;
+    flex: $values;
 }
 
 @mixin my-color-styles($name, $color) {
@@ -153,13 +172,24 @@ $toolbar-input-border-color: transparent;
         color: $color;
     }
 
+    .badge {
+        @include color-by-background($active-color);
+        background-color: $active-color;
+        @include border-radius(0.2em);
+        padding: 0 5px;
+        &.#{$name} {
+            @include color-by-background($color);
+            background-color: $color;
+        }
+    }
+
     /* colors for custom styles */
     .triangle.#{$name} {
-        &.top-left, 
+        &.top-left,
         &.top-right {
             border-top-color: $color;
         }
-        &.bottom-left, 
+        &.bottom-left,
         &.bottom-right {
             border-bottom-color: $color;
         }
@@ -225,6 +255,7 @@ $toolbar-input-border-color: transparent;
 @include my-color-styles('deeporange', $deeporange);
 @include my-color-styles('brown', $brown);
 @include my-color-styles('grey', $grey);
+@include my-color-styles('gray', $grey);
 @include my-color-styles('bluegrey', $bluegrey);
 @include my-color-styles('black', $black);
 @include my-color-styles('almostblack', $almostblack);
@@ -391,9 +422,8 @@ $toolbar-input-border-color: transparent;
     @include my-transition(all 0.2s ease);
 
 }
-.x-desktop .x-button:hover {
+.x-button:hover {
 	@include box-shadow($md-shadow-hover);
-/*     z-index: 2; */
 }
 .x-button.x-button-pressing,
 .x-button.x-button-pressed {
@@ -447,7 +477,8 @@ $toolbar-input-border-color: transparent;
 }
 .x-toolbar-dark {
     background-color: $my-toolbar-dark-color;
-    &:not(.x-msgbox-title) .x-title {
+    &:not(.x-msgbox-title) .x-title,
+    &:not(.x-msgbox-title) .x-button-plain {
         @include color-by-background($my-toolbar-dark-color);
         @if $my-theme == 'dark' {
             color: $white;
@@ -456,7 +487,8 @@ $toolbar-input-border-color: transparent;
 }
 .x-toolbar-light {
     background-color: $my-toolbar-light-color;
-    .x-title {
+    .x-title,
+    .x-button-plain {
         @include color-by-background($my-toolbar-light-color);
         @if $my-theme == 'dark' {
             color: $white;
@@ -465,7 +497,8 @@ $toolbar-input-border-color: transparent;
 }
 .x-toolbar-neutral {
     background-color: $my-toolbar-neutral-color;
-    .x-title {
+    .x-title,
+    .x-button-plain  {
         @include color-by-background($my-toolbar-neutral-color);
         @if $my-theme == 'dark' {
             color: $white;
@@ -475,10 +508,12 @@ $toolbar-input-border-color: transparent;
 
 
 /* toolbar buttons */
-.x-body .x-toolbar .x-button-back,
-.x-body .x-toolbar .x-button-forward {
-    margin: 6px .2em;
-    padding: 0 .6em;
+.x-body .x-toolbar {
+    .x-button-back,
+    .x-button-forward {
+        margin: 6px .2em;
+        padding: 0 .6em;
+    }
 }
 
 /* toolbar fields */
@@ -596,8 +631,14 @@ $toolbar-input-border-color: transparent;
         .x-list-item {
             color: $black;
         }
-        .x-list-item.x-item-selected {
-            @include color-by-background($active-color);
+        .x-list-item {
+            &.x-list-item-tpl,
+            &.x-list-item-tpl.x-list-footer-wrap {
+                border-color: #dedede;
+            }
+            &.x-item-selected {
+                @include color-by-background($active-color);
+            }
         }
     }
 }
@@ -608,7 +649,8 @@ $toolbar-input-border-color: transparent;
 /* RippleEffect */
 
 /* this ripple effect origin is always in the center, to change that you have to use javascript */
-.x-button:not(.x-item-disabled),
+.x-button:not(.x-item-disabled):not(.x-button-back):not(.x-button-forward),
+.x-button,
 .x-list-item {
   position: relative;
 /*   overflow: hidden; */
@@ -735,26 +777,26 @@ $font-files: url('../font-awesome/fonts/fontawesome-webfont.woff') format("woff"
     position: absolute;
     background: transparent !important;
     &.top-left {
-        border-top: 20px solid $active-color;
-        border-right: 20px solid transparent;
+        border-top: 15px solid $active-color;
+        border-right: 15px solid transparent;
         top: 0;
         left: 0;
     }
     &.top-right {
-        border-top: 20px solid $active-color;
-        border-left: 20px solid transparent;
+        border-top: 15px solid $active-color;
+        border-left: 15px solid transparent;
         top: 0;
         right: 0;
     }
     &.bottom-left {
-        border-bottom: 20px solid $active-color;
-        border-right: 20px solid transparent;
+        border-bottom: 15px solid $active-color;
+        border-right: 15px solid transparent;
         bottom: 0;
         left: 0;
     }
     &.bottom-right {
-        border-bottom: 20px solid $active-color;
-        border-left: 20px solid transparent;
+        border-bottom: 15px solid $active-color;
+        border-left: 15px solid transparent;
         bottom: 0;
         right: 0;
     }
@@ -783,6 +825,106 @@ $font-files: url('../font-awesome/fonts/fontawesome-webfont.woff') format("woff"
         }
     }
 }
+
+/* list itemHeight should be at least 68 */
+.person-image {
+    position: absolute;
+    height: 3.2em;
+    width: 3.2em;
+    right: 0.8em;
+    top: 50%;
+    margin-top: -1.6em;
+    @include border-radius(1.6em);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: $my-border-color;
+    border: 1px solid $my-border-color;
+}
+.person-image.square {
+    @include border-radius(2px);
+}
+.with-person-image.x-list .x-list-item {
+    min-height: 68px !important;
+    .x-innerhtml {
+        padding-right: 85em;
+    }
+}
+
+.markers-container {
+    right: 0.8em;
+    color: $active-color;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    text-align: center;
+    white-space: nowrap;
+
+    &:before {
+        content: '';
+        display: inline-block;
+        height: 100%;
+        vertical-align: middle;
+    }
+    .markers {
+        display: inline-block;
+        vertical-align: middle;
+
+        >div {
+            display: block;
+            line-height: 20px;
+            width: 20px;
+            height: 20px;
+            text-align: center;
+            background-color: transparent;
+            border-radius: 2px;
+            margin: 2px 0px;
+        }
+    }
+}
+.with-markers.x-list .x-list-item {
+    &.x-item-selected .markers div {
+        background-color: $white;
+    }
+    .x-innerhtml {
+        padding-right: 35px;
+    }
+}
+
+.with-person-image.with-markers.x-list {
+    .markers-container {
+        right: 4.5em;
+    }
+    .x-list-item .x-innerhtml {
+        padding-right: 105px;
+    }
+}
+
+.flexbox.x-list {
+    .x-innerhtml {
+        @include flexbox();
+    }
+}
+.flexbox .flex1 {
+    @include flex(1);
+    overflow: hidden;
+}
+.flexbox .flex2 {
+    @include flex(2);
+    overflow: hidden;
+}
+.flexbox .flex3 {
+    @include flex(3);
+    overflow: hidden;
+}
+.flexbox .flex4 {
+    @include flex(3);
+    overflow: hidden;
+}
+.flexbox .flex5 {
+    @include flex(3);
+    overflow: hidden;
+}
+
 /* ui mixin: teal for of type: sencha-button-ui */
 
 @include sencha-button-ui(

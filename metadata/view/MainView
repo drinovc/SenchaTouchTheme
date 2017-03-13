@@ -33,7 +33,27 @@
                 "zIndex": 1
             },
             "name": "MyTitleBar1",
-            "designerId": "024f5b5a-e4fe-40da-9097-5a5202d8f302"
+            "designerId": "024f5b5a-e4fe-40da-9097-5a5202d8f302",
+            "cn": [
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "align": "right",
+                        "designer|uiInterfaceName": "plain",
+                        "iconCls": "fa fa-question",
+                        "itemId": "btnHelp",
+                        "text": "",
+                        "ui": "plain"
+                    },
+                    "name": "MyButton70",
+                    "designerId": "5c1ecef8-cda2-4879-9105-d89ee4be4244"
+                }
+            ]
         },
         {
             "type": "Ext.Container",
