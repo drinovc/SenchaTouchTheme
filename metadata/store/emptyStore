@@ -1,0 +1,116 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "data": [
+            "[]"
+        ],
+        "designer|userClassName": "emptyStore",
+        "groupField": null,
+        "storeId": "emptyStore"
+    },
+    "name": "countryStore1",
+    "designerId": "3c39e0ec-ce9d-4a13-9906-894b73f5d31c",
+    "cn": [
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "name"
+            },
+            "name": "field",
+            "designerId": "e65deb9c-033d-43a7-9b38-dc930fe9a0d2"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "code"
+            },
+            "name": "field1",
+            "designerId": "71321fc5-ee0e-4cbe-9feb-ee8b376b4027"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "color1"
+            },
+            "name": "field2",
+            "designerId": "e797954c-7944-4af4-ba39-a6373c7b23f2"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "color2"
+            },
+            "name": "field3",
+            "designerId": "ebb40b79-698f-4a7b-b503-6549ca1367b2"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "cls"
+            },
+            "name": "field4",
+            "designerId": "0d50042d-9293-4fff-977f-fdab02d6cee1"
+        },
+        {
+            "type": "Ext.util.Grouper",
+            "reference": {
+                "name": "grouper",
+                "type": "object"
+            },
+            "codeClass": null,
+            "name": "MyGrouper",
+            "designerId": "502703e2-7eb3-44cb-82ef-576d232c5de0",
+            "cn": [
+                {
+                    "type": "fixedfunction",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|params": [
+                            "item"
+                        ],
+                        "fn": "groupFn",
+                        "implHandler": [
+                            "return item.get('name')[0];"
+                        ]
+                    },
+                    "name": "groupFn",
+                    "designerId": "f92367ef-c3ae-4f00-bc56-78147a24fa46"
+                }
+            ]
+        }
+    ]
+}

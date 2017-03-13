@@ -23,9 +23,11 @@ Ext.define('SenchaTouchTheme.view.List', {
 
     config: {
         centered: false,
+        layout: 'hbox',
         items: [
             {
                 xtype: 'list',
+                flex: 1,
                 cls: [
                     'with-person-image',
                     'with-markers',
@@ -53,6 +55,51 @@ Ext.define('SenchaTouchTheme.view.List', {
                 store: 'countryStore',
                 grouped: false,
                 itemHeight: 68
+            },
+            {
+                xtype: 'container',
+                width: 20
+            },
+            {
+                xtype: 'list',
+                flex: 1,
+                height: '100%',
+                itemTpl: [
+                    '<div>{name} ({code})</div>',
+                    '<div class="smaller-font">Some description...</div>'
+                ],
+                store: 'countryStore',
+                grouped: true
+            },
+            {
+                xtype: 'container',
+                width: 20
+            },
+            {
+                xtype: 'list',
+                flex: 1,
+                height: '100%',
+                itemTpl: [
+                    '<div>{name} ({code})</div>',
+                    '<div class="smallest-font">Some info...</div>'
+                ],
+                store: 'countryStore',
+                grouped: false,
+                onItemDisclosure: true
+            },
+            {
+                xtype: 'container',
+                width: 20
+            },
+            {
+                xtype: 'list',
+                flex: 1,
+                deferEmptyText: false,
+                emptyText: 'List is empty',
+                itemTpl: [
+                    '<div>List Item {string}</div>'
+                ],
+                store: 'emptyStore'
             }
         ]
     }

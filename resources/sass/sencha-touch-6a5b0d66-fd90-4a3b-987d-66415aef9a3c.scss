@@ -46,7 +46,7 @@ $md-shadow-floating: 0 0.1em 0.5em rgba(0,0,0,0.4);
 
 /********** THEME SETTINGS **********/
 
-$my-theme: 'light';
+$my-theme: 'dark';
 
 /* LIGHT THEME */
 $my-base-color: $white;
@@ -64,15 +64,17 @@ $my-toolbar-light-color: $almostwhite;
 $my-toolbar-neutral-color: #e0e0e0;
 
 $my-border-color: #dedede;
-$my-list-separator-color: #dedede;
 $my-toolbar-field-border-color: #a6a6a6;
 $my-toolbar-border-width: 0;
 
 $my-button-color: $almostwhite;
 $my-button-pressed-color: $almostwhite2;
 
+$my-list-separator-color: #dedede;
 $my-list-bg-color: rgba(255,255,255,.5);
 $my-list-active-color: $my-active-color;
+
+$my-field-disabled-bg-colog: hsla(60, 25%, 93%, 1);
 
 /* DARK THEME */
 @if $my-theme == 'dark' {
@@ -91,15 +93,17 @@ $my-list-active-color: $my-active-color;
     $my-toolbar-neutral-color: rgba(0, 0, 0, 0.23); // rgba(9, 52, 95, 0.27);
 
     $my-border-color: rgba(255, 255, 255, 0.4);
-    $my-list-separator-color: rgba(255, 255, 255, 0.4);
     $my-toolbar-field-border-color: rgba(255, 255, 255, 0.4);
     $my-toolbar-border-width: 1px;
 
     $my-button-color: $almostwhite;
     $my-button-pressed-color: $almostwhite2;
 
+    $my-list-separator-color: rgba(255, 255, 255, 0.4);
     $my-list-bg-color: rgba(0, 0, 0, 0.23);
     $my-list-active-color: $my-active-color;
+
+    $my-field-disabled-bg-colog: hsla(60, 25%, 93%, 1);
 }
 
 
@@ -461,6 +465,16 @@ $list-active-color: $my-list-active-color;
     background-image: none;
     background-color: $active-color;
 }
+input {
+    &[readonly="true"],
+    &:read-only,
+    &:disabled {
+        background-color: $my-field-disabled-bg-colog;
+    }
+}
+.x-label {
+    color: $my-text-color;
+}
 
 /* fieldset */
 .x-form-fieldset-title {
@@ -589,6 +603,9 @@ $list-active-color: $my-list-active-color;
         &.x-list-item-tpl.x-list-header-wrap {
             border-top-width: 0;
         }
+    }
+    .x-list-emptytext {
+        color: $my-text-color;
     }
 }
 .x-list-round {
@@ -923,6 +940,12 @@ $font-files: url('../font-awesome/fonts/fontawesome-webfont.woff') format("woff"
     overflow: hidden;
 }
 
+.smaller-font {
+    font-size: 0.8em;
+}
+.smallest-font {
+    font-size: 0.6em;
+}
 /* ui mixin: teal for of type: sencha-button-ui */
 
 @include sencha-button-ui(

@@ -4,4 +4,4 @@
  * combination of content from app.json, and all required package's package.json
  * files.  Customizations should be placed in app.json.
  */
-{"id":"13ae4238-c32d-440a-bfee-0ec197fa62a8","js":[{"bootstrap":true,"isSdk":true,"path":"touch/sencha-touch.js"},{"bootstrap":true,"path":"bootstrap.js"},{"update":"delta","path":"app.js"}],"css":[{"path":"resources/font-awesome/css/font-awesome.css"},{"update":"delta","theme":"Default","platform":["phone","tablet","desktop"],"path":"resources/css/sencha-touch-6a5b0d66-fd90-4a3b-987d-66415aef9a3c.css"}]}
+{"id":"13ae4238-c32d-440a-bfee-0ec197fa62a8","js":[{"bootstrap":true,"isSdk":true,"path":"touch/sencha-touch.js"},{"bootstrap":true,"path":"bootstrap.js"},{"path":"overrides.js"},{"update":"delta","path":"app.js"}],"css":[{"path":"resources/font-awesome/css/font-awesome.css"},{"update":"delta","theme":"Default","platform":["phone","tablet","desktop"],"path":"resources/css/sencha-touch-6a5b0d66-fd90-4a3b-987d-66415aef9a3c.css"}]}

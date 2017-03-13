@@ -35,41 +35,26 @@
                     "codeClass": null,
                     "userConfig": {
                         "dataIndex": "name",
-                        "text": "String",
+                        "text": "Name",
                         "width": 300
                     },
                     "name": "MyColumn",
                     "designerId": "bda9c123-ce44-46d5-a374-16d5c27df919"
                 },
                 {
-                    "type": "Ext.grid.column.Date",
+                    "type": "Ext.grid.column.Column",
                     "reference": {
                         "name": "columns",
                         "type": "array"
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "dataIndex": "date",
-                        "text": "Date",
-                        "width": 110
+                        "dataIndex": "code",
+                        "text": "Code",
+                        "width": 100
                     },
-                    "name": "MyDate",
-                    "designerId": "a87204a3-8a33-48ea-8412-b388f499c072"
-                },
-                {
-                    "type": "Ext.grid.column.Boolean",
-                    "reference": {
-                        "name": "columns",
-                        "type": "array"
-                    },
-                    "codeClass": null,
-                    "userConfig": {
-                        "dataIndex": "bool",
-                        "text": "Boolean",
-                        "width": 110
-                    },
-                    "name": "MyBoolean",
-                    "designerId": "adc56631-1a4e-4df6-97a5-c31e27f0ef25"
+                    "name": "MyColumn1",
+                    "designerId": "dc605954-6ce4-468d-98d8-93f537d2d6ee"
                 }
             ]
         }

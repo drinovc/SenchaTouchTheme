@@ -50,6 +50,18 @@ Ext.define('SenchaTouchTheme.view.FieldsAndRadios', {
                         required: true
                     },
                     {
+                        xtype: 'textfield',
+                        label: 'Name (read only)',
+                        required: true,
+                        readOnly: true
+                    },
+                    {
+                        xtype: 'textfield',
+                        disabled: true,
+                        label: 'Name (disabled)',
+                        required: true
+                    },
+                    {
                         xtype: 'passwordfield',
                         label: 'Password'
                     },

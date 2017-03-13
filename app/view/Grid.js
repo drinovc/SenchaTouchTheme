@@ -18,8 +18,7 @@ Ext.define('SenchaTouchTheme.view.Grid', {
 
     requires: [
         'Ext.grid.Grid',
-        'Ext.grid.column.Date',
-        'Ext.grid.column.Boolean'
+        'Ext.grid.column.Column'
     ],
 
     config: {
@@ -34,19 +33,13 @@ Ext.define('SenchaTouchTheme.view.Grid', {
                         xtype: 'column',
                         width: 300,
                         dataIndex: 'name',
-                        text: 'String'
+                        text: 'Name'
                     },
                     {
-                        xtype: 'datecolumn',
-                        width: 110,
-                        dataIndex: 'date',
-                        text: 'Date'
-                    },
-                    {
-                        xtype: 'booleancolumn',
-                        width: 110,
-                        dataIndex: 'bool',
-                        text: 'Boolean'
+                        xtype: 'column',
+                        width: 100,
+                        dataIndex: 'code',
+                        text: 'Code'
                     }
                 ]
             }

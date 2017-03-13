@@ -74,25 +74,13 @@ Ext.define('SenchaTouchTheme.view.MainView', {
                                 title: 'Forms and Panels',
                                 view: 'FormsAndPanels'
                             },
-                            {
-                                title: 'Grid',
-                                view: 'Grid'
-                            },
-                            {
+                            /*{title: 'Grid', view: 'Grid'},*/{
                                 title: 'List',
                                 view: 'List'
                             },
                             {
                                 title: 'List Buffered',
                                 view: 'ListBuffered'
-                            },
-                            {
-                                title: 'List Disclosure',
-                                view: 'ListDisclosure'
-                            },
-                            {
-                                title: 'List Grouped',
-                                view: 'ListGrouped'
                             },
                             {
                                 title: 'List Round',

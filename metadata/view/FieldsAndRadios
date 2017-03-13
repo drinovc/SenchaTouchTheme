@@ -43,6 +43,36 @@
                     "designerId": "6bacf6d1-16ba-401c-bec3-ce9bfe37f9ac"
                 },
                 {
+                    "type": "Ext.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "label": "Name (read only)",
+                        "readOnly": true,
+                        "required": true
+                    },
+                    "name": "MyTextField7",
+                    "designerId": "73d1a20b-fd88-4788-8e07-50aa7181fa94"
+                },
+                {
+                    "type": "Ext.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "disabled": true,
+                        "label": "Name (disabled)",
+                        "required": true
+                    },
+                    "name": "MyTextField8",
+                    "designerId": "7b3d6545-fbdb-4fa9-a91d-1446ab664180"
+                },
+                {
                     "type": "Ext.field.Password",
                     "reference": {
                         "name": "items",

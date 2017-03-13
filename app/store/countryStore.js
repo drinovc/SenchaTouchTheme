@@ -34,7 +34,9 @@ Ext.define('SenchaTouchTheme.store.countryStore', {
             },
             {
                 name: 'Albania',
-                code: 'AL'
+                code: 'AL',
+                color1: 'green',
+                color2: 'green'
             },
             {
                 name: 'Algeria',
@@ -156,9 +158,7 @@ Ext.define('SenchaTouchTheme.store.countryStore', {
             },
             {
                 name: 'Brazil',
-                code: 'BR',
-                color1: 'green',
-                color2: 'green'
+                code: 'BR'
             },
             {
                 name: 'British Indian Ocean Territory',

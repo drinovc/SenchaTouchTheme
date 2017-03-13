@@ -13,6 +13,10 @@
          "x-bootstrap": true
       },
       {
+         "path": "overrides.js",
+         "x-compile": true
+      },
+      {
          "path": "app.js",
          "bundle": true,
          "update": "delta"

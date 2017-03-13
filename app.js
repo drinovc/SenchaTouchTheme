@@ -20,8 +20,6 @@ Ext.Loader.setConfig({
 
 
 Ext.Loader.setPath('Ext.grid.column.Column','packages/sencha-touch-grid/src/grid/column/Column.js');
-Ext.Loader.setPath('Ext.grid.column.Boolean','packages/sencha-touch-grid/src/grid/column/Boolean.js');
-Ext.Loader.setPath('Ext.grid.column.Date','packages/sencha-touch-grid/src/grid/column/Date.js');
 Ext.Loader.setPath('Ext.grid.Grid','packages/sencha-touch-grid/src/grid/Grid.js');
 
 Ext.application({
@@ -30,7 +28,8 @@ Ext.application({
         'Ext.MessageBox'
     ],
     stores: [
-        'countryStore'
+        'countryStore',
+        'emptyStore'
     ],
     views: [
         'MainView',
@@ -38,10 +37,8 @@ Ext.application({
         'FieldsAndRadios',
         'Toolbars',
         'List',
-        'ListGrouped',
         'Tabs',
         'Overlays',
-        'ListDisclosure',
         'ListRound',
         'LoadMask',
         'Carousel',

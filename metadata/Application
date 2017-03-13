@@ -14,7 +14,8 @@
             "Ext.MessageBox"
         ],
         "stores": [
-            "countryStore"
+            "countryStore",
+            "emptyStore"
         ],
         "views": [
             "MainView",
@@ -22,10 +23,8 @@
             "FieldsAndRadios",
             "Toolbars",
             "List",
-            "ListGrouped",
             "Tabs",
             "Overlays",
-            "ListDisclosure",
             "ListRound",
             "LoadMask",
             "Carousel",
