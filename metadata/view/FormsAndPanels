@@ -1,0 +1,113 @@
+{
+    "type": "Ext.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "FormsAndPanels",
+        "layout": "hbox"
+    },
+    "name": "MyContainer48",
+    "designerId": "d1ff0415-dda3-4dae-a997-d636b2f9b54a",
+    "cn": [
+        {
+            "type": "Ext.form.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|flex": 1
+            },
+            "name": "MyFormPanel",
+            "designerId": "ea82febb-6deb-4d09-8490-059961a824fd",
+            "cn": [
+                {
+                    "type": "Ext.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "label": "From Field"
+                    },
+                    "name": "MyTextField6",
+                    "designerId": "4ac92f62-d31f-45c3-8ae2-9284b57e7eb3"
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "html": "<span class=\"font-red\">red</span>  <span class=\"font-pink\">pink</span>  <span class=\"font-purple\">purple</span>  <span class=\"font-deeppurple\">deeppurple</span>  <span class=\"font-indigo\">indigo</span>  <span class=\"font-blue\">blue</span>  <span class=\"font-lightblue\">lightblue</span>  <span class=\"font-cyan\">cyan</span>  <span class=\"font-teal\">teal</span>  <span class=\"font-green\">green</span>  <span class=\"font-lightgreen\">lightgreen</span>  <span class=\"font-lime\">lime</span>  <span class=\"font-yellow\">yellow</span>  <span class=\"font-amber\">amber</span>  <span class=\"font-orange\">orange</span>  <span class=\"font-deeporange\">deeporange</span>  <span class=\"font-brown\">brown</span>  <span class=\"font-grey\">grey</span>  <span class=\"font-bluegrey\">bluegrey</span> ",
+                        "padding": 10
+                    },
+                    "name": "MyContainer48",
+                    "designerId": "279bf512-6e74-411a-81dc-42960c20c547"
+                }
+            ]
+        },
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "width": 20
+            },
+            "name": "MyContainer49",
+            "designerId": "56fff02f-72fe-43a5-af0f-7b08b5d58cee"
+        },
+        {
+            "type": "Ext.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|flex": 1
+            },
+            "name": "MyPanel1",
+            "designerId": "4677a52b-cd50-410d-86d6-ec62911de015",
+            "cn": [
+                {
+                    "type": "Ext.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "label": "Panel Field"
+                    },
+                    "name": "MyTextField6",
+                    "designerId": "4463d2d9-9e09-4353-9614-ea2da5f10a05"
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "html": "<span class=\"badge red\">red</span> <span class=\"badge pink\">pink</span> <span class=\"badge purple\">purple</span> <span class=\"badge deeppurple\">deeppurple</span> <span class=\"badge indigo\">indigo</span> <span class=\"badge blue\">blue</span> <span class=\"badge lightblue\">lightblue</span> <span class=\"badge cyan\">cyan</span> <span class=\"badge teal\">teal</span> <span class=\"badge green\">green</span> <span class=\"badge lightgreen\">lightgreen</span> <span class=\"badge lime\">lime</span> <span class=\"badge yellow\">yellow</span> <span class=\"badge amber\">amber</span> <span class=\"badge orange\">orange</span> <span class=\"badge deeporange\">deeporange</span> <span class=\"badge brown\">brown</span> <span class=\"badge grey\">grey</span> <span class=\"badge bluegrey\">bluegrey</span>",
+                        "padding": 10
+                    },
+                    "name": "MyContainer50",
+                    "designerId": "e2a636bd-3fea-4360-bcb3-3cfabdd027e7"
+                }
+            ]
+        }
+    ]
+}
