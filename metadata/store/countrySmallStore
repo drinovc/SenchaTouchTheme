@@ -1,0 +1,175 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "data": [
+            "[ ",
+            "  {name: 'Afghanistan<br>2 lines', code: 'AF', cls:'triangle bottom-left red'}, ",
+            "  {name: 'Åland Islands', code: 'AX'}, ",
+            "  {name: 'Albania', code: 'AL', color1: 'green', color2: 'green'}, ",
+            "  {name: 'Algeria', code: 'DZ', cls:'triangle top-left teal'}, ",
+            "  {name: 'American Samoa', code: 'AS'}, ",
+            "  {name: 'Andorra', code: 'AD', cls:'triangle bottom-right orange'}, ",
+            "  {name: 'Angola', code: 'AO'}, ",
+            "  {name: 'Anguilla', code: 'AI', cls:'triangle top-right lime'}, ",
+            "  {name: 'Antarctica', code: 'AQ', cls:'triangle bottom-left deeporange'}, ",
+            "  {name: 'Antigua and Barbuda', code: 'AG', cls:'triangle bottom-left orange'}, ",
+            "  {name: 'Argentina', code: 'AR', cls:'triangle bottom-left lime'}, ",
+            "  {name: 'Armenia', code: 'AM', cls:'triangle bottom-left pink'}, ",
+            "  {name: 'Aruba', code: 'AW', cls:'triangle bottom-left lime'}, ",
+            "  {name: 'Australia', code: 'AU'}, ",
+            "  {name: 'Austria', code: 'AT', color1: 'red', color2: 'red'}, ",
+            "  {name: 'Azerbaijan', code: 'AZ'}, ",
+            "  {name: 'Bahamas', code: 'BS'}, ",
+            "  {name: 'Bahrain', code: 'BH'}, ",
+            "  {name: 'Bangladesh', code: 'BD'}, ",
+            "  {name: 'Barbados', code: 'BB'}, ",
+            "  {name: 'Belarus', code: 'BY'}, ",
+            "  {name: 'Belgium', code: 'BE'}, ",
+            "  {name: 'Belize', code: 'BZ'}, ",
+            "  {name: 'Benin', code: 'BJ'}, ",
+            "  {name: 'Bermuda', code: 'BM'}, ",
+            "  {name: 'Bhutan', code: 'BT'}, ",
+            "  {name: 'Bolivia', code: 'BO'}, ",
+            "  {name: 'Bosnia and Herzegovina', code: 'BA'}, ",
+            "  {name: 'Botswana', code: 'BW'}, ",
+            "  {name: 'Bouvet Island', code: 'BV'}, ",
+            "  {name: 'Brazil', code: 'BR'}, ",
+            "  {name: 'British Indian Ocean Territory', code: 'IO'}, ",
+            "  {name: 'Brunei Darussalam', code: 'BN'}, ",
+            "  {name: 'Bulgaria', code: 'BG'}, ",
+            "  {name: 'Burkina Faso', code: 'BF'}, ",
+            "  {name: 'Burundi', code: 'BI'}, ",
+            "  {name: 'Cambodia', code: 'KH'}, ",
+            "  {name: 'Cameroon', code: 'CM'}, ",
+            "  {name: 'Canada', code: 'CA'}, ",
+            "  {name: 'Cape Verde', code: 'CV'}, ",
+            "  {name: 'Cayman Islands', code: 'KY'}, ",
+            "  {name: 'Central African Republic', code: 'CF'}, ",
+            "  {name: 'Chad', code: 'TD'}, ",
+            "  {name: 'Chile', code: 'CL'}, ",
+            "  {name: 'China', code: 'CN'}, ",
+            "  {name: 'Christmas Island', code: 'CX'}, ",
+            "  {name: 'Cocos (Keeling) Islands', code: 'CC'}, ",
+            "  {name: 'Colombia', code: 'CO'}, ",
+            "  {name: 'Comoros', code: 'KM'}, ",
+            "  {name: 'Congo', code: 'CG'}, ",
+            "  {name: 'Congo, The Democratic Republic of the', code: 'CD'}, ",
+            "  {name: 'Cook Islands', code: 'CK'}, ",
+            "  {name: 'Costa Rica', code: 'CR'}, ",
+            "  {name: 'Cote D\\'Ivoire', code: 'CI'}, ",
+            "  {name: 'Croatia', code: 'HR'}, ",
+            "  {name: 'Cuba', code: 'CU'}, ",
+            "  {name: 'Cyprus', code: 'CY'}, ",
+            "  {name: 'Czech Republic', code: 'CZ'}",
+            "]"
+        ],
+        "designer|userClassName": "countrySmallStore",
+        "groupField": null,
+        "storeId": "countrySmallStore"
+    },
+    "name": "countryStore2",
+    "designerId": "578f2545-d5f9-4d09-87da-40609ff18536",
+    "cn": [
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "name"
+            },
+            "name": "field",
+            "designerId": "c7b67b81-7f23-499c-b20e-78dd87d6807a"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "code"
+            },
+            "name": "field1",
+            "designerId": "5db70ed7-6a4c-43ab-bc08-8ae2e00bdff6"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "color1"
+            },
+            "name": "field2",
+            "designerId": "21936fb7-c62b-4763-9f1c-bde3629f6d12"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "color2"
+            },
+            "name": "field3",
+            "designerId": "ac303b67-c17f-4199-8c74-8cfc5b057d48"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "cls"
+            },
+            "name": "field4",
+            "designerId": "fdc83660-f93e-454e-9651-894cd9e6d59a"
+        },
+        {
+            "type": "Ext.util.Grouper",
+            "reference": {
+                "name": "grouper",
+                "type": "object"
+            },
+            "codeClass": null,
+            "name": "MyGrouper",
+            "designerId": "d810d181-4837-44f7-8027-4c7c66e41d6a",
+            "cn": [
+                {
+                    "type": "fixedfunction",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|params": [
+                            "item"
+                        ],
+                        "fn": "groupFn",
+                        "implHandler": [
+                            "return item.get('name')[0];"
+                        ]
+                    },
+                    "name": "groupFn",
+                    "designerId": "f350bd00-dc6e-4d0b-adf8-35d1266c8d7a"
+                }
+            ]
+        }
+    ]
+}

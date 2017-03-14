@@ -733,6 +733,185 @@ Ext.define('SenchaTouchTheme.view.Buttons', {
                             {
                                 xtype: 'button',
                                 height: '',
+                                ui: 'base',
+                                text: 'Base'
+                            },
+                            {
+                                xtype: 'spacer'
+                            },
+                            {
+                                xtype: 'button',
+                                ui: 'base-round',
+                                text: 'Round'
+                            },
+                            {
+                                xtype: 'spacer'
+                            },
+                            {
+                                xtype: 'button',
+                                ui: 'base-small',
+                                text: 'Small'
+                            },
+                            {
+                                xtype: 'spacer'
+                            }
+                        ]
+                    },
+                    {
+                        xtype: 'container',
+                        flex: 4,
+                        height: '',
+                        width: '100%',
+                        defaults: {
+                            cls: 'x-button-pressing'
+                        },
+                        layout: {
+                            type: 'hbox',
+                            align: 'center',
+                            pack: 'center'
+                        },
+                        items: [
+                            {
+                                xtype: 'spacer'
+                            },
+                            {
+                                xtype: 'button',
+                                height: '',
+                                ui: 'base',
+                                text: 'Base'
+                            },
+                            {
+                                xtype: 'spacer'
+                            },
+                            {
+                                xtype: 'button',
+                                ui: 'base-round',
+                                text: 'Round'
+                            },
+                            {
+                                xtype: 'spacer'
+                            },
+                            {
+                                xtype: 'button',
+                                ui: 'base-small',
+                                text: 'Small'
+                            },
+                            {
+                                xtype: 'spacer'
+                            }
+                        ]
+                    },
+                    {
+                        xtype: 'container',
+                        flex: 4,
+                        height: '',
+                        width: '100%',
+                        defaults: {
+                            cls: 'x-button-pressed'
+                        },
+                        layout: {
+                            type: 'hbox',
+                            align: 'center',
+                            pack: 'center'
+                        },
+                        items: [
+                            {
+                                xtype: 'spacer'
+                            },
+                            {
+                                xtype: 'button',
+                                height: '',
+                                ui: 'base',
+                                text: 'Base'
+                            },
+                            {
+                                xtype: 'spacer'
+                            },
+                            {
+                                xtype: 'button',
+                                ui: 'base-round',
+                                text: 'Round'
+                            },
+                            {
+                                xtype: 'spacer'
+                            },
+                            {
+                                xtype: 'button',
+                                ui: 'base-small',
+                                text: 'Small'
+                            },
+                            {
+                                xtype: 'spacer'
+                            }
+                        ]
+                    },
+                    {
+                        xtype: 'container',
+                        flex: 4,
+                        height: '',
+                        width: '100%',
+                        defaults: {
+                            disabled: true
+                        },
+                        layout: {
+                            type: 'hbox',
+                            align: 'center',
+                            pack: 'center'
+                        },
+                        items: [
+                            {
+                                xtype: 'spacer'
+                            },
+                            {
+                                xtype: 'button',
+                                height: '',
+                                ui: 'base',
+                                text: 'Base'
+                            },
+                            {
+                                xtype: 'spacer'
+                            },
+                            {
+                                xtype: 'button',
+                                ui: 'base-round',
+                                text: 'Round'
+                            },
+                            {
+                                xtype: 'spacer'
+                            },
+                            {
+                                xtype: 'button',
+                                ui: 'base-small',
+                                text: 'Small'
+                            },
+                            {
+                                xtype: 'spacer'
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                xtype: 'container',
+                layout: 'hbox',
+                items: [
+                    {
+                        xtype: 'container',
+                        flex: 4,
+                        height: '',
+                        width: '100%',
+                        layout: {
+                            type: 'hbox',
+                            align: 'center',
+                            pack: 'center'
+                        },
+                        items: [
+                            {
+                                xtype: 'spacer'
+                            },
+                            {
+                                xtype: 'button',
+                                height: '',
                                 ui: 'decline',
                                 text: 'Decline'
                             },

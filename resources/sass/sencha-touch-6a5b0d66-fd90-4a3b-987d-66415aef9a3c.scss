@@ -46,7 +46,8 @@ $md-shadow-floating: 0 0.1em 0.5em rgba(0,0,0,0.4);
 
 /********** THEME SETTINGS **********/
 
-$my-theme: 'dark';
+$my-theme: 'light';
+$my-fields-theme: 'light';
 
 /* LIGHT THEME */
 $my-base-color: $white;
@@ -74,7 +75,12 @@ $my-list-separator-color: #dedede;
 $my-list-bg-color: rgba(255,255,255,.5);
 $my-list-active-color: $my-active-color;
 
-$my-field-disabled-bg-colog: hsla(60, 25%, 93%, 1);
+$my-panel-bg-color: transparent;
+
+$my-fieldset-bg-color: $white;
+$my-fieldset-border-color: #ddd;
+
+$my-field-disabled-bg-color: hsla(60, 25%, 93%, 1);
 
 /* DARK THEME */
 @if $my-theme == 'dark' {
@@ -89,8 +95,8 @@ $my-field-disabled-bg-colog: hsla(60, 25%, 93%, 1);
     $my-page-bg-image: url('../images/background-dark.jpg');
 
     $my-toolbar-dark-color: rgba(0, 0, 0, 0.23); // rgba(9, 52, 95, 0.27);
-    $my-toolbar-light-color: rgba(0, 0, 0, 0.23); // rgba(9, 52, 95, 0.27);
-    $my-toolbar-neutral-color: rgba(0, 0, 0, 0.23); // rgba(9, 52, 95, 0.27);
+    $my-toolbar-light-color: rgba(0, 0, 0, 0.15); // rgba(9, 52, 95, 0.27);
+    $my-toolbar-neutral-color: rgba(0, 0, 0, 0.07); // rgba(9, 52, 95, 0.27);
 
     $my-border-color: rgba(255, 255, 255, 0.4);
     $my-toolbar-field-border-color: rgba(255, 255, 255, 0.4);
@@ -103,7 +109,16 @@ $my-field-disabled-bg-colog: hsla(60, 25%, 93%, 1);
     $my-list-bg-color: rgba(0, 0, 0, 0.23);
     $my-list-active-color: $my-active-color;
 
-    $my-field-disabled-bg-colog: hsla(60, 25%, 93%, 1);
+    $my-panel-bg-color: rgba(0, 0, 0, 0.23);
+
+    $my-fieldset-bg-color: $white;
+
+    @if $my-fields-theme == 'dark' {
+        $my-fieldset-bg-color: rgba(0, 0, 0, 0.23);
+        $my-fieldset-border-color: rgba(255, 255, 255, 0.4);
+
+        $my-field-disabled-bg-color: hsla(60, 20%, 50%, 0.2);
+    }
 }
 
 
@@ -143,22 +158,6 @@ $list-active-color: $my-list-active-color;
     transition: $transition;
 }
 
-@mixin flexbox() {
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-}
-
-@mixin flex($values) {
-    -webkit-box-flex: $values;
-    -moz-box-flex: $values;
-    -webkit-flex: $values;
-    -ms-flex: $values;
-    flex: $values;
-}
-
 @mixin my-color-styles($name, $color) {
     /* custom */
     .bg-#{$name},
@@ -175,15 +174,9 @@ $list-active-color: $my-list-active-color;
         color: $color;
     }
 
-    .badge {
-        @include color-by-background($active-color);
-        background-color: $active-color;
-        @include border-radius(0.2em);
-        padding: 0 5px;
-        &.#{$name} {
-            @include color-by-background($color);
-            background-color: $color;
-        }
+    .badge.#{$name} {
+        @include color-by-background($color);
+        background-color: $color;
     }
 
     /* colors for custom styles */
@@ -259,6 +252,10 @@ $list-active-color: $my-list-active-color;
 @include my-color-styles('grey', $grey);
 @include my-color-styles('gray', $grey);
 @include my-color-styles('bluegrey', $bluegrey);
+
+@include my-color-styles('base', $base-color);
+@include my-color-styles('active', $active-color);
+
 @include my-color-styles('black', $black);
 @include my-color-styles('almostblack', $almostblack);
 @include my-color-styles('white', $white);
@@ -276,7 +273,7 @@ $list-active-color: $my-list-active-color;
 }
 
 /* fix for weird pink background */
-/* 
+/*
 .x-container.x-layout-box-item {
     background-color: transparent !important;
 }
@@ -391,6 +388,27 @@ $list-active-color: $my-list-active-color;
         }
     }
 }
+
+/* seach field */
+.x-field-search .x-field-input .x-form-field {
+    margin-left: 1.5em;
+}
+
+/* left aligned checkbox and radio */
+.x-field-checkbox:not(right-aligned) .x-field-mask::after {
+    right: initial;
+    left: 10px;
+}
+.x-field-radio:not(right-aligned) .x-field-mask {
+    &::before {
+        right: initial;
+        left: 9px;
+    }
+    &::after {
+        right: initial;
+        left: 14px;
+    }
+}
 /******************************************************************************/
 /* ThemeOverrides */
 
@@ -415,34 +433,41 @@ $list-active-color: $my-list-active-color;
 
 /* buttons */
 .x-button {
+    background-color: $my-button-color;
+    @include my-transition(all 0.2s ease);
+
     &:not(.x-button-plain) {
         @include box-shadow($md-shadow);
         background-image: none !important;
         border: none !important;
     }
-    background-color: $my-button-color;
-    @include my-transition(all 0.2s ease);
-
+    &:hover {
+        @include box-shadow($md-shadow-hover);
+    }
+    &.x-button-pressing,
+    &.x-button-pressed {
+        background-color: $my-button-pressed-color;
+        @include box-shadow($md-shadow-pressed);
+    }
 }
-.x-button:hover {
-	@include box-shadow($md-shadow-hover);
-}
-.x-button.x-button-pressing,
-.x-button.x-button-pressed {
-    background-color: $my-button-pressed-color;
-    @include box-shadow($md-shadow-pressed);
-}
-.x-button.x-button-plain.x-button-pressing,
-.x-button.x-button-plain.x-button-pressed,
-.x-toolbar .x-button.x-button-plain.x-button-pressing,
-.x-toolbar .x-button.x-button-plain.x-button-pressed {
-    background-color: transparent;
-    background-image: none;
+.x-button.x-button-plain,
+.x-toolbar .x-button.x-button-plain {
+    &.x-button-pressing,
+    &.x-button-pressed {
+        background-color: transparent;
+        background-image: none;
+    }
 }
 .x-button-label,
 .x-badge,
 .x-hasbadge .x-badge {
     font-weight: normal;
+}
+.x-hasbadge {
+    .x-badge {
+        background-color: $active-color;
+        @include color-by-background($active-color);
+    }
 }
 .x-button-plain {
     color: $my-text-color;
@@ -469,11 +494,15 @@ input {
     &[readonly="true"],
     &:read-only,
     &:disabled {
-        background-color: $my-field-disabled-bg-colog;
+        background-color: $my-field-disabled-bg-color !important;
     }
 }
 .x-label {
     color: $my-text-color;
+}
+.x-form-label {
+/*     color: $my-text-color; */
+    text-shadow: none;
 }
 
 /* fieldset */
@@ -481,13 +510,27 @@ input {
     font-weight: normal;
     color: $my-text-color;
 }
+.x-form-fieldset {
+    .x-form-fieldset-inner {
+        background-color: $my-fieldset-bg-color;
+    }
+    .x-field {
+        border-bottom: 1px solid $my-fieldset-border-color;
+    }
+}
 
-/* toolbar and titlebar and tab bar */
+/* toolbar and titlebar and tabbar */
 .x-toolbar {
     border-color: $my-border-color !important;
     border-width: $my-toolbar-border-width !important;
 }
-.x-toolbar-dark {
+@if $my-theme == 'dark' {
+    .x-tabbar {
+        border-color: $my-border-color !important;
+    }
+}
+.x-toolbar-dark,
+.x-tabbar-dark {
     background-color: $my-toolbar-dark-color;
     &:not(.x-msgbox-title) .x-title,
     &:not(.x-msgbox-title) .x-button-plain {
@@ -497,7 +540,8 @@ input {
         }
     }
 }
-.x-toolbar-light {
+.x-toolbar-light,
+.x-tabbar-light {
     background-color: $my-toolbar-light-color;
     .x-title,
     .x-button-plain {
@@ -507,7 +551,8 @@ input {
         }
     }
 }
-.x-toolbar-neutral {
+.x-toolbar-neutral,
+.x-tabbar-neutral {
     background-color: $my-toolbar-neutral-color;
     .x-title,
     .x-button-plain  {
@@ -530,14 +575,16 @@ input {
 
 /* toolbar fields */
 .x-toolbar {
-    .x-field-textarea .x-component-outer,
-    .x-field-text .x-component-outer,
-    .x-field-number .x-component-outer,
-    .x-field-search .x-component-outer,
-    .x-field-select .x-component-outer {
-        @include box-shadow(none);
-        border: 1px solid $my-toolbar-field-border-color;
-        @include border-radius(0.2em);
+    .x-field-textarea,
+    .x-field-text,
+    .x-field-number,
+    .x-field-search,
+    .x-field-select {
+        .x-component-outer {
+            @include box-shadow(none);
+            border: 1px solid $my-toolbar-field-border-color;
+            @include border-radius(0.2em);
+        }
     }
     .x-field-search .x-field-input:before {
         top: .25em;
@@ -621,6 +668,11 @@ input {
     }
 }
 
+/* panel */
+.x-panel {
+    background-color: $my-panel-bg-color;
+}
+
 /* msgbox and floating panels */
 .x-msgbox {
     border: none;
@@ -659,6 +711,40 @@ input {
 }
 .x-webkit .x-anchor.x-anchor-top {
     background-color: $white;
+}
+
+/* overrides if dark fields are used */
+@if $my-fields-theme == 'dark' {
+    .x-form-fieldset {
+        .x-form-fieldset-inner {
+            border: none;
+        }
+        input,
+        textarea {
+            background-color: transparent;
+            color: $my-text-color;
+        }
+        .x-item-disabled .x-form-label {
+            color: #aaa;
+        }
+        .x-form-label {
+            background-color: rgba(0,0,0,0.15);
+            color: $my-text-color;
+        }
+        .x-form-label span {
+            font-weight: normal;
+        }
+        .x-spinner,
+        .x-spinner .x-field-input,
+        .x-field-select  {
+            .x-input-el {
+                -webkit-text-fill-color: $my-text-color;
+            }
+        }
+        .x-field-input .x-clear-icon {
+            opacity: 0.6;
+        }
+    }
 }
 /******************************************************************************/
 /* RippleEffect */
@@ -729,8 +815,12 @@ $font-files: url('../font-awesome/fonts/fontawesome-webfont.woff') format("woff"
             content: '\f105';
             margin-left: 0.2em;
             color: silver;
-            line-height: 32px;
+            line-height: 30px;
         }
+    }
+    .x-list-item-tpl .x-list-disclosure {
+        margin-top: -16px;
+        top: 50%;
     }
 }
 
@@ -759,6 +849,58 @@ $font-files: url('../font-awesome/fonts/fontawesome-webfont.woff') format("woff"
         content: '\f068';
     }
 }
+@mixin flexbox() {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+@mixin flex($values) {
+    -webkit-box-flex: $values;
+    -moz-box-flex: $values;
+    -webkit-flex: $values;
+    -ms-flex: $values;
+    flex: $values;
+}
+
+.flexbox {
+    @include flexbox();
+    &.wrap {
+        flex-wrap: wrap;
+    }
+    &.items-center {
+        align-items: center;
+        justify-content: center;
+    }
+    &.column {
+        flex-direction: column;
+    }
+}
+.flexbox .flex1 {
+    @include flex(1);
+    overflow: hidden;
+}
+.flexbox .flex2 {
+    @include flex(2);
+    overflow: hidden;
+}
+.flexbox .flex3 {
+    @include flex(3);
+    overflow: hidden;
+}
+.flexbox .flex4 {
+    @include flex(3);
+    overflow: hidden;
+}
+.flexbox .flex5 {
+    @include flex(3);
+    overflow: hidden;
+}
+.flexbox .fullflex {
+    flex: 0 0 100%;
+}
 .border-top {
     border-right: 1px solid $my-border-color;
 }
@@ -770,6 +912,125 @@ $font-files: url('../font-awesome/fonts/fontawesome-webfont.woff') format("woff"
 }
 .border-left {
     border-right: 1px solid $my-border-color;
+}
+.border {
+    border: 1px solid $my-border-color;
+}
+
+.badge {
+    @include color-by-background($active-color);
+    background-color: $active-color;
+    @include border-radius(0.2em);
+    padding: 0 5px;
+}
+
+.smaller-font {
+    font-size: 0.8em;
+}
+.smallest-font {
+    font-size: 0.6em;
+}
+
+.tabbar-style.x-segmentedbutton {
+    margin-bottom: -14px;
+    .x-button {
+        height: 2.4em;
+        @include border-bottom-left-radius(0);
+        @include border-bottom-right-radius(0);
+
+        &.x-button-pressed:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 0.5em;
+            background-color: $active-color;
+        }
+
+        .x-button-label {
+            position: relative;
+            top: -7px;
+        }
+    }
+}
+.flexbox-list.x-list {
+    .x-innerhtml {
+        @include flexbox();
+    }
+}
+
+.list-badge {
+    padding: 2px 4px;
+    font-size: 0.65em;
+    min-width: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+
+$markers-right: 15px;
+$marker-size: 20px;
+.markers {
+    @include flexbox();
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    align-items: center;
+    align-content: center;
+    justify-content: flex-end;
+    color: $active-color;
+
+    >div {
+        align-self: center;
+        display: block;
+        line-height: $marker-size;
+        width: $marker-size;
+        height: $marker-size;
+        text-align: center;
+        background-color: transparent;
+        border-radius: 2px;
+        margin: 2px;
+    }
+
+    &.vertical {
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+.x-item-selected .markers div {
+    background-color: $white;
+}
+
+$person-image-width: 58px;
+$person-image-right: 15px;
+.person-image {
+    @include flexbox();
+    align-items: center;
+    &:before {
+        content: '';
+        height: $person-image-width;
+        min-height: $person-image-width;
+        width: $person-image-width;
+        min-width: $person-image-width;
+        right: $person-image-right;
+        @include border-radius($person-image-width/2);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: $my-border-color;
+        border: 1px solid $my-border-color;
+        margin-left: 5px;
+        background-image: inherit;
+    }
+}
+.person-image.square:before {
+    @include border-radius(2px);
+}
+
+.smaller-padding.x-list .x-list-item.x-list-item-tpl .x-innerhtml {
+    padding: 5px 15px;
+    .text {
+        padding: 7px 2px;
+    }
 }
 
 .strip {
@@ -817,265 +1078,6 @@ $font-files: url('../font-awesome/fonts/fontawesome-webfont.woff') format("woff"
     }
 }
 
-.tabbar-style.x-segmentedbutton {
-    margin-bottom: -14px;
-    .x-button {
-        height: 2.4em;
-        @include border-bottom-left-radius(0);
-        @include border-bottom-right-radius(0);
-
-        &.x-button-pressed:before {
-            content: '';
-            position: absolute;
-            left: 0;
-            bottom: 0;
-            width: 100%;
-            height: 0.5em;
-            background-color: $active-color;
-        }
-
-        .x-button-label {
-            position: relative;
-            top: -7px;
-        }
-    }
+.with-disclosure.x-list .x-list-item.x-list-item-tpl .x-innerhtml {
+    padding-right: 40px !important;
 }
-
-/* list itemHeight should be at least 68 */
-.person-image {
-    position: absolute;
-    height: 3.2em;
-    width: 3.2em;
-    right: 0.8em;
-    top: 50%;
-    margin-top: -1.6em;
-    @include border-radius(1.6em);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: $my-border-color;
-    border: 1px solid $my-border-color;
-}
-.person-image.square {
-    @include border-radius(2px);
-}
-.with-person-image.x-list .x-list-item {
-    min-height: 68px !important;
-    .x-innerhtml {
-        padding-right: 85em;
-    }
-}
-
-.markers-container {
-    right: 0.8em;
-    color: $active-color;
-    position: absolute;
-    top: 0;
-    height: 100%;
-    text-align: center;
-    white-space: nowrap;
-
-    &:before {
-        content: '';
-        display: inline-block;
-        height: 100%;
-        vertical-align: middle;
-    }
-    .markers {
-        display: inline-block;
-        vertical-align: middle;
-
-        >div {
-            display: block;
-            line-height: 20px;
-            width: 20px;
-            height: 20px;
-            text-align: center;
-            background-color: transparent;
-            border-radius: 2px;
-            margin: 2px 0px;
-        }
-    }
-}
-.with-markers.x-list .x-list-item {
-    &.x-item-selected .markers div {
-        background-color: $white;
-    }
-    .x-innerhtml {
-        padding-right: 35px;
-    }
-}
-
-.with-person-image.with-markers.x-list {
-    .markers-container {
-        right: 4.5em;
-    }
-    .x-list-item .x-innerhtml {
-        padding-right: 105px;
-    }
-}
-
-.flexbox.x-list {
-    .x-innerhtml {
-        @include flexbox();
-    }
-}
-.flexbox .flex1 {
-    @include flex(1);
-    overflow: hidden;
-}
-.flexbox .flex2 {
-    @include flex(2);
-    overflow: hidden;
-}
-.flexbox .flex3 {
-    @include flex(3);
-    overflow: hidden;
-}
-.flexbox .flex4 {
-    @include flex(3);
-    overflow: hidden;
-}
-.flexbox .flex5 {
-    @include flex(3);
-    overflow: hidden;
-}
-
-.smaller-font {
-    font-size: 0.8em;
-}
-.smallest-font {
-    font-size: 0.6em;
-}
-/* ui mixin: teal for of type: sencha-button-ui */
-
-@include sencha-button-ui(
-  $ui-label:"teal",
-    $color: $teal,
-    $gradient: $button-gradient
-);
-/* ui mixin: red for of type: sencha-button-ui */
-
-@include sencha-button-ui(
-  $ui-label:"red",
-    $color: $red,
-    $gradient: $button-gradient
-);
-/* ui mixin: pink for of type: sencha-button-ui */
-
-@include sencha-button-ui(
-  $ui-label:"pink",
-    $color: $pink,
-    $gradient: $button-gradient
-);
-/* ui mixin: purple for of type: sencha-button-ui */
-
-@include sencha-button-ui(
-  $ui-label:"purple",
-    $color: $purple,
-    $gradient: $button-gradient
-);
-/* ui mixin: deeppurple for of type: sencha-button-ui */
-
-@include sencha-button-ui(
-  $ui-label:"deeppurple",
-    $color: $deeppurple,
-    $gradient: $button-gradient
-);
-/* ui mixin: indigo for of type: sencha-button-ui */
-
-@include sencha-button-ui(
-  $ui-label:"indigo",
-    $color: $indigo,
-    $gradient: $button-gradient
-);
-/* ui mixin: blue for of type: sencha-button-ui */
-
-@include sencha-button-ui(
-  $ui-label:"blue",
-    $color: $blue,
-    $gradient: $button-gradient
-);
-/* ui mixin: lightblue for of type: sencha-button-ui */
-
-@include sencha-button-ui(
-  $ui-label:"lightblue",
-    $color: $lightblue,
-    $gradient: $button-gradient
-);
-/* ui mixin: cyan for of type: sencha-button-ui */
-
-@include sencha-button-ui(
-  $ui-label:"cyan",
-    $color: $cyan,
-    $gradient: $button-gradient
-);
-/* ui mixin: green for of type: sencha-button-ui */
-
-@include sencha-button-ui(
-  $ui-label:"green",
-    $color: $green,
-    $gradient: $button-gradient
-);
-/* ui mixin: lightgreen for of type: sencha-button-ui */
-
-@include sencha-button-ui(
-  $ui-label:"lightgreen",
-    $color: $lightgreen,
-    $gradient: $button-gradient
-);
-/* ui mixin: lime for of type: sencha-button-ui */
-
-@include sencha-button-ui(
-  $ui-label:"lime",
-    $color: $lime,
-    $gradient: $button-gradient
-);
-/* ui mixin: yellow for of type: sencha-button-ui */
-
-@include sencha-button-ui(
-  $ui-label:"yellow",
-    $color: $yellow,
-    $gradient: $button-gradient
-);
-/* ui mixin: amber for of type: sencha-button-ui */
-
-@include sencha-button-ui(
-  $ui-label:"amber",
-    $color: $amber,
-    $gradient: $button-gradient
-);
-/* ui mixin: orange for of type: sencha-button-ui */
-
-@include sencha-button-ui(
-  $ui-label:"orange",
-    $color: $orange,
-    $gradient: $button-gradient
-);
-/* ui mixin: deeporange for of type: sencha-button-ui */
-
-@include sencha-button-ui(
-  $ui-label:"deeporange",
-    $color: $deeporange,
-    $gradient: $button-gradient
-);
-/* ui mixin: brown for of type: sencha-button-ui */
-
-@include sencha-button-ui(
-  $ui-label:"brown",
-    $color: $brown,
-    $gradient: $button-gradient
-);
-/* ui mixin: grey for of type: sencha-button-ui */
-
-@include sencha-button-ui(
-  $ui-label:"grey",
-    $color: $grey,
-    $gradient: $button-gradient
-);
-/* ui mixin: bluegrey for of type: sencha-button-ui */
-
-@include sencha-button-ui(
-  $ui-label:"bluegrey",
-    $color: $bluegrey,
-    $gradient: $button-gradient
-);

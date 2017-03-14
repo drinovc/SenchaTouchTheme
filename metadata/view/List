@@ -22,19 +22,18 @@
             "codeClass": null,
             "userConfig": {
                 "cls": [
-                    "with-person-image",
-                    "with-markers",
-                    "flexbox"
+                    "smaller-padding",
+                    "with-disclosure"
                 ],
                 "data": null,
-                "grouped": false,
+                "grouped": true,
                 "height": "100%",
-                "itemHeight": 68,
                 "layout|flex": 1,
-                "store": "countryStore"
+                "onItemDisclosure": true,
+                "store": "countrySmallStore"
             },
             "name": "MyList1",
-            "designerId": "f6f0f303-4315-443b-b368-a87445b82e00",
+            "designerId": "a6904e20-16ca-4051-a199-ee9fbee4b2c8",
             "cn": [
                 {
                     "type": "Ext.XTemplate",
@@ -46,26 +45,19 @@
                     "userConfig": {
                         "designer|displayName": "itemTpl",
                         "implHandler": [
-                            "<div class=\"flex1\">{code}</div>",
-                            "<div class=\"flex3\">{name}</div>",
-                            "",
-                            "<div class=\"strip left bg-{color1}\"></div>",
-                            "<div class=\"strip right bg-{color2}\"></div>",
-                            "",
-                            "<div class=\"markers-container\">",
-                            "    <div class=\"markers\">",
-                            "        <div class=\"fa fa-info-circle\"></div>",
-                            "        <div class=\"fa fa-minus-circle font-deeporange\"></div>",
+                            "<div class=\"flexbox\">",
+                            "    <div class=\"flex1 text\">",
+                            "        <div>{name}</div>",
+                            "        <div class=\"smaller-font\">Smaller font...</div>",
                             "    </div>",
-                            "</div>",
-                            "",
-                            "<div class=\"person-image\" style=\"background-image: url('resources/images/person.png');\"></div>",
-                            "",
-                            "<tpl if=\"cls\"><div class=\"{cls}\"></div></tpl>"
+                            "    <div class=\"flexbox items-center\">",
+                            "        <div class=\"badge list-badge\">{code}</div>",
+                            "    </div>",
+                            "</div>"
                         ]
                     },
                     "name": "itemTpl",
-                    "designerId": "47738893-63d3-4c1b-b789-7bf596385b66"
+                    "designerId": "2810d985-f9d7-4b84-b8dd-b82b0af556dc"
                 }
             ]
         },
@@ -90,14 +82,19 @@
             },
             "codeClass": null,
             "userConfig": {
+                "cls": [
+                    "with-disclosure",
+                    "smaller-padding"
+                ],
                 "data": null,
-                "grouped": true,
+                "grouped": false,
                 "height": "100%",
                 "layout|flex": 1,
-                "store": "countryStore"
+                "onItemDisclosure": true,
+                "store": "countrySmallStore"
             },
             "name": "MyList1",
-            "designerId": "a6904e20-16ca-4051-a199-ee9fbee4b2c8",
+            "designerId": "9e3fa08e-a1cd-4ce2-8ea6-e2dbc3239c96",
             "cn": [
                 {
                     "type": "Ext.XTemplate",
@@ -109,12 +106,21 @@
                     "userConfig": {
                         "designer|displayName": "itemTpl",
                         "implHandler": [
-                            "<div>{name} ({code})</div>",
-                            "<div class=\"smaller-font\">Some description...</div>"
+                            "<div class=\"flexbox\">",
+                            "    <div class=\"flex1 text\">",
+                            "        <div>{name} ({code})</div>",
+                            "        <div class=\"smallest-font\">Smallest font...</div>",
+                            "    </div>",
+                            "    <div class=\"markers vertical\">",
+                            "        <div class=\"fa fa-info-circle\"></div>",
+                            "        <div class=\"fa fa-plus-circle font-green\"></div>",
+                            "        <div class=\"fa fa-minus-circle font-deeporange\"></div>",
+                            "    </div>",
+                            "</div>"
                         ]
                     },
                     "name": "itemTpl",
-                    "designerId": "2810d985-f9d7-4b84-b8dd-b82b0af556dc"
+                    "designerId": "f591bfde-d065-4782-a51f-082e8202ae5b"
                 }
             ]
         },
@@ -139,15 +145,20 @@
             },
             "codeClass": null,
             "userConfig": {
+                "cls": [
+                    "smaller-padding",
+                    "with-disclosure"
+                ],
                 "data": null,
                 "grouped": false,
                 "height": "100%",
+                "itemHeight": null,
                 "layout|flex": 1,
                 "onItemDisclosure": true,
-                "store": "countryStore"
+                "store": "countrySmallStore"
             },
             "name": "MyList1",
-            "designerId": "9e3fa08e-a1cd-4ce2-8ea6-e2dbc3239c96",
+            "designerId": "f6f0f303-4315-443b-b368-a87445b82e00",
             "cn": [
                 {
                     "type": "Ext.XTemplate",
@@ -159,12 +170,27 @@
                     "userConfig": {
                         "designer|displayName": "itemTpl",
                         "implHandler": [
-                            "<div>{name} ({code})</div>",
-                            "<div class=\"smallest-font\">Some info...</div>"
+                            "<div class=\"strip left bg-{color1}\"></div>",
+                            "<div class=\"strip right bg-{color2}\"></div>",
+                            "<tpl if=\"cls\"><div class=\"{cls}\"></div></tpl>",
+                            "",
+                            "<div class=\"flexbox\">",
+                            "    <div class=\"flex1 flexbox wrap\">",
+                            "        <div class=\"flex1 text\">{code}</div>",
+                            "        <div class=\"flex3 text\">{name}</div>",
+                            "        <div class=\"smaller-font fullflex\">Some text for description...</div>",
+                            "    </div>",
+                            "    <div class=\"markers\">",
+                            "        <div class=\"fa fa-info-circle\"></div>",
+                            "        <div class=\"fa fa-plus-circle font-green\"></div>",
+                            "        <div class=\"fa fa-minus-circle font-deeporange\"></div>",
+                            "    </div>",
+                            "    <div class=\"person-image\" style=\"background-image: url('resources/images/person.png');\"></div>",
+                            "</div>"
                         ]
                     },
                     "name": "itemTpl",
-                    "designerId": "f591bfde-d065-4782-a51f-082e8202ae5b"
+                    "designerId": "47738893-63d3-4c1b-b789-7bf596385b66"
                 }
             ]
         },

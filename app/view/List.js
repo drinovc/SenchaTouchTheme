@@ -29,32 +29,53 @@ Ext.define('SenchaTouchTheme.view.List', {
                 xtype: 'list',
                 flex: 1,
                 cls: [
-                    'with-person-image',
-                    'with-markers',
-                    'flexbox'
+                    'smaller-padding',
+                    'with-disclosure'
                 ],
                 height: '100%',
                 itemTpl: [
-                    '<div class="flex1">{code}</div>',
-                    '<div class="flex3">{name}</div>',
-                    '',
-                    '<div class="strip left bg-{color1}"></div>',
-                    '<div class="strip right bg-{color2}"></div>',
-                    '',
-                    '<div class="markers-container">',
-                    '    <div class="markers">',
+                    '<div class="flexbox">',
+                    '    <div class="flex1 text">',
+                    '        <div>{name}</div>',
+                    '        <div class="smaller-font">Smaller font...</div>',
+                    '    </div>',
+                    '    <div class="flexbox items-center">',
+                    '        <div class="badge list-badge">{code}</div>',
+                    '    </div>',
+                    '</div>'
+                ],
+                store: 'countrySmallStore',
+                grouped: true,
+                onItemDisclosure: true
+            },
+            {
+                xtype: 'container',
+                width: 20
+            },
+            {
+                xtype: 'list',
+                flex: 1,
+                cls: [
+                    'with-disclosure',
+                    'smaller-padding'
+                ],
+                height: '100%',
+                itemTpl: [
+                    '<div class="flexbox">',
+                    '    <div class="flex1 text">',
+                    '        <div>{name} ({code})</div>',
+                    '        <div class="smallest-font">Smallest font...</div>',
+                    '    </div>',
+                    '    <div class="markers vertical">',
                     '        <div class="fa fa-info-circle"></div>',
+                    '        <div class="fa fa-plus-circle font-green"></div>',
                     '        <div class="fa fa-minus-circle font-deeporange"></div>',
                     '    </div>',
-                    '</div>',
-                    '',
-                    '<div class="person-image" style="background-image: url(\'resources/images/person.png\');"></div>',
-                    '',
-                    '<tpl if="cls"><div class="{cls}"></div></tpl>'
+                    '</div>'
                 ],
-                store: 'countryStore',
+                store: 'countrySmallStore',
                 grouped: false,
-                itemHeight: 68
+                onItemDisclosure: true
             },
             {
                 xtype: 'container',
@@ -63,27 +84,31 @@ Ext.define('SenchaTouchTheme.view.List', {
             {
                 xtype: 'list',
                 flex: 1,
+                cls: [
+                    'smaller-padding',
+                    'with-disclosure'
+                ],
                 height: '100%',
                 itemTpl: [
-                    '<div>{name} ({code})</div>',
-                    '<div class="smaller-font">Some description...</div>'
+                    '<div class="strip left bg-{color1}"></div>',
+                    '<div class="strip right bg-{color2}"></div>',
+                    '<tpl if="cls"><div class="{cls}"></div></tpl>',
+                    '',
+                    '<div class="flexbox">',
+                    '    <div class="flex1 flexbox wrap">',
+                    '        <div class="flex1 text">{code}</div>',
+                    '        <div class="flex3 text">{name}</div>',
+                    '        <div class="smaller-font fullflex">Some text for description...</div>',
+                    '    </div>',
+                    '    <div class="markers">',
+                    '        <div class="fa fa-info-circle"></div>',
+                    '        <div class="fa fa-plus-circle font-green"></div>',
+                    '        <div class="fa fa-minus-circle font-deeporange"></div>',
+                    '    </div>',
+                    '    <div class="person-image" style="background-image: url(\'resources/images/person.png\');"></div>',
+                    '</div>'
                 ],
-                store: 'countryStore',
-                grouped: true
-            },
-            {
-                xtype: 'container',
-                width: 20
-            },
-            {
-                xtype: 'list',
-                flex: 1,
-                height: '100%',
-                itemTpl: [
-                    '<div>{name} ({code})</div>',
-                    '<div class="smallest-font">Some info...</div>'
-                ],
-                store: 'countryStore',
+                store: 'countrySmallStore',
                 grouped: false,
                 onItemDisclosure: true
             },

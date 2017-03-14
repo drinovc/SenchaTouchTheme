@@ -37,7 +37,10 @@
                     "codeClass": null,
                     "userConfig": {
                         "label": "Name",
-                        "required": true
+                        "required": true,
+                        "value": [
+                            "value"
+                        ]
                     },
                     "name": "MyTextField",
                     "designerId": "6bacf6d1-16ba-401c-bec3-ce9bfe37f9ac"
@@ -52,7 +55,10 @@
                     "userConfig": {
                         "label": "Name (read only)",
                         "readOnly": true,
-                        "required": true
+                        "required": true,
+                        "value": [
+                            "value"
+                        ]
                     },
                     "name": "MyTextField7",
                     "designerId": "73d1a20b-fd88-4788-8e07-50aa7181fa94"
@@ -67,7 +73,10 @@
                     "userConfig": {
                         "disabled": true,
                         "label": "Name (disabled)",
-                        "required": true
+                        "required": true,
+                        "value": [
+                            "value"
+                        ]
                     },
                     "name": "MyTextField8",
                     "designerId": "7b3d6545-fbdb-4fa9-a91d-1446ab664180"
@@ -80,7 +89,10 @@
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "label": "Password"
+                        "label": "Password",
+                        "value": [
+                            "value"
+                        ]
                     },
                     "name": "MyTextField1",
                     "designerId": "5070e047-b2bb-4f85-ba25-160bd10a9566"
@@ -94,7 +106,10 @@
                     "codeClass": null,
                     "userConfig": {
                         "label": "Email",
-                        "placeHolder": "email@example.com"
+                        "placeHolder": "email@example.com",
+                        "value": [
+                            "value@email.com"
+                        ]
                     },
                     "name": "MyTextField1",
                     "designerId": "48376b75-95e9-4066-827e-e3590cd29667"
@@ -226,7 +241,10 @@
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "label": "Text Area"
+                        "label": "Text Area",
+                        "value": [
+                            "value"
+                        ]
                     },
                     "name": "MyTextArea",
                     "designerId": "07a813d7-0d9b-43b7-922d-c0eb3ebe8814"
@@ -252,7 +270,10 @@
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "label": "Number"
+                        "label": "Number",
+                        "value": [
+                            "0"
+                        ]
                     },
                     "name": "MyNumberField",
                     "designerId": "57724182-78fd-46a9-aed1-16a2b75cb283"
@@ -265,7 +286,10 @@
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "label": "Search"
+                        "label": "Search",
+                        "value": [
+                            "value"
+                        ]
                     },
                     "name": "MySearchField1",
                     "designerId": "a704b4a4-ad66-4274-9a33-aac6005b8f72"
@@ -340,6 +364,35 @@
                             },
                             "name": "MyRadioButton",
                             "designerId": "a963a352-81f5-41b9-a610-3f54782596b4"
+                        },
+                        {
+                            "type": "Ext.field.Checkbox",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "checked": true,
+                                "label": "Checkbox"
+                            },
+                            "name": "MyTextField9",
+                            "designerId": "ea808589-e3a4-4ddb-a39e-f30e8c993343"
+                        },
+                        {
+                            "type": "Ext.field.Toggle",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "label": "Toggle",
+                                "labelAlign": null,
+                                "value": 1
+                            },
+                            "name": "MyToggleField1",
+                            "designerId": "9afd3b67-9b9e-4d26-9c60-ebffc340eeb6"
                         }
                     ]
                 },

@@ -157,6 +157,7 @@
             "codeClass": null,
             "userConfig": {
                 "designer|uiInterfaceName": "neutral",
+                "layout|flex": null,
                 "ui": "neutral"
             },
             "name": "MyTabPanel",
@@ -375,6 +376,7 @@
             "userConfig": {
                 "designer|uiInterfaceName": "neutral",
                 "docked": "bottom",
+                "layout|flex": 1,
                 "ui": "neutral"
             },
             "name": "MyTabPanel",

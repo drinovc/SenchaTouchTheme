@@ -20,7 +20,13 @@
             },
             "codeClass": null,
             "userConfig": {
-                "layout|flex": 1
+                "defaults": [
+                    "{",
+                    "    margin: 10",
+                    "}"
+                ],
+                "layout|flex": 1,
+                "scrollable": "vertical"
             },
             "name": "MyFormPanel",
             "designerId": "ea82febb-6deb-4d09-8490-059961a824fd",
@@ -33,7 +39,10 @@
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "label": "From Field"
+                        "label": "From Field",
+                        "value": [
+                            "value"
+                        ]
                     },
                     "name": "MyTextField6",
                     "designerId": "4ac92f62-d31f-45c3-8ae2-9284b57e7eb3"
@@ -49,8 +58,158 @@
                         "html": "<span class=\"font-red\">red</span>  <span class=\"font-pink\">pink</span>  <span class=\"font-purple\">purple</span>  <span class=\"font-deeppurple\">deeppurple</span>  <span class=\"font-indigo\">indigo</span>  <span class=\"font-blue\">blue</span>  <span class=\"font-lightblue\">lightblue</span>  <span class=\"font-cyan\">cyan</span>  <span class=\"font-teal\">teal</span>  <span class=\"font-green\">green</span>  <span class=\"font-lightgreen\">lightgreen</span>  <span class=\"font-lime\">lime</span>  <span class=\"font-yellow\">yellow</span>  <span class=\"font-amber\">amber</span>  <span class=\"font-orange\">orange</span>  <span class=\"font-deeporange\">deeporange</span>  <span class=\"font-brown\">brown</span>  <span class=\"font-grey\">grey</span>  <span class=\"font-bluegrey\">bluegrey</span> ",
                         "padding": 10
                     },
-                    "name": "MyContainer48",
-                    "designerId": "279bf512-6e74-411a-81dc-42960c20c547"
+                    "name": "MyContainer1",
+                    "designerId": "a9dd91d9-2ec6-4784-a22f-d4058e25ed7f"
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "html": "<span class=\"badge red\">red</span> <span class=\"badge pink\">pink</span> <span class=\"badge purple\">purple</span> <span class=\"badge deeppurple\">deeppurple</span> <span class=\"badge indigo\">indigo</span> <span class=\"badge blue\">blue</span> <span class=\"badge lightblue\">lightblue</span> <span class=\"badge cyan\">cyan</span> <span class=\"badge teal\">teal</span> <span class=\"badge green\">green</span> <span class=\"badge lightgreen\">lightgreen</span> <span class=\"badge lime\">lime</span> <span class=\"badge yellow\">yellow</span> <span class=\"badge amber\">amber</span> <span class=\"badge orange\">orange</span> <span class=\"badge deeporange\">deeporange</span> <span class=\"badge brown\">brown</span> <span class=\"badge grey\">grey</span> <span class=\"badge bluegrey\">bluegrey</span>",
+                        "padding": 10
+                    },
+                    "name": "MyContainer6",
+                    "designerId": "174bfac2-1a1c-4a42-97df-e00aeb3d02cf"
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "cls": [
+                            "white-bg"
+                        ],
+                        "html": "<span class=\"font-red\">red</span>  <span class=\"font-pink\">pink</span>  <span class=\"font-purple\">purple</span>  <span class=\"font-deeppurple\">deeppurple</span>  <span class=\"font-indigo\">indigo</span>  <span class=\"font-blue\">blue</span>  <span class=\"font-lightblue\">lightblue</span>  <span class=\"font-cyan\">cyan</span>  <span class=\"font-teal\">teal</span>  <span class=\"font-green\">green</span>  <span class=\"font-lightgreen\">lightgreen</span>  <span class=\"font-lime\">lime</span>  <span class=\"font-yellow\">yellow</span>  <span class=\"font-amber\">amber</span>  <span class=\"font-orange\">orange</span>  <span class=\"font-deeporange\">deeporange</span>  <span class=\"font-brown\">brown</span>  <span class=\"font-grey\">grey</span>  <span class=\"font-bluegrey\">bluegrey</span> ",
+                        "padding": 10
+                    },
+                    "name": "MyContainer61",
+                    "designerId": "9aa147f8-0477-4e94-8e42-8a96fccf5231"
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "cls": [
+                            "white-bg"
+                        ],
+                        "html": "<span class=\"badge red\">red</span> <span class=\"badge pink\">pink</span> <span class=\"badge purple\">purple</span> <span class=\"badge deeppurple\">deeppurple</span> <span class=\"badge indigo\">indigo</span> <span class=\"badge blue\">blue</span> <span class=\"badge lightblue\">lightblue</span> <span class=\"badge cyan\">cyan</span> <span class=\"badge teal\">teal</span> <span class=\"badge green\">green</span> <span class=\"badge lightgreen\">lightgreen</span> <span class=\"badge lime\">lime</span> <span class=\"badge yellow\">yellow</span> <span class=\"badge amber\">amber</span> <span class=\"badge orange\">orange</span> <span class=\"badge deeporange\">deeporange</span> <span class=\"badge brown\">brown</span> <span class=\"badge grey\">grey</span> <span class=\"badge bluegrey\">bluegrey</span>",
+                        "padding": 10
+                    },
+                    "name": "MyContainer7",
+                    "designerId": "ea342907-e6af-4b63-bc0d-031bd5e630f8"
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "cls": [
+                            "black-bg"
+                        ],
+                        "html": "<span class=\"font-red\">red</span>  <span class=\"font-pink\">pink</span>  <span class=\"font-purple\">purple</span>  <span class=\"font-deeppurple\">deeppurple</span>  <span class=\"font-indigo\">indigo</span>  <span class=\"font-blue\">blue</span>  <span class=\"font-lightblue\">lightblue</span>  <span class=\"font-cyan\">cyan</span>  <span class=\"font-teal\">teal</span>  <span class=\"font-green\">green</span>  <span class=\"font-lightgreen\">lightgreen</span>  <span class=\"font-lime\">lime</span>  <span class=\"font-yellow\">yellow</span>  <span class=\"font-amber\">amber</span>  <span class=\"font-orange\">orange</span>  <span class=\"font-deeporange\">deeporange</span>  <span class=\"font-brown\">brown</span>  <span class=\"font-grey\">grey</span>  <span class=\"font-bluegrey\">bluegrey</span> ",
+                        "padding": 10
+                    },
+                    "name": "MyContainer60",
+                    "designerId": "b4fc0e3c-0701-4863-9e1e-7e385a577333"
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "cls": [
+                            "black-bg"
+                        ],
+                        "html": "<span class=\"badge red\">red</span> <span class=\"badge pink\">pink</span> <span class=\"badge purple\">purple</span> <span class=\"badge deeppurple\">deeppurple</span> <span class=\"badge indigo\">indigo</span> <span class=\"badge blue\">blue</span> <span class=\"badge lightblue\">lightblue</span> <span class=\"badge cyan\">cyan</span> <span class=\"badge teal\">teal</span> <span class=\"badge green\">green</span> <span class=\"badge lightgreen\">lightgreen</span> <span class=\"badge lime\">lime</span> <span class=\"badge yellow\">yellow</span> <span class=\"badge amber\">amber</span> <span class=\"badge orange\">orange</span> <span class=\"badge deeporange\">deeporange</span> <span class=\"badge brown\">brown</span> <span class=\"badge grey\">grey</span> <span class=\"badge bluegrey\">bluegrey</span>",
+                        "padding": 10
+                    },
+                    "name": "MyContainer10",
+                    "designerId": "23898001-9921-4aa2-afc2-d23d3ba1d775"
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "cls": [
+                            "base-bg"
+                        ],
+                        "html": "<span class=\"font-red\">red</span>  <span class=\"font-pink\">pink</span>  <span class=\"font-purple\">purple</span>  <span class=\"font-deeppurple\">deeppurple</span>  <span class=\"font-indigo\">indigo</span>  <span class=\"font-blue\">blue</span>  <span class=\"font-lightblue\">lightblue</span>  <span class=\"font-cyan\">cyan</span>  <span class=\"font-teal\">teal</span>  <span class=\"font-green\">green</span>  <span class=\"font-lightgreen\">lightgreen</span>  <span class=\"font-lime\">lime</span>  <span class=\"font-yellow\">yellow</span>  <span class=\"font-amber\">amber</span>  <span class=\"font-orange\">orange</span>  <span class=\"font-deeporange\">deeporange</span>  <span class=\"font-brown\">brown</span>  <span class=\"font-grey\">grey</span>  <span class=\"font-bluegrey\">bluegrey</span> ",
+                        "padding": 10
+                    },
+                    "name": "MyContainer62",
+                    "designerId": "6732e977-10cf-4f1a-9d86-eae5372ab8c9"
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "cls": [
+                            "base-bg"
+                        ],
+                        "html": "<span class=\"badge red\">red</span> <span class=\"badge pink\">pink</span> <span class=\"badge purple\">purple</span> <span class=\"badge deeppurple\">deeppurple</span> <span class=\"badge indigo\">indigo</span> <span class=\"badge blue\">blue</span> <span class=\"badge lightblue\">lightblue</span> <span class=\"badge cyan\">cyan</span> <span class=\"badge teal\">teal</span> <span class=\"badge green\">green</span> <span class=\"badge lightgreen\">lightgreen</span> <span class=\"badge lime\">lime</span> <span class=\"badge yellow\">yellow</span> <span class=\"badge amber\">amber</span> <span class=\"badge orange\">orange</span> <span class=\"badge deeporange\">deeporange</span> <span class=\"badge brown\">brown</span> <span class=\"badge grey\">grey</span> <span class=\"badge bluegrey\">bluegrey</span>",
+                        "padding": 10
+                    },
+                    "name": "MyContainer9",
+                    "designerId": "4825abd8-9142-43e5-8866-72dd4e6e3d33"
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "cls": [
+                            "active-bg"
+                        ],
+                        "html": "<span class=\"font-red\">red</span>  <span class=\"font-pink\">pink</span>  <span class=\"font-purple\">purple</span>  <span class=\"font-deeppurple\">deeppurple</span>  <span class=\"font-indigo\">indigo</span>  <span class=\"font-blue\">blue</span>  <span class=\"font-lightblue\">lightblue</span>  <span class=\"font-cyan\">cyan</span>  <span class=\"font-teal\">teal</span>  <span class=\"font-green\">green</span>  <span class=\"font-lightgreen\">lightgreen</span>  <span class=\"font-lime\">lime</span>  <span class=\"font-yellow\">yellow</span>  <span class=\"font-amber\">amber</span>  <span class=\"font-orange\">orange</span>  <span class=\"font-deeporange\">deeporange</span>  <span class=\"font-brown\">brown</span>  <span class=\"font-grey\">grey</span>  <span class=\"font-bluegrey\">bluegrey</span> ",
+                        "padding": 10
+                    },
+                    "name": "MyContainer56",
+                    "designerId": "df91a40b-4c1e-4af3-b371-76941f03b6d9"
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "cls": [
+                            "active-bg"
+                        ],
+                        "html": "<span class=\"badge red\">red</span> <span class=\"badge pink\">pink</span> <span class=\"badge purple\">purple</span> <span class=\"badge deeppurple\">deeppurple</span> <span class=\"badge indigo\">indigo</span> <span class=\"badge blue\">blue</span> <span class=\"badge lightblue\">lightblue</span> <span class=\"badge cyan\">cyan</span> <span class=\"badge teal\">teal</span> <span class=\"badge green\">green</span> <span class=\"badge lightgreen\">lightgreen</span> <span class=\"badge lime\">lime</span> <span class=\"badge yellow\">yellow</span> <span class=\"badge amber\">amber</span> <span class=\"badge orange\">orange</span> <span class=\"badge deeporange\">deeporange</span> <span class=\"badge brown\">brown</span> <span class=\"badge grey\">grey</span> <span class=\"badge bluegrey\">bluegrey</span>",
+                        "padding": 10
+                    },
+                    "name": "MyContainer11",
+                    "designerId": "77242578-4846-4bd6-bbd2-309f1ea6a9fd"
                 }
             ]
         },
@@ -75,7 +234,13 @@
             },
             "codeClass": null,
             "userConfig": {
-                "layout|flex": 1
+                "defaults": [
+                    "{",
+                    "    margin: 10",
+                    "}"
+                ],
+                "layout|flex": 1,
+                "scrollable": "vertical"
             },
             "name": "MyPanel1",
             "designerId": "4677a52b-cd50-410d-86d6-ec62911de015",
@@ -88,10 +253,27 @@
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "label": "Panel Field"
+                        "label": "Panel Field",
+                        "value": [
+                            "value"
+                        ]
                     },
                     "name": "MyTextField6",
                     "designerId": "4463d2d9-9e09-4353-9614-ea2da5f10a05"
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "html": "<span class=\"font-red\">red</span>  <span class=\"font-pink\">pink</span>  <span class=\"font-purple\">purple</span>  <span class=\"font-deeppurple\">deeppurple</span>  <span class=\"font-indigo\">indigo</span>  <span class=\"font-blue\">blue</span>  <span class=\"font-lightblue\">lightblue</span>  <span class=\"font-cyan\">cyan</span>  <span class=\"font-teal\">teal</span>  <span class=\"font-green\">green</span>  <span class=\"font-lightgreen\">lightgreen</span>  <span class=\"font-lime\">lime</span>  <span class=\"font-yellow\">yellow</span>  <span class=\"font-amber\">amber</span>  <span class=\"font-orange\">orange</span>  <span class=\"font-deeporange\">deeporange</span>  <span class=\"font-brown\">brown</span>  <span class=\"font-grey\">grey</span>  <span class=\"font-bluegrey\">bluegrey</span> ",
+                        "padding": 10
+                    },
+                    "name": "MyContainer48",
+                    "designerId": "279bf512-6e74-411a-81dc-42960c20c547"
                 },
                 {
                     "type": "Ext.Container",
@@ -106,6 +288,142 @@
                     },
                     "name": "MyContainer50",
                     "designerId": "e2a636bd-3fea-4360-bcb3-3cfabdd027e7"
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "cls": [
+                            "white-bg"
+                        ],
+                        "html": "<span class=\"font-red\">red</span>  <span class=\"font-pink\">pink</span>  <span class=\"font-purple\">purple</span>  <span class=\"font-deeppurple\">deeppurple</span>  <span class=\"font-indigo\">indigo</span>  <span class=\"font-blue\">blue</span>  <span class=\"font-lightblue\">lightblue</span>  <span class=\"font-cyan\">cyan</span>  <span class=\"font-teal\">teal</span>  <span class=\"font-green\">green</span>  <span class=\"font-lightgreen\">lightgreen</span>  <span class=\"font-lime\">lime</span>  <span class=\"font-yellow\">yellow</span>  <span class=\"font-amber\">amber</span>  <span class=\"font-orange\">orange</span>  <span class=\"font-deeporange\">deeporange</span>  <span class=\"font-brown\">brown</span>  <span class=\"font-grey\">grey</span>  <span class=\"font-bluegrey\">bluegrey</span> ",
+                        "padding": 10
+                    },
+                    "name": "MyContainer2",
+                    "designerId": "d2c69a27-2173-4461-953e-efb8ba553b24"
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "cls": [
+                            "white-bg"
+                        ],
+                        "html": "<span class=\"badge red\">red</span> <span class=\"badge pink\">pink</span> <span class=\"badge purple\">purple</span> <span class=\"badge deeppurple\">deeppurple</span> <span class=\"badge indigo\">indigo</span> <span class=\"badge blue\">blue</span> <span class=\"badge lightblue\">lightblue</span> <span class=\"badge cyan\">cyan</span> <span class=\"badge teal\">teal</span> <span class=\"badge green\">green</span> <span class=\"badge lightgreen\">lightgreen</span> <span class=\"badge lime\">lime</span> <span class=\"badge yellow\">yellow</span> <span class=\"badge amber\">amber</span> <span class=\"badge orange\">orange</span> <span class=\"badge deeporange\">deeporange</span> <span class=\"badge brown\">brown</span> <span class=\"badge grey\">grey</span> <span class=\"badge bluegrey\">bluegrey</span>",
+                        "padding": 10
+                    },
+                    "name": "MyContainer59",
+                    "designerId": "f5420f27-2354-4535-900c-87d3e9e3006d"
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "cls": [
+                            "black-bg"
+                        ],
+                        "html": "<span class=\"font-red\">red</span>  <span class=\"font-pink\">pink</span>  <span class=\"font-purple\">purple</span>  <span class=\"font-deeppurple\">deeppurple</span>  <span class=\"font-indigo\">indigo</span>  <span class=\"font-blue\">blue</span>  <span class=\"font-lightblue\">lightblue</span>  <span class=\"font-cyan\">cyan</span>  <span class=\"font-teal\">teal</span>  <span class=\"font-green\">green</span>  <span class=\"font-lightgreen\">lightgreen</span>  <span class=\"font-lime\">lime</span>  <span class=\"font-yellow\">yellow</span>  <span class=\"font-amber\">amber</span>  <span class=\"font-orange\">orange</span>  <span class=\"font-deeporange\">deeporange</span>  <span class=\"font-brown\">brown</span>  <span class=\"font-grey\">grey</span>  <span class=\"font-bluegrey\">bluegrey</span> ",
+                        "padding": 10
+                    },
+                    "name": "MyContainer3",
+                    "designerId": "ce97fd37-6dd8-4bbd-bb34-bb0f463454b7"
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "cls": [
+                            "black-bg"
+                        ],
+                        "html": "<span class=\"badge red\">red</span> <span class=\"badge pink\">pink</span> <span class=\"badge purple\">purple</span> <span class=\"badge deeppurple\">deeppurple</span> <span class=\"badge indigo\">indigo</span> <span class=\"badge blue\">blue</span> <span class=\"badge lightblue\">lightblue</span> <span class=\"badge cyan\">cyan</span> <span class=\"badge teal\">teal</span> <span class=\"badge green\">green</span> <span class=\"badge lightgreen\">lightgreen</span> <span class=\"badge lime\">lime</span> <span class=\"badge yellow\">yellow</span> <span class=\"badge amber\">amber</span> <span class=\"badge orange\">orange</span> <span class=\"badge deeporange\">deeporange</span> <span class=\"badge brown\">brown</span> <span class=\"badge grey\">grey</span> <span class=\"badge bluegrey\">bluegrey</span>",
+                        "padding": 10
+                    },
+                    "name": "MyContainer57",
+                    "designerId": "83b52ac2-59f6-4b7d-8033-2d61ff7061fd"
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "cls": [
+                            "base-bg"
+                        ],
+                        "html": "<span class=\"font-red\">red</span>  <span class=\"font-pink\">pink</span>  <span class=\"font-purple\">purple</span>  <span class=\"font-deeppurple\">deeppurple</span>  <span class=\"font-indigo\">indigo</span>  <span class=\"font-blue\">blue</span>  <span class=\"font-lightblue\">lightblue</span>  <span class=\"font-cyan\">cyan</span>  <span class=\"font-teal\">teal</span>  <span class=\"font-green\">green</span>  <span class=\"font-lightgreen\">lightgreen</span>  <span class=\"font-lime\">lime</span>  <span class=\"font-yellow\">yellow</span>  <span class=\"font-amber\">amber</span>  <span class=\"font-orange\">orange</span>  <span class=\"font-deeporange\">deeporange</span>  <span class=\"font-brown\">brown</span>  <span class=\"font-grey\">grey</span>  <span class=\"font-bluegrey\">bluegrey</span> ",
+                        "padding": 10
+                    },
+                    "name": "MyContainer4",
+                    "designerId": "863949f1-9e98-4323-af15-d23d6d581b20"
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "cls": [
+                            "base-bg"
+                        ],
+                        "html": "<span class=\"badge red\">red</span> <span class=\"badge pink\">pink</span> <span class=\"badge purple\">purple</span> <span class=\"badge deeppurple\">deeppurple</span> <span class=\"badge indigo\">indigo</span> <span class=\"badge blue\">blue</span> <span class=\"badge lightblue\">lightblue</span> <span class=\"badge cyan\">cyan</span> <span class=\"badge teal\">teal</span> <span class=\"badge green\">green</span> <span class=\"badge lightgreen\">lightgreen</span> <span class=\"badge lime\">lime</span> <span class=\"badge yellow\">yellow</span> <span class=\"badge amber\">amber</span> <span class=\"badge orange\">orange</span> <span class=\"badge deeporange\">deeporange</span> <span class=\"badge brown\">brown</span> <span class=\"badge grey\">grey</span> <span class=\"badge bluegrey\">bluegrey</span>",
+                        "padding": 10
+                    },
+                    "name": "MyContainer58",
+                    "designerId": "54cd7bfa-2c60-4b15-8bf0-b40741852273"
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "cls": [
+                            "active-bg"
+                        ],
+                        "html": "<span class=\"font-red\">red</span>  <span class=\"font-pink\">pink</span>  <span class=\"font-purple\">purple</span>  <span class=\"font-deeppurple\">deeppurple</span>  <span class=\"font-indigo\">indigo</span>  <span class=\"font-blue\">blue</span>  <span class=\"font-lightblue\">lightblue</span>  <span class=\"font-cyan\">cyan</span>  <span class=\"font-teal\">teal</span>  <span class=\"font-green\">green</span>  <span class=\"font-lightgreen\">lightgreen</span>  <span class=\"font-lime\">lime</span>  <span class=\"font-yellow\">yellow</span>  <span class=\"font-amber\">amber</span>  <span class=\"font-orange\">orange</span>  <span class=\"font-deeporange\">deeporange</span>  <span class=\"font-brown\">brown</span>  <span class=\"font-grey\">grey</span>  <span class=\"font-bluegrey\">bluegrey</span> ",
+                        "padding": 10
+                    },
+                    "name": "MyContainer5",
+                    "designerId": "ad8fd713-678b-401b-87be-5db68b04267d"
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "cls": [
+                            "active-bg"
+                        ],
+                        "html": "<span class=\"badge red\">red</span> <span class=\"badge pink\">pink</span> <span class=\"badge purple\">purple</span> <span class=\"badge deeppurple\">deeppurple</span> <span class=\"badge indigo\">indigo</span> <span class=\"badge blue\">blue</span> <span class=\"badge lightblue\">lightblue</span> <span class=\"badge cyan\">cyan</span> <span class=\"badge teal\">teal</span> <span class=\"badge green\">green</span> <span class=\"badge lightgreen\">lightgreen</span> <span class=\"badge lime\">lime</span> <span class=\"badge yellow\">yellow</span> <span class=\"badge amber\">amber</span> <span class=\"badge orange\">orange</span> <span class=\"badge deeporange\">deeporange</span> <span class=\"badge brown\">brown</span> <span class=\"badge grey\">grey</span> <span class=\"badge bluegrey\">bluegrey</span>",
+                        "padding": 10
+                    },
+                    "name": "MyContainer63",
+                    "designerId": "2a4e75ef-fe47-417b-813c-f3d5287edfdd"
                 }
             ]
         }

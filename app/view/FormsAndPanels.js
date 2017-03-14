@@ -27,14 +27,72 @@ Ext.define('SenchaTouchTheme.view.FormsAndPanels', {
             {
                 xtype: 'formpanel',
                 flex: 1,
+                defaults: {
+                    margin: 10
+                },
+                scrollable: 'vertical',
                 items: [
                     {
                         xtype: 'textfield',
-                        label: 'From Field'
+                        label: 'From Field',
+                        value: 'value'
                     },
                     {
                         xtype: 'container',
                         html: '<span class="font-red">red</span>  <span class="font-pink">pink</span>  <span class="font-purple">purple</span>  <span class="font-deeppurple">deeppurple</span>  <span class="font-indigo">indigo</span>  <span class="font-blue">blue</span>  <span class="font-lightblue">lightblue</span>  <span class="font-cyan">cyan</span>  <span class="font-teal">teal</span>  <span class="font-green">green</span>  <span class="font-lightgreen">lightgreen</span>  <span class="font-lime">lime</span>  <span class="font-yellow">yellow</span>  <span class="font-amber">amber</span>  <span class="font-orange">orange</span>  <span class="font-deeporange">deeporange</span>  <span class="font-brown">brown</span>  <span class="font-grey">grey</span>  <span class="font-bluegrey">bluegrey</span> ',
+                        padding: 10
+                    },
+                    {
+                        xtype: 'container',
+                        html: '<span class="badge red">red</span> <span class="badge pink">pink</span> <span class="badge purple">purple</span> <span class="badge deeppurple">deeppurple</span> <span class="badge indigo">indigo</span> <span class="badge blue">blue</span> <span class="badge lightblue">lightblue</span> <span class="badge cyan">cyan</span> <span class="badge teal">teal</span> <span class="badge green">green</span> <span class="badge lightgreen">lightgreen</span> <span class="badge lime">lime</span> <span class="badge yellow">yellow</span> <span class="badge amber">amber</span> <span class="badge orange">orange</span> <span class="badge deeporange">deeporange</span> <span class="badge brown">brown</span> <span class="badge grey">grey</span> <span class="badge bluegrey">bluegrey</span>',
+                        padding: 10
+                    },
+                    {
+                        xtype: 'container',
+                        cls: 'white-bg',
+                        html: '<span class="font-red">red</span>  <span class="font-pink">pink</span>  <span class="font-purple">purple</span>  <span class="font-deeppurple">deeppurple</span>  <span class="font-indigo">indigo</span>  <span class="font-blue">blue</span>  <span class="font-lightblue">lightblue</span>  <span class="font-cyan">cyan</span>  <span class="font-teal">teal</span>  <span class="font-green">green</span>  <span class="font-lightgreen">lightgreen</span>  <span class="font-lime">lime</span>  <span class="font-yellow">yellow</span>  <span class="font-amber">amber</span>  <span class="font-orange">orange</span>  <span class="font-deeporange">deeporange</span>  <span class="font-brown">brown</span>  <span class="font-grey">grey</span>  <span class="font-bluegrey">bluegrey</span> ',
+                        padding: 10
+                    },
+                    {
+                        xtype: 'container',
+                        cls: 'white-bg',
+                        html: '<span class="badge red">red</span> <span class="badge pink">pink</span> <span class="badge purple">purple</span> <span class="badge deeppurple">deeppurple</span> <span class="badge indigo">indigo</span> <span class="badge blue">blue</span> <span class="badge lightblue">lightblue</span> <span class="badge cyan">cyan</span> <span class="badge teal">teal</span> <span class="badge green">green</span> <span class="badge lightgreen">lightgreen</span> <span class="badge lime">lime</span> <span class="badge yellow">yellow</span> <span class="badge amber">amber</span> <span class="badge orange">orange</span> <span class="badge deeporange">deeporange</span> <span class="badge brown">brown</span> <span class="badge grey">grey</span> <span class="badge bluegrey">bluegrey</span>',
+                        padding: 10
+                    },
+                    {
+                        xtype: 'container',
+                        cls: 'black-bg',
+                        html: '<span class="font-red">red</span>  <span class="font-pink">pink</span>  <span class="font-purple">purple</span>  <span class="font-deeppurple">deeppurple</span>  <span class="font-indigo">indigo</span>  <span class="font-blue">blue</span>  <span class="font-lightblue">lightblue</span>  <span class="font-cyan">cyan</span>  <span class="font-teal">teal</span>  <span class="font-green">green</span>  <span class="font-lightgreen">lightgreen</span>  <span class="font-lime">lime</span>  <span class="font-yellow">yellow</span>  <span class="font-amber">amber</span>  <span class="font-orange">orange</span>  <span class="font-deeporange">deeporange</span>  <span class="font-brown">brown</span>  <span class="font-grey">grey</span>  <span class="font-bluegrey">bluegrey</span> ',
+                        padding: 10
+                    },
+                    {
+                        xtype: 'container',
+                        cls: 'black-bg',
+                        html: '<span class="badge red">red</span> <span class="badge pink">pink</span> <span class="badge purple">purple</span> <span class="badge deeppurple">deeppurple</span> <span class="badge indigo">indigo</span> <span class="badge blue">blue</span> <span class="badge lightblue">lightblue</span> <span class="badge cyan">cyan</span> <span class="badge teal">teal</span> <span class="badge green">green</span> <span class="badge lightgreen">lightgreen</span> <span class="badge lime">lime</span> <span class="badge yellow">yellow</span> <span class="badge amber">amber</span> <span class="badge orange">orange</span> <span class="badge deeporange">deeporange</span> <span class="badge brown">brown</span> <span class="badge grey">grey</span> <span class="badge bluegrey">bluegrey</span>',
+                        padding: 10
+                    },
+                    {
+                        xtype: 'container',
+                        cls: 'base-bg',
+                        html: '<span class="font-red">red</span>  <span class="font-pink">pink</span>  <span class="font-purple">purple</span>  <span class="font-deeppurple">deeppurple</span>  <span class="font-indigo">indigo</span>  <span class="font-blue">blue</span>  <span class="font-lightblue">lightblue</span>  <span class="font-cyan">cyan</span>  <span class="font-teal">teal</span>  <span class="font-green">green</span>  <span class="font-lightgreen">lightgreen</span>  <span class="font-lime">lime</span>  <span class="font-yellow">yellow</span>  <span class="font-amber">amber</span>  <span class="font-orange">orange</span>  <span class="font-deeporange">deeporange</span>  <span class="font-brown">brown</span>  <span class="font-grey">grey</span>  <span class="font-bluegrey">bluegrey</span> ',
+                        padding: 10
+                    },
+                    {
+                        xtype: 'container',
+                        cls: 'base-bg',
+                        html: '<span class="badge red">red</span> <span class="badge pink">pink</span> <span class="badge purple">purple</span> <span class="badge deeppurple">deeppurple</span> <span class="badge indigo">indigo</span> <span class="badge blue">blue</span> <span class="badge lightblue">lightblue</span> <span class="badge cyan">cyan</span> <span class="badge teal">teal</span> <span class="badge green">green</span> <span class="badge lightgreen">lightgreen</span> <span class="badge lime">lime</span> <span class="badge yellow">yellow</span> <span class="badge amber">amber</span> <span class="badge orange">orange</span> <span class="badge deeporange">deeporange</span> <span class="badge brown">brown</span> <span class="badge grey">grey</span> <span class="badge bluegrey">bluegrey</span>',
+                        padding: 10
+                    },
+                    {
+                        xtype: 'container',
+                        cls: 'active-bg',
+                        html: '<span class="font-red">red</span>  <span class="font-pink">pink</span>  <span class="font-purple">purple</span>  <span class="font-deeppurple">deeppurple</span>  <span class="font-indigo">indigo</span>  <span class="font-blue">blue</span>  <span class="font-lightblue">lightblue</span>  <span class="font-cyan">cyan</span>  <span class="font-teal">teal</span>  <span class="font-green">green</span>  <span class="font-lightgreen">lightgreen</span>  <span class="font-lime">lime</span>  <span class="font-yellow">yellow</span>  <span class="font-amber">amber</span>  <span class="font-orange">orange</span>  <span class="font-deeporange">deeporange</span>  <span class="font-brown">brown</span>  <span class="font-grey">grey</span>  <span class="font-bluegrey">bluegrey</span> ',
+                        padding: 10
+                    },
+                    {
+                        xtype: 'container',
+                        cls: 'active-bg',
+                        html: '<span class="badge red">red</span> <span class="badge pink">pink</span> <span class="badge purple">purple</span> <span class="badge deeppurple">deeppurple</span> <span class="badge indigo">indigo</span> <span class="badge blue">blue</span> <span class="badge lightblue">lightblue</span> <span class="badge cyan">cyan</span> <span class="badge teal">teal</span> <span class="badge green">green</span> <span class="badge lightgreen">lightgreen</span> <span class="badge lime">lime</span> <span class="badge yellow">yellow</span> <span class="badge amber">amber</span> <span class="badge orange">orange</span> <span class="badge deeporange">deeporange</span> <span class="badge brown">brown</span> <span class="badge grey">grey</span> <span class="badge bluegrey">bluegrey</span>',
                         padding: 10
                     }
                 ]
@@ -46,13 +104,71 @@ Ext.define('SenchaTouchTheme.view.FormsAndPanels', {
             {
                 xtype: 'panel',
                 flex: 1,
+                defaults: {
+                    margin: 10
+                },
+                scrollable: 'vertical',
                 items: [
                     {
                         xtype: 'textfield',
-                        label: 'Panel Field'
+                        label: 'Panel Field',
+                        value: 'value'
                     },
                     {
                         xtype: 'container',
+                        html: '<span class="font-red">red</span>  <span class="font-pink">pink</span>  <span class="font-purple">purple</span>  <span class="font-deeppurple">deeppurple</span>  <span class="font-indigo">indigo</span>  <span class="font-blue">blue</span>  <span class="font-lightblue">lightblue</span>  <span class="font-cyan">cyan</span>  <span class="font-teal">teal</span>  <span class="font-green">green</span>  <span class="font-lightgreen">lightgreen</span>  <span class="font-lime">lime</span>  <span class="font-yellow">yellow</span>  <span class="font-amber">amber</span>  <span class="font-orange">orange</span>  <span class="font-deeporange">deeporange</span>  <span class="font-brown">brown</span>  <span class="font-grey">grey</span>  <span class="font-bluegrey">bluegrey</span> ',
+                        padding: 10
+                    },
+                    {
+                        xtype: 'container',
+                        html: '<span class="badge red">red</span> <span class="badge pink">pink</span> <span class="badge purple">purple</span> <span class="badge deeppurple">deeppurple</span> <span class="badge indigo">indigo</span> <span class="badge blue">blue</span> <span class="badge lightblue">lightblue</span> <span class="badge cyan">cyan</span> <span class="badge teal">teal</span> <span class="badge green">green</span> <span class="badge lightgreen">lightgreen</span> <span class="badge lime">lime</span> <span class="badge yellow">yellow</span> <span class="badge amber">amber</span> <span class="badge orange">orange</span> <span class="badge deeporange">deeporange</span> <span class="badge brown">brown</span> <span class="badge grey">grey</span> <span class="badge bluegrey">bluegrey</span>',
+                        padding: 10
+                    },
+                    {
+                        xtype: 'container',
+                        cls: 'white-bg',
+                        html: '<span class="font-red">red</span>  <span class="font-pink">pink</span>  <span class="font-purple">purple</span>  <span class="font-deeppurple">deeppurple</span>  <span class="font-indigo">indigo</span>  <span class="font-blue">blue</span>  <span class="font-lightblue">lightblue</span>  <span class="font-cyan">cyan</span>  <span class="font-teal">teal</span>  <span class="font-green">green</span>  <span class="font-lightgreen">lightgreen</span>  <span class="font-lime">lime</span>  <span class="font-yellow">yellow</span>  <span class="font-amber">amber</span>  <span class="font-orange">orange</span>  <span class="font-deeporange">deeporange</span>  <span class="font-brown">brown</span>  <span class="font-grey">grey</span>  <span class="font-bluegrey">bluegrey</span> ',
+                        padding: 10
+                    },
+                    {
+                        xtype: 'container',
+                        cls: 'white-bg',
+                        html: '<span class="badge red">red</span> <span class="badge pink">pink</span> <span class="badge purple">purple</span> <span class="badge deeppurple">deeppurple</span> <span class="badge indigo">indigo</span> <span class="badge blue">blue</span> <span class="badge lightblue">lightblue</span> <span class="badge cyan">cyan</span> <span class="badge teal">teal</span> <span class="badge green">green</span> <span class="badge lightgreen">lightgreen</span> <span class="badge lime">lime</span> <span class="badge yellow">yellow</span> <span class="badge amber">amber</span> <span class="badge orange">orange</span> <span class="badge deeporange">deeporange</span> <span class="badge brown">brown</span> <span class="badge grey">grey</span> <span class="badge bluegrey">bluegrey</span>',
+                        padding: 10
+                    },
+                    {
+                        xtype: 'container',
+                        cls: 'black-bg',
+                        html: '<span class="font-red">red</span>  <span class="font-pink">pink</span>  <span class="font-purple">purple</span>  <span class="font-deeppurple">deeppurple</span>  <span class="font-indigo">indigo</span>  <span class="font-blue">blue</span>  <span class="font-lightblue">lightblue</span>  <span class="font-cyan">cyan</span>  <span class="font-teal">teal</span>  <span class="font-green">green</span>  <span class="font-lightgreen">lightgreen</span>  <span class="font-lime">lime</span>  <span class="font-yellow">yellow</span>  <span class="font-amber">amber</span>  <span class="font-orange">orange</span>  <span class="font-deeporange">deeporange</span>  <span class="font-brown">brown</span>  <span class="font-grey">grey</span>  <span class="font-bluegrey">bluegrey</span> ',
+                        padding: 10
+                    },
+                    {
+                        xtype: 'container',
+                        cls: 'black-bg',
+                        html: '<span class="badge red">red</span> <span class="badge pink">pink</span> <span class="badge purple">purple</span> <span class="badge deeppurple">deeppurple</span> <span class="badge indigo">indigo</span> <span class="badge blue">blue</span> <span class="badge lightblue">lightblue</span> <span class="badge cyan">cyan</span> <span class="badge teal">teal</span> <span class="badge green">green</span> <span class="badge lightgreen">lightgreen</span> <span class="badge lime">lime</span> <span class="badge yellow">yellow</span> <span class="badge amber">amber</span> <span class="badge orange">orange</span> <span class="badge deeporange">deeporange</span> <span class="badge brown">brown</span> <span class="badge grey">grey</span> <span class="badge bluegrey">bluegrey</span>',
+                        padding: 10
+                    },
+                    {
+                        xtype: 'container',
+                        cls: 'base-bg',
+                        html: '<span class="font-red">red</span>  <span class="font-pink">pink</span>  <span class="font-purple">purple</span>  <span class="font-deeppurple">deeppurple</span>  <span class="font-indigo">indigo</span>  <span class="font-blue">blue</span>  <span class="font-lightblue">lightblue</span>  <span class="font-cyan">cyan</span>  <span class="font-teal">teal</span>  <span class="font-green">green</span>  <span class="font-lightgreen">lightgreen</span>  <span class="font-lime">lime</span>  <span class="font-yellow">yellow</span>  <span class="font-amber">amber</span>  <span class="font-orange">orange</span>  <span class="font-deeporange">deeporange</span>  <span class="font-brown">brown</span>  <span class="font-grey">grey</span>  <span class="font-bluegrey">bluegrey</span> ',
+                        padding: 10
+                    },
+                    {
+                        xtype: 'container',
+                        cls: 'base-bg',
+                        html: '<span class="badge red">red</span> <span class="badge pink">pink</span> <span class="badge purple">purple</span> <span class="badge deeppurple">deeppurple</span> <span class="badge indigo">indigo</span> <span class="badge blue">blue</span> <span class="badge lightblue">lightblue</span> <span class="badge cyan">cyan</span> <span class="badge teal">teal</span> <span class="badge green">green</span> <span class="badge lightgreen">lightgreen</span> <span class="badge lime">lime</span> <span class="badge yellow">yellow</span> <span class="badge amber">amber</span> <span class="badge orange">orange</span> <span class="badge deeporange">deeporange</span> <span class="badge brown">brown</span> <span class="badge grey">grey</span> <span class="badge bluegrey">bluegrey</span>',
+                        padding: 10
+                    },
+                    {
+                        xtype: 'container',
+                        cls: 'active-bg',
+                        html: '<span class="font-red">red</span>  <span class="font-pink">pink</span>  <span class="font-purple">purple</span>  <span class="font-deeppurple">deeppurple</span>  <span class="font-indigo">indigo</span>  <span class="font-blue">blue</span>  <span class="font-lightblue">lightblue</span>  <span class="font-cyan">cyan</span>  <span class="font-teal">teal</span>  <span class="font-green">green</span>  <span class="font-lightgreen">lightgreen</span>  <span class="font-lime">lime</span>  <span class="font-yellow">yellow</span>  <span class="font-amber">amber</span>  <span class="font-orange">orange</span>  <span class="font-deeporange">deeporange</span>  <span class="font-brown">brown</span>  <span class="font-grey">grey</span>  <span class="font-bluegrey">bluegrey</span> ',
+                        padding: 10
+                    },
+                    {
+                        xtype: 'container',
+                        cls: 'active-bg',
                         html: '<span class="badge red">red</span> <span class="badge pink">pink</span> <span class="badge purple">purple</span> <span class="badge deeppurple">deeppurple</span> <span class="badge indigo">indigo</span> <span class="badge blue">blue</span> <span class="badge lightblue">lightblue</span> <span class="badge cyan">cyan</span> <span class="badge teal">teal</span> <span class="badge green">green</span> <span class="badge lightgreen">lightgreen</span> <span class="badge lime">lime</span> <span class="badge yellow">yellow</span> <span class="badge amber">amber</span> <span class="badge orange">orange</span> <span class="badge deeporange">deeporange</span> <span class="badge brown">brown</span> <span class="badge grey">grey</span> <span class="badge bluegrey">bluegrey</span>',
                         padding: 10
                     }

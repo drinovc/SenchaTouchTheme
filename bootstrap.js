@@ -696,6 +696,7 @@ Ext.ClassManager.addNameAlternateMappings({
     "Ext.viewport.WP"
   ],
   "SenchaTouchTheme.controller.MainView": [],
+  "SenchaTouchTheme.store.countrySmallStore": [],
   "SenchaTouchTheme.store.countryStore": [],
   "SenchaTouchTheme.store.emptyStore": [],
   "SenchaTouchTheme.view.Buttons": [],
@@ -1502,6 +1503,7 @@ Ext.ClassManager.addNameAliasMappings({
   "Ext.viewport.Viewport": [],
   "Ext.viewport.WindowsPhone": [],
   "SenchaTouchTheme.controller.MainView": [],
+  "SenchaTouchTheme.store.countrySmallStore": [],
   "SenchaTouchTheme.store.countryStore": [],
   "SenchaTouchTheme.store.emptyStore": [],
   "SenchaTouchTheme.view.Buttons": [],

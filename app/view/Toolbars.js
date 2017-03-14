@@ -36,10 +36,12 @@ Ext.define('SenchaTouchTheme.view.Toolbars', {
                 items: [
                     {
                         xtype: 'searchfield',
+                        value: 'value',
                         placeHolder: 'search'
                     },
                     {
                         xtype: 'textfield',
+                        value: 'value',
                         placeHolder: 'text'
                     },
                     {

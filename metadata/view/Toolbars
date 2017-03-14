@@ -35,7 +35,10 @@
                     "codeClass": null,
                     "userConfig": {
                         "label": null,
-                        "placeHolder": "search"
+                        "placeHolder": "search",
+                        "value": [
+                            "value"
+                        ]
                     },
                     "name": "MySearchField",
                     "designerId": "d80e669d-331a-4952-8e5c-a3f0160fd442"
@@ -49,7 +52,10 @@
                     "codeClass": null,
                     "userConfig": {
                         "label": null,
-                        "placeHolder": "text"
+                        "placeHolder": "text",
+                        "value": [
+                            "value"
+                        ]
                     },
                     "name": "MyTextField4",
                     "designerId": "9aece4d2-9943-4383-875d-e77e02d06a9d"

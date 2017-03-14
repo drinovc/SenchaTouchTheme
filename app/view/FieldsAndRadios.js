@@ -47,27 +47,32 @@ Ext.define('SenchaTouchTheme.view.FieldsAndRadios', {
                     {
                         xtype: 'textfield',
                         label: 'Name',
-                        required: true
+                        required: true,
+                        value: 'value'
                     },
                     {
                         xtype: 'textfield',
                         label: 'Name (read only)',
                         required: true,
+                        value: 'value',
                         readOnly: true
                     },
                     {
                         xtype: 'textfield',
                         disabled: true,
                         label: 'Name (disabled)',
-                        required: true
+                        required: true,
+                        value: 'value'
                     },
                     {
                         xtype: 'passwordfield',
-                        label: 'Password'
+                        label: 'Password',
+                        value: 'value'
                     },
                     {
                         xtype: 'emailfield',
                         label: 'Email',
+                        value: 'value@email.com',
                         placeHolder: 'email@example.com'
                     },
                     {
@@ -115,7 +120,8 @@ Ext.define('SenchaTouchTheme.view.FieldsAndRadios', {
                     },
                     {
                         xtype: 'textareafield',
-                        label: 'Text Area'
+                        label: 'Text Area',
+                        value: 'value'
                     },
                     {
                         xtype: 'filefield',
@@ -123,11 +129,13 @@ Ext.define('SenchaTouchTheme.view.FieldsAndRadios', {
                     },
                     {
                         xtype: 'numberfield',
-                        label: 'Number'
+                        label: 'Number',
+                        value: 0
                     },
                     {
                         xtype: 'searchfield',
-                        label: 'Search'
+                        label: 'Search',
+                        value: 'value'
                     }
                 ]
             },
@@ -154,6 +162,16 @@ Ext.define('SenchaTouchTheme.view.FieldsAndRadios', {
                                 xtype: 'radiofield',
                                 label: 'Option 3',
                                 name: 'options'
+                            },
+                            {
+                                xtype: 'checkboxfield',
+                                label: 'Checkbox',
+                                checked: true
+                            },
+                            {
+                                xtype: 'togglefield',
+                                label: 'Toggle',
+                                value: 1
                             }
                         ]
                     },

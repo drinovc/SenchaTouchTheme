@@ -29,7 +29,8 @@ Ext.application({
     ],
     stores: [
         'countryStore',
-        'emptyStore'
+        'emptyStore',
+        'countrySmallStore'
     ],
     views: [
         'MainView',

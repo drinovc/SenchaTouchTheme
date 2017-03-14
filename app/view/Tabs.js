@@ -153,6 +153,7 @@ Ext.define('SenchaTouchTheme.view.Tabs', {
             },
             {
                 xtype: 'tabpanel',
+                flex: 1,
                 docked: 'bottom',
                 ui: 'neutral',
                 items: [
