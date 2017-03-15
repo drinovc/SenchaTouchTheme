@@ -35,6 +35,9 @@
                     "codeClass": null,
                     "userConfig": {
                         "clearIcon": false,
+                        "cls": [
+                            "selected"
+                        ],
                         "label": "User",
                         "labelWidth": null,
                         "width": null

@@ -29,6 +29,8 @@ Ext.define('SenchaTouchTheme.view.FieldsAndRadios', {
         'Ext.field.Search',
         'Ext.field.File',
         'Ext.field.TextArea',
+        'Ext.Toolbar',
+        'Ext.SegmentedButton',
         'Ext.field.Radio',
         'Ext.field.Toggle'
     ],
@@ -185,6 +187,34 @@ Ext.define('SenchaTouchTheme.view.FieldsAndRadios', {
                         label: 'Text Area (disabled)',
                         value: 'value',
                         readOnly: true
+                    },
+                    {
+                        xtype: 'toolbar',
+                        docked: 'top',
+                        items: [
+                            {
+                                xtype: 'segmentedbutton',
+                                itemId: 'btnsFieldsSize',
+                                items: [
+                                    {
+                                        xtype: 'button',
+                                        pressed: true,
+                                        itemId: 'mybutton',
+                                        text: 'Normal'
+                                    },
+                                    {
+                                        xtype: 'button',
+                                        itemId: 'mybutton1',
+                                        text: 'Smaller'
+                                    },
+                                    {
+                                        xtype: 'button',
+                                        itemId: 'mybutton2',
+                                        text: 'Smallest'
+                                    }
+                                ]
+                            }
+                        ]
                     }
                 ]
             },
@@ -281,7 +311,36 @@ Ext.define('SenchaTouchTheme.view.FieldsAndRadios', {
                     }
                 ]
             }
+        ],
+        listeners: [
+            {
+                fn: 'onMybuttonTap',
+                event: 'tap',
+                delegate: '#mybutton'
+            },
+            {
+                fn: 'onMybutton1Tap',
+                event: 'tap',
+                delegate: '#mybutton1'
+            },
+            {
+                fn: 'onMybutton2Tap',
+                event: 'tap',
+                delegate: '#mybutton2'
+            }
         ]
+    },
+
+    onMybuttonTap: function(button, e, eOpts) {
+        button.up('fieldset').setCls('normal-font');
+    },
+
+    onMybutton1Tap: function(button, e, eOpts) {
+        button.up('fieldset').setCls('smaller-font');
+    },
+
+    onMybutton2Tap: function(button, e, eOpts) {
+        button.up('fieldset').setCls('smallest-font');
     }
 
 });

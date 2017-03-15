@@ -47,8 +47,8 @@ $md-shadow-floating: 0 0.1em 0.5em rgba(0,0,0,0.4);
 
 /********** THEME SETTINGS **********/
 
-$my-theme: 'light';
-$my-fields-theme: 'light';
+$my-theme: 'dark';
+$my-fields-theme: 'dark';
 
 /* LIGHT THEME */
 $my-base-color: $white;
@@ -840,7 +840,7 @@ $font-files: url('../font-awesome/fonts/fontawesome-webfont.woff') format("woff"
             right: 0;
             bottom: 0;
             text-align: center;
-            line-height: 36px;
+            line-height: 2em;
             color: black;
         }
     }
@@ -904,16 +904,16 @@ $font-files: url('../font-awesome/fonts/fontawesome-webfont.woff') format("woff"
     flex: 0 0 100%;
 }
 .border-top {
-    border-right: 1px solid $my-border-color;
+    border-top: 1px solid $my-border-color;
 }
 .border-right {
     border-right: 1px solid $my-border-color;
 }
 .border-bottom {
-    border-right: 1px solid $my-border-color;
+    border-bottom: 1px solid $my-border-color;
 }
 .border-left {
-    border-right: 1px solid $my-border-color;
+    border-left: 1px solid $my-border-color;
 }
 .border {
     border: 1px solid $my-border-color;
@@ -956,6 +956,17 @@ $font-files: url('../font-awesome/fonts/fontawesome-webfont.woff') format("woff"
         }
     }
 }
+
+.selected {
+    &.x-field{
+        input {
+            background-color: rgba(3, 169, 244, 0.4);
+        }
+        .x-form-label {
+            background-color: rgba(3, 169, 244, 0.5);
+        }
+    }
+}
 .flexbox-list.x-list {
     .x-innerhtml {
         @include flexbox();
@@ -970,7 +981,6 @@ $font-files: url('../font-awesome/fonts/fontawesome-webfont.woff') format("woff"
     font-weight: bold;
 }
 
-$markers-right: 15px;
 $marker-size: 20px;
 .markers {
     @include flexbox();
@@ -1004,7 +1014,6 @@ $marker-size: 20px;
 }
 
 $person-image-width: 58px;
-$person-image-right: 15px;
 .person-image {
     @include flexbox();
     align-items: center;
@@ -1014,13 +1023,12 @@ $person-image-right: 15px;
         min-height: $person-image-width;
         width: $person-image-width;
         min-width: $person-image-width;
-        right: $person-image-right;
         @include border-radius($person-image-width/2);
         background-repeat: no-repeat;
         background-size: cover;
         background-color: $my-border-color;
         border: 1px solid $my-border-color;
-        margin-left: 5px;
+        margin: 0 2px;
         background-image: inherit;
     }
 }

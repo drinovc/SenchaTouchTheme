@@ -31,6 +31,7 @@ Ext.define('SenchaTouchTheme.view.Login', {
                 items: [
                     {
                         xtype: 'textfield',
+                        cls: 'selected',
                         clearIcon: false,
                         label: 'User'
                     },

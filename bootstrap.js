@@ -21,6 +21,7 @@ Ext.Loader.addClassPathMappings({
   "Ext.Element-static": "touch/src/dom/Element.static.js",
   "Ext.Element-style": "touch/src/dom/Element.style.js",
   "Ext.Element-traversal": "touch/src/dom/Element.traversal.js",
+  "Ext.cmd": "../../../Users/drino/bin/Sencha/Cmd/6.2.1.29/plugins/src",
   "Ext.core.DomQuery": "touch/src/dom/Query.js",
   "Ext.device.Purchases.Product": "touch/src/device/purchases/Sencha.js",
   "Ext.device.filesystem.DirectoryEntry": "touch/src/device/filesystem/Sencha.js",
@@ -32,9 +33,6 @@ Ext.Loader.addClassPathMappings({
   "Ext.device.sqlite.SQLResultSet": "touch/src/device/sqlite/Sencha.js",
   "Ext.device.sqlite.SQLResultSetRowList": "touch/src/device/sqlite/Sencha.js",
   "Ext.device.sqlite.SQLTransaction": "touch/src/device/sqlite/Sencha.js",
-  "Ext.grid": "packages/sencha-touch-grid/src/grid",
-  "Ext.grid.column.Action": "packages/sencha-touch-grid/src/grid/column/unsupported/Action.js",
-  "Ext.grid.column.CheckColumn": "packages/sencha-touch-grid/src/grid/column/unsupported/CheckColumn.js",
   "SenchaTouchTheme": "app"
 });
 
@@ -523,30 +521,6 @@ Ext.ClassManager.addNameAlternateMappings({
   "Ext.fx.runner.Css": [],
   "Ext.fx.runner.CssAnimation": [],
   "Ext.fx.runner.CssTransition": [],
-  "Ext.grid.Grid": [],
-  "Ext.grid.HeaderContainer": [],
-  "Ext.grid.HeaderGroup": [],
-  "Ext.grid.Row": [],
-  "Ext.grid.column.Action": [
-    "Ext.grid.ActionColumn"
-  ],
-  "Ext.grid.column.Boolean": [],
-  "Ext.grid.column.CheckColumn": [
-    "Ext.ux.CheckColumn"
-  ],
-  "Ext.grid.column.Column": [],
-  "Ext.grid.column.Date": [],
-  "Ext.grid.column.Number": [],
-  "Ext.grid.column.Template": [],
-  "Ext.grid.infinite.Grid": [],
-  "Ext.grid.infinite.Row": [],
-  "Ext.grid.infinite.TemplateRow": [],
-  "Ext.grid.plugin.ColumnResizing": [],
-  "Ext.grid.plugin.Editable": [],
-  "Ext.grid.plugin.MultiSelection": [],
-  "Ext.grid.plugin.PagingToolbar": [],
-  "Ext.grid.plugin.SummaryRow": [],
-  "Ext.grid.plugin.ViewOptions": [],
   "Ext.layout.Abstract": [],
   "Ext.layout.Box": [],
   "Ext.layout.Card": [],
@@ -559,17 +533,6 @@ Ext.ClassManager.addNameAlternateMappings({
   "Ext.layout.wrapper.BoxDock": [],
   "Ext.layout.wrapper.Dock": [],
   "Ext.layout.wrapper.Inner": [],
-  "Ext.log.Base": [],
-  "Ext.log.Logger": [],
-  "Ext.log.filter.Filter": [],
-  "Ext.log.filter.Priority": [],
-  "Ext.log.formatter.Default": [],
-  "Ext.log.formatter.Formatter": [],
-  "Ext.log.formatter.Identity": [],
-  "Ext.log.writer.Console": [],
-  "Ext.log.writer.DocumentTitle": [],
-  "Ext.log.writer.Remote": [],
-  "Ext.log.writer.Writer": [],
   "Ext.mixin.Bindable": [],
   "Ext.mixin.Filterable": [],
   "Ext.mixin.Mixin": [],
@@ -699,12 +662,12 @@ Ext.ClassManager.addNameAlternateMappings({
   "SenchaTouchTheme.store.countrySmallStore": [],
   "SenchaTouchTheme.store.countryStore": [],
   "SenchaTouchTheme.store.emptyStore": [],
+  "SenchaTouchTheme.view.Backgrounds": [],
   "SenchaTouchTheme.view.Buttons": [],
   "SenchaTouchTheme.view.Carousel": [],
   "SenchaTouchTheme.view.FieldsAndRadios": [],
   "SenchaTouchTheme.view.FontAwesome": [],
   "SenchaTouchTheme.view.FormsAndPanels": [],
-  "SenchaTouchTheme.view.Grid": [],
   "SenchaTouchTheme.view.List": [],
   "SenchaTouchTheme.view.ListBuffered": [],
   "SenchaTouchTheme.view.ListRound": [],
@@ -1265,66 +1228,6 @@ Ext.ClassManager.addNameAliasMappings({
   "Ext.fx.runner.Css": [],
   "Ext.fx.runner.CssAnimation": [],
   "Ext.fx.runner.CssTransition": [],
-  "Ext.grid.Grid": [
-    "widget.grid"
-  ],
-  "Ext.grid.HeaderContainer": [
-    "widget.headercontainer"
-  ],
-  "Ext.grid.HeaderGroup": [
-    "widget.gridheadergroup"
-  ],
-  "Ext.grid.Row": [
-    "widget.gridrow"
-  ],
-  "Ext.grid.column.Action": [
-    "widget.actioncolumn"
-  ],
-  "Ext.grid.column.Boolean": [
-    "widget.booleancolumn"
-  ],
-  "Ext.grid.column.CheckColumn": [
-    "widget.checkcolumn"
-  ],
-  "Ext.grid.column.Column": [
-    "widget.column"
-  ],
-  "Ext.grid.column.Date": [
-    "widget.datecolumn"
-  ],
-  "Ext.grid.column.Number": [
-    "widget.numbercolumn"
-  ],
-  "Ext.grid.column.Template": [
-    "widget.templatecolumn"
-  ],
-  "Ext.grid.infinite.Grid": [
-    "widget.grid"
-  ],
-  "Ext.grid.infinite.Row": [
-    "widget.gridrow"
-  ],
-  "Ext.grid.infinite.TemplateRow": [
-    "widget.listgridrow"
-  ],
-  "Ext.grid.plugin.ColumnResizing": [
-    "plugin.gridcolumnresizing"
-  ],
-  "Ext.grid.plugin.Editable": [
-    "plugin.grideditable"
-  ],
-  "Ext.grid.plugin.MultiSelection": [
-    "plugin.gridmultiselection"
-  ],
-  "Ext.grid.plugin.PagingToolbar": [
-    "plugin.gridpagingtoolbar"
-  ],
-  "Ext.grid.plugin.SummaryRow": [
-    "plugin.gridsummaryrow"
-  ],
-  "Ext.grid.plugin.ViewOptions": [
-    "plugin.gridviewoptions"
-  ],
   "Ext.layout.Abstract": [],
   "Ext.layout.Box": [
     "layout.tablebox"
@@ -1354,17 +1257,6 @@ Ext.ClassManager.addNameAliasMappings({
   "Ext.layout.wrapper.BoxDock": [],
   "Ext.layout.wrapper.Dock": [],
   "Ext.layout.wrapper.Inner": [],
-  "Ext.log.Base": [],
-  "Ext.log.Logger": [],
-  "Ext.log.filter.Filter": [],
-  "Ext.log.filter.Priority": [],
-  "Ext.log.formatter.Default": [],
-  "Ext.log.formatter.Formatter": [],
-  "Ext.log.formatter.Identity": [],
-  "Ext.log.writer.Console": [],
-  "Ext.log.writer.DocumentTitle": [],
-  "Ext.log.writer.Remote": [],
-  "Ext.log.writer.Writer": [],
   "Ext.mixin.Bindable": [],
   "Ext.mixin.Filterable": [],
   "Ext.mixin.Mixin": [],
@@ -1506,6 +1398,7 @@ Ext.ClassManager.addNameAliasMappings({
   "SenchaTouchTheme.store.countrySmallStore": [],
   "SenchaTouchTheme.store.countryStore": [],
   "SenchaTouchTheme.store.emptyStore": [],
+  "SenchaTouchTheme.view.Backgrounds": [],
   "SenchaTouchTheme.view.Buttons": [],
   "SenchaTouchTheme.view.Carousel": [],
   "SenchaTouchTheme.view.FieldsAndRadios": [
@@ -1513,7 +1406,6 @@ Ext.ClassManager.addNameAliasMappings({
   ],
   "SenchaTouchTheme.view.FontAwesome": [],
   "SenchaTouchTheme.view.FormsAndPanels": [],
-  "SenchaTouchTheme.view.Grid": [],
   "SenchaTouchTheme.view.List": [],
   "SenchaTouchTheme.view.ListBuffered": [],
   "SenchaTouchTheme.view.ListRound": [],
@@ -1529,7 +1421,6 @@ Ext.ClassManager.addNameAliasMappings({
   ]
 });
 
-Ext.setVersion("sencha-touch-grid", "2.3.0.2");
 
 /**
  * This file is generated by Sencha Cmd and should NOT be edited.  It is

@@ -24,6 +24,7 @@
             "codeClass": null,
             "userConfig": {
                 "layout|flex": 1,
+                "padding": null,
                 "title": null
             },
             "name": "MyFieldSet",
@@ -367,6 +368,136 @@
                     },
                     "name": "MyTextArea2",
                     "designerId": "73d62627-31b8-4965-995e-01fa42d9f1d6"
+                },
+                {
+                    "type": "Ext.Toolbar",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "docked": "top"
+                    },
+                    "name": "MyToolbar",
+                    "designerId": "a4739cc9-80bd-46bf-a159-cd3ecc463058",
+                    "cn": [
+                        {
+                            "type": "Ext.SegmentedButton",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "itemId": "btnsFieldsSize"
+                            },
+                            "name": "MySegmentedButton",
+                            "designerId": "15defb6b-3cd1-4836-9c2d-e72162264942",
+                            "cn": [
+                                {
+                                    "type": "Ext.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "itemId": "mybutton",
+                                        "pressed": true,
+                                        "text": "Normal"
+                                    },
+                                    "name": "MyButton",
+                                    "designerId": "4ac330a2-d660-41de-808a-f9c843bcea63",
+                                    "cn": [
+                                        {
+                                            "type": "basiceventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fn": "onMybuttonTap",
+                                                "implHandler": [
+                                                    "button.up('fieldset').setCls('normal-font');"
+                                                ],
+                                                "name": "tap"
+                                            },
+                                            "name": "onMybuttonTap",
+                                            "designerId": "88b0b8ad-3192-4cdb-89dc-0a44725da741"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "itemId": "mybutton1",
+                                        "text": "Smaller"
+                                    },
+                                    "name": "MyButton1",
+                                    "designerId": "b810fe4e-6b70-481b-9fdb-3c410019520c",
+                                    "cn": [
+                                        {
+                                            "type": "basiceventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fn": "onMybutton1Tap",
+                                                "implHandler": [
+                                                    "button.up('fieldset').setCls('smaller-font');"
+                                                ],
+                                                "name": "tap"
+                                            },
+                                            "name": "onMybutton1Tap",
+                                            "designerId": "e8a8790b-d3df-4a2e-8f92-7c7bd4e641e1"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "itemId": "mybutton2",
+                                        "text": "Smallest"
+                                    },
+                                    "name": "MyButton2",
+                                    "designerId": "cdc42612-af67-4aff-b908-6393c8d336a0",
+                                    "cn": [
+                                        {
+                                            "type": "basiceventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fn": "onMybutton2Tap",
+                                                "implHandler": [
+                                                    "button.up('fieldset').setCls('smallest-font');"
+                                                ],
+                                                "name": "tap"
+                                            },
+                                            "name": "onMybutton2Tap",
+                                            "designerId": "aa8f5a45-9c27-4fea-b2a9-9419396f320c"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
                 }
             ]
         },

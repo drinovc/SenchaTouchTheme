@@ -74,7 +74,7 @@ Ext.define('SenchaTouchTheme.view.MainView', {
                                 title: 'Forms and Panels',
                                 view: 'FormsAndPanels'
                             },
-                            /*{title: 'Grid', view: 'Grid'},*/{
+                            {
                                 title: 'List',
                                 view: 'List'
                             },
@@ -134,7 +134,63 @@ Ext.define('SenchaTouchTheme.view.MainView', {
                     hidden: true
                 }
             }
+        ],
+        listeners: [
+            {
+                fn: 'onContainerInitialize',
+                event: 'initialize'
+            }
         ]
+    },
+
+    onContainerInitialize: function(component, eOpts) {
+        // ON MOUSE WHEEL - scrolling any list and grid with mouse
+        document.body.addEventListener("mousewheel", function(e) {
+            var view = component;
+            var dY = -e.wheelDelta;
+            var el = Ext.get(e.target);
+            var cmp;
+
+            do {
+                el = el.getParent();
+                if(el.classList && !el.classList.includes("no-mouse-scroll-fix") &&
+                   (el.classList.includes("x-list") || el.classList.includes("x-grid") || el.classList.includes("x-form") || el.classList.includes("mouse-scroll-fix"))) {
+
+                    cmp = Ext.getCmp(el.id);
+                }
+            } while(!cmp && el.id != "VMain" && el != el.getParent());
+
+            if(cmp) {
+                var scroller = cmp.getScrollable().getScroller();
+                var end = scroller.getSize().y - scroller.getContainerSize().y;
+
+                if(end <= 0) { // don't scroll if nothing to scroll
+                    console.log("Nothing to scroll");
+                    return;
+                }
+
+                cmp.getScrollable().showIndicators(); // show scroll indicators - maybe hide them after ???
+
+                if(dY > 0) { // scroll down
+                    if(scroller.position.y + dY <= end) { // don't scroll over bottom
+                        scroller.scrollBy(0, dY, false);
+                    }
+                    else {
+                        scroller.scrollToEnd();
+                    }
+                    Ext.defer(cmp.getScrollable().hideIndicators, 1000, cmp.getScrollable());
+                }
+                else { // scroll up
+                    if(scroller.position.y + dY > 0) { // don't scroll over top
+                        scroller.scrollBy(0, dY, false);
+                    }
+                    else {
+                        scroller.scrollToTop();
+                    }
+                    Ext.defer(cmp.getScrollable().hideIndicators, 1000, cmp.getScrollable());
+                }
+            }
+        });
     }
 
 });

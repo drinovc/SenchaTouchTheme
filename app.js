@@ -40,7 +40,6 @@ Ext.application({
         'ListRound',
         'LoadMask',
         'Carousel',
-        'Grid',
         'Login',
         'FontAwesome',
         'ListBuffered',
