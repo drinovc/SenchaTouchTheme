@@ -19,6 +19,9 @@
                 "type": "array"
             },
             "codeClass": null,
+            "userConfig": {
+                "designer|uiInterfaceName": "dark"
+            },
             "name": "MyTabPanel",
             "designerId": "a38cbad9-f267-4965-b219-b33d838a8e3c",
             "cn": [
@@ -69,7 +72,8 @@
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "docked": "top"
+                        "docked": "top",
+                        "ui": null
                     },
                     "name": "MyTabBar3",
                     "designerId": "bd88365e-d306-432d-80df-4ee34311108e"

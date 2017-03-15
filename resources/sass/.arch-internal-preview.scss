@@ -35,6 +35,8 @@ $white: #fff;
 $almostwhite: #f7f7f7;
 $almostwhite2: #f0f0f0;
 
+$bluegreylight: #96abb6;
+$bluegreylightest: #c3cfd5; 
 
 /********** MATERIAL SETTINGS **********/
 
@@ -48,7 +50,7 @@ $md-shadow-floating: 0 0.1em 0.5em rgba(0,0,0,0.4);
 /********** THEME SETTINGS **********/
 
 $my-theme: 'light';
-$my-fields-theme: 'light';
+$my-fields-theme: $my-theme;
 
 /* LIGHT THEME */
 $my-base-color: $white;
@@ -62,8 +64,8 @@ $my-page-bg-color: $my-base-color;
 $my-page-bg-image: url('../images/background.jpg');
 
 $my-toolbar-dark-color: $bluegrey;
-$my-toolbar-light-color: $almostwhite;
-$my-toolbar-neutral-color: #e0e0e0;
+$my-toolbar-light-color: $bluegreylight;
+$my-toolbar-neutral-color: $bluegreylightest;
 
 $my-border-color: #dedede;
 $my-toolbar-field-border-color: #a6a6a6;
@@ -262,6 +264,101 @@ $list-active-color: $my-list-active-color;
 @include my-color-styles('almostblack', $almostblack);
 @include my-color-styles('white', $white);
 @include my-color-styles('almostwhite', $almostwhite);
+
+@include my-color-styles('toolbar-dark', $my-toolbar-dark-color);
+@include my-color-styles('toolbar-light', $my-toolbar-light-color);
+@include my-color-styles('toolbar-neutral', $my-toolbar-neutral-color);
+
+/* default button color */
+@include sencha-button-ui(
+    $ui-label: 'normal',
+    $color: $almostwhite,
+    $gradient: $button-gradient
+    );
+
+@if $my-theme == 'dark' {
+    .x-toolbar-dark,
+    .x-tabbar-dark {
+        background-color: $my-toolbar-dark-color;
+        &:not(.x-msgbox-title) .x-title,
+        &:not(.x-msgbox-title) .x-button-plain {
+            @include color-by-background($my-toolbar-dark-color);
+            @if $my-theme == 'dark' {
+                color: $white;
+            }
+        }
+    }
+    .x-toolbar-light,
+    .x-tabbar-light {
+        background-color: $my-toolbar-light-color;
+        .x-title,
+        .x-button-plain {
+            @include color-by-background($my-toolbar-light-color);
+            @if $my-theme == 'dark' {
+                color: $white;
+            }
+        }
+    }
+    .x-toolbar-neutral,
+    .x-tabbar-neutral {
+        background-color: $my-toolbar-neutral-color;
+        .x-title,
+        .x-button-plain  {
+            @include color-by-background($my-toolbar-neutral-color);
+            @if $my-theme == 'dark' {
+                color: $white;
+            }
+        }
+    }
+} @else {
+    /* default toolbar uis */
+    @include sencha-toolbar-ui(
+        $ui-label: 'dark',
+        $color: $my-toolbar-dark-color,
+        $gradient: $toolbar-gradient
+        );
+    @include sencha-toolbar-ui(
+        $ui-label: 'light',
+        $color: $my-toolbar-light-color,
+        $gradient: $toolbar-gradient
+        );
+    @include sencha-toolbar-ui(
+        $ui-label: 'neutral',
+        $color: $my-toolbar-neutral-color,
+        $gradient: $toolbar-gradient
+        );
+    @include sencha-toolbar-ui(
+        $ui-label: 'gray',
+        $color: $bluegreylight,
+        $gradient: $toolbar-gradient
+        );
+
+    /* default tabbar uis */
+    @include sencha-tabbar-ui(
+        $ui-label: 'dark',
+        $bar-color: $my-toolbar-dark-color,
+        $bar-gradient: $toolbar-gradient,
+        $tab-active-color: $active-color
+        );
+    @include sencha-tabbar-ui(
+        $ui-label: 'light',
+        $bar-color: $my-toolbar-light-color,
+        $bar-gradient: $toolbar-gradient,
+        $tab-active-color: $active-color
+        );
+    @include sencha-tabbar-ui(
+        $ui-label: 'neutral',
+        $bar-color: $my-toolbar-neutral-color,
+        $bar-gradient: $toolbar-gradient,
+        $tab-active-color: $active-color
+        );
+    @include sencha-tabbar-ui(
+        $ui-label: 'gray',
+        $bar-color: $bluegreylight,
+        $bar-gradient: $toolbar-gradient,
+        $tab-active-color: $active-color
+        );
+}
 /******************************************************************************/
 /* Fixes */
 
@@ -493,8 +590,8 @@ $list-active-color: $my-list-active-color;
     background-color: $active-color;
 }
 input {
-    &[readonly="true"],
-    &:read-only,
+    //&[readonly="true"],
+    //&:read-only,
     &:disabled {
         background-color: $my-field-disabled-bg-color !important;
     }
@@ -531,40 +628,6 @@ input {
         border-color: $my-border-color !important;
     }
 }
-.x-toolbar-dark,
-.x-tabbar-dark {
-    background-color: $my-toolbar-dark-color;
-    &:not(.x-msgbox-title) .x-title,
-    &:not(.x-msgbox-title) .x-button-plain {
-        @include color-by-background($my-toolbar-dark-color);
-        @if $my-theme == 'dark' {
-            color: $white;
-        }
-    }
-}
-.x-toolbar-light,
-.x-tabbar-light {
-    background-color: $my-toolbar-light-color;
-    .x-title,
-    .x-button-plain {
-        @include color-by-background($my-toolbar-light-color);
-        @if $my-theme == 'dark' {
-            color: $white;
-        }
-    }
-}
-.x-toolbar-neutral,
-.x-tabbar-neutral {
-    background-color: $my-toolbar-neutral-color;
-    .x-title,
-    .x-button-plain  {
-        @include color-by-background($my-toolbar-neutral-color);
-        @if $my-theme == 'dark' {
-            color: $white;
-        }
-    }
-}
-
 
 /* toolbar buttons */
 .x-body .x-toolbar {
@@ -756,10 +819,9 @@ input {
 .x-button,
 .x-list-item {
   position: relative;
-/*   overflow: hidden; */
   transform: translate3d(0, 0, 0);
 
-  &:after {
+  &:before {
     content: "";
     display: block;
     position: absolute;
@@ -769,7 +831,6 @@ input {
     left: 0;
     pointer-events: none;
     background-image: radial-gradient(circle, #000 10%, transparent 10.01%);
-    //background-image: radial-gradient(circle, #fff 10%, transparent 10.01%);
     background-repeat: no-repeat;
     background-position: 50%;
     transform: scale(10,10);
@@ -777,7 +838,7 @@ input {
     transition: transform .5s, opacity 1s;
   }
 
-  &:active:after {
+  &:active:before {
     transform: scale(0,0);
     opacity: .2;
     transition: 0s;
@@ -851,6 +912,9 @@ $font-files: url('../font-awesome/fonts/fontawesome-webfont.woff') format("woff"
         content: '\f068';
     }
 }
+/******************************************************************************/
+/* Flexbox */
+
 @mixin flexbox() {
     display: -webkit-box;
     display: -moz-box;
@@ -903,6 +967,9 @@ $font-files: url('../font-awesome/fonts/fontawesome-webfont.woff') format("woff"
 .flexbox .fullflex {
     flex: 0 0 100%;
 }
+/******************************************************************************/
+/* Custom styles */
+
 .border-top {
     border-top: 1px solid $my-border-color;
 }
@@ -960,13 +1027,24 @@ $font-files: url('../font-awesome/fonts/fontawesome-webfont.woff') format("woff"
 .selected {
     &.x-field{
         input {
-            background-color: rgba(3, 169, 244, 0.4);
+            background-color: rgba(3, 169, 244, 0.4) !important;
         }
         .x-form-label {
-            background-color: rgba(3, 169, 244, 0.5);
+            background-color: rgba(3, 169, 244, 0.5) !important;
         }
     }
 }
+/******************************************************************************/
+/* Custom list styles */
+
+.x-list-item {
+    .check-mark {
+        &.checked {
+            color: $active-color !important;
+        }
+    }
+}
+
 .flexbox-list.x-list {
     .x-innerhtml {
         @include flexbox();
@@ -1091,3 +1169,17 @@ $person-image-width: 58px;
 .with-disclosure.x-list .x-list-item.x-list-item-tpl .x-innerhtml {
     padding-right: 40px !important;
 }
+/* ui mixin: base for of type: sencha-toolbar-ui */
+
+@include sencha-toolbar-ui(
+  $ui-label:"base",
+    $color: $base-color,
+    $gradient: $toolbar-gradient
+);
+/* ui mixin: mystyle for of type: sencha-toolbar-ui */
+
+@include sencha-toolbar-ui(
+  $ui-label:"mystyle",
+    $color: $bluegrey,
+    $gradient: $toolbar-gradient
+);
