@@ -1,0 +1,74 @@
+{
+    "type": "Ext.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Backgrounds",
+        "layout": "fit"
+    },
+    "name": "MyContainer",
+    "designerId": "329a7903-2cae-477c-b924-cda83e7f434d",
+    "cn": [
+        {
+            "type": "Ext.dataview.List",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "data": [
+                    "[",
+                    "    { name: 'Light', file: 'background.jpg' },",
+                    "    { name: 'Light 1', file: 'background-1.jpg' },",
+                    "    { name: 'Light 2', file: 'background-2.jpg' },",
+                    "    { name: 'Light 3', file: 'background-3.jpg' },",
+                    "    { name: 'Light 4', file: 'background-4.jpg' },",
+                    "    { name: 'Dark', file: 'background-dark.jpg' }",
+                    "]"
+                ],
+                "itemId": "listBackgrounds"
+            },
+            "name": "MyList",
+            "designerId": "2aab533e-0fe3-4fd2-8216-f36451f1a99a",
+            "cn": [
+                {
+                    "type": "Ext.XTemplate",
+                    "reference": {
+                        "name": "itemTpl",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "itemTpl",
+                        "implHandler": [
+                            "<div>{name}</div>"
+                        ]
+                    },
+                    "name": "itemTpl",
+                    "designerId": "5b62e3ca-9be3-4b6c-a5d1-2bb4128e615e"
+                },
+                {
+                    "type": "basiceventbinding",
+                    "reference": {
+                        "name": "listeners",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "onListBackgroundsSelect",
+                        "implHandler": [
+                            "Ext.Viewport.element.dom.firstChild.style.backgroundImage = 'url(resources/images/' + record.get('file') + ')';"
+                        ],
+                        "name": "select"
+                    },
+                    "name": "onListBackgroundsSelect",
+                    "designerId": "fbcb247f-7178-416f-ab8f-8ff511834774"
+                }
+            ]
+        }
+    ]
+}

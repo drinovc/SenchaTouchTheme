@@ -22,9 +22,6 @@ Ext.define('SenchaTouchTheme.store.emptyStore', {
     ],
 
     config: {
-        data: [
-            
-        ],
         storeId: 'emptyStore',
         fields: [
             {

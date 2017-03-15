@@ -100,7 +100,8 @@
                             "    {title: 'Load Mask', view: 'LoadMask'},",
                             "    {title: 'Overlays', view: 'Overlays'},",
                             "    {title: 'Tabs', view: 'Tabs'},",
-                            "    {title: 'Toolbars', view: 'Toolbars'}",
+                            "    {title: 'Toolbars', view: 'Toolbars'},",
+                            "    {title: 'Backgrounds', view: 'Backgrounds'}",
                             "    ",
                             "]"
                         ],

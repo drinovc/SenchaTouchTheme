@@ -26,14 +26,15 @@ Ext.define('SenchaTouchTheme.view.FieldsAndRadios', {
         'Ext.field.DatePicker',
         'Ext.picker.Date',
         'Ext.Button',
-        'Ext.field.TextArea',
-        'Ext.field.File',
         'Ext.field.Search',
+        'Ext.field.File',
+        'Ext.field.TextArea',
         'Ext.field.Radio',
         'Ext.field.Toggle'
     ],
 
     config: {
+        scrollable: 'vertical',
         layout: {
             type: 'hbox',
             align: 'stretchmax'
@@ -42,7 +43,6 @@ Ext.define('SenchaTouchTheme.view.FieldsAndRadios', {
             {
                 xtype: 'fieldset',
                 flex: 1,
-                title: 'Fields',
                 items: [
                     {
                         xtype: 'textfield',
@@ -85,14 +85,50 @@ Ext.define('SenchaTouchTheme.view.FieldsAndRadios', {
                         label: 'Spinner'
                     },
                     {
-                        xtype: 'checkboxfield',
-                        label: 'Checkbox',
-                        checked: true
-                    },
-                    {
                         xtype: 'selectfield',
                         label: 'Select',
                         value: null,
+                        options: [
+                            {
+                                text: 'First Option',
+                                value: 'firstOption'
+                            },
+                            {
+                                text: 'Second Option',
+                                value: 'secondOption'
+                            },
+                            {
+                                text: 'Third Option',
+                                value: 'thirdOption'
+                            }
+                        ]
+                    },
+                    {
+                        xtype: 'selectfield',
+                        label: 'Select (read only)',
+                        value: null,
+                        readOnly: true,
+                        options: [
+                            {
+                                text: 'First Option',
+                                value: 'firstOption'
+                            },
+                            {
+                                text: 'Second Option',
+                                value: 'secondOption'
+                            },
+                            {
+                                text: 'Third Option',
+                                value: 'thirdOption'
+                            }
+                        ]
+                    },
+                    {
+                        xtype: 'selectfield',
+                        disabled: true,
+                        label: 'Select (disabled)',
+                        value: null,
+                        readOnly: true,
                         options: [
                             {
                                 text: 'First Option',
@@ -119,15 +155,6 @@ Ext.define('SenchaTouchTheme.view.FieldsAndRadios', {
                         placeHolder: 'mm/dd/yyyy'
                     },
                     {
-                        xtype: 'textareafield',
-                        label: 'Text Area',
-                        value: 'value'
-                    },
-                    {
-                        xtype: 'filefield',
-                        label: 'File'
-                    },
-                    {
                         xtype: 'numberfield',
                         label: 'Number',
                         value: 0
@@ -136,6 +163,28 @@ Ext.define('SenchaTouchTheme.view.FieldsAndRadios', {
                         xtype: 'searchfield',
                         label: 'Search',
                         value: 'value'
+                    },
+                    {
+                        xtype: 'filefield',
+                        label: 'File'
+                    },
+                    {
+                        xtype: 'textareafield',
+                        label: 'Text Area',
+                        value: 'value'
+                    },
+                    {
+                        xtype: 'textareafield',
+                        label: 'Text Area (read only)',
+                        value: 'value',
+                        readOnly: true
+                    },
+                    {
+                        xtype: 'textareafield',
+                        disabled: true,
+                        label: 'Text Area (disabled)',
+                        value: 'value',
+                        readOnly: true
                     }
                 ]
             },
@@ -145,7 +194,6 @@ Ext.define('SenchaTouchTheme.view.FieldsAndRadios', {
                 items: [
                     {
                         xtype: 'fieldset',
-                        title: 'Radio',
                         items: [
                             {
                                 xtype: 'radiofield',
@@ -164,24 +212,57 @@ Ext.define('SenchaTouchTheme.view.FieldsAndRadios', {
                                 name: 'options'
                             },
                             {
+                                xtype: 'radiofield',
+                                disabled: true,
+                                label: 'Option2 1 (disabled)',
+                                name: 'options2',
+                                checked: true
+                            },
+                            {
+                                xtype: 'radiofield',
+                                disabled: true,
+                                label: 'Option2 2 (disabled)',
+                                name: 'options2'
+                            },
+                            {
                                 xtype: 'checkboxfield',
                                 label: 'Checkbox',
+                                checked: true
+                            },
+                            {
+                                xtype: 'checkboxfield',
+                                disabled: true,
+                                label: 'Checkbox (disabled)',
                                 checked: true
                             },
                             {
                                 xtype: 'togglefield',
                                 label: 'Toggle',
                                 value: 1
+                            },
+                            {
+                                xtype: 'togglefield',
+                                disabled: true,
+                                label: 'Toggle (disabled)',
+                                value: 1
                             }
                         ]
                     },
                     {
                         xtype: 'fieldset',
-                        title: 'Sliders',
                         items: [
                             {
                                 xtype: 'sliderfield',
                                 label: 'Single Thumb',
+                                labelAlign: 'top',
+                                value: [
+                                    42
+                                ]
+                            },
+                            {
+                                xtype: 'sliderfield',
+                                disabled: true,
+                                label: 'Single Thumb (disabled)',
                                 labelAlign: 'top',
                                 value: [
                                     42
@@ -195,12 +276,6 @@ Ext.define('SenchaTouchTheme.view.FieldsAndRadios', {
                                     20,
                                     80
                                 ]
-                            },
-                            {
-                                xtype: 'togglefield',
-                                label: 'Toggle',
-                                labelAlign: 'top',
-                                value: 1
                             }
                         ]
                     }

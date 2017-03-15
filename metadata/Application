@@ -33,7 +33,8 @@
             "Login",
             "FontAwesome",
             "ListBuffered",
-            "FormsAndPanels"
+            "FormsAndPanels",
+            "Backgrounds"
         ]
     },
     "name": "Application",

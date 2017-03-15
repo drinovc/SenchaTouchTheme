@@ -105,6 +105,10 @@ Ext.define('SenchaTouchTheme.view.MainView', {
                             {
                                 title: 'Toolbars',
                                 view: 'Toolbars'
+                            },
+                            {
+                                title: 'Backgrounds',
+                                view: 'Backgrounds'
                             }
                         ],
                         height: '100%',

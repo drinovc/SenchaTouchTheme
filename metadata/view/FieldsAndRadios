@@ -9,7 +9,8 @@
         "container|align": "stretchmax",
         "designer|userAlias": "fieldsandradios",
         "designer|userClassName": "FieldsAndRadios",
-        "layout": "hbox"
+        "layout": "hbox",
+        "scrollable": "vertical"
     },
     "name": "MyContainer3",
     "designerId": "b7bee559-cdf5-4906-b3b7-0c4a75fb97af",
@@ -23,7 +24,7 @@
             "codeClass": null,
             "userConfig": {
                 "layout|flex": 1,
-                "title": "Fields"
+                "title": null
             },
             "name": "MyFieldSet",
             "designerId": "54a2d9a8-4866-43bc-8ed8-0515843a6412",
@@ -142,20 +143,6 @@
                     "designerId": "041633de-79c8-4cce-ba39-46add9602cd3"
                 },
                 {
-                    "type": "Ext.field.Checkbox",
-                    "reference": {
-                        "name": "items",
-                        "type": "array"
-                    },
-                    "codeClass": null,
-                    "userConfig": {
-                        "checked": true,
-                        "label": "Checkbox"
-                    },
-                    "name": "MyTextField1",
-                    "designerId": "f0b49776-bb92-463a-8263-bd37d154a525"
-                },
-                {
                     "type": "Ext.field.Select",
                     "reference": {
                         "name": "items",
@@ -177,6 +164,55 @@
                     },
                     "name": "MyTextField1",
                     "designerId": "2d4dcf8f-46ea-4621-99d2-eb636c1b7fc6"
+                },
+                {
+                    "type": "Ext.field.Select",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "label": "Select (read only)",
+                        "options": [
+                            "[",
+                            "    {text: 'First Option', value: 'firstOption'},",
+                            "    {text: 'Second Option', value: 'secondOption'},",
+                            "    {text: 'Third Option', value: 'thirdOption'}",
+                            "]"
+                        ],
+                        "readOnly": true,
+                        "value": [
+                            "null"
+                        ]
+                    },
+                    "name": "MyTextField5",
+                    "designerId": "9d7df645-5c15-405e-bc53-ee7eea801b44"
+                },
+                {
+                    "type": "Ext.field.Select",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "disabled": true,
+                        "label": "Select (disabled)",
+                        "options": [
+                            "[",
+                            "    {text: 'First Option', value: 'firstOption'},",
+                            "    {text: 'Second Option', value: 'secondOption'},",
+                            "    {text: 'Third Option', value: 'thirdOption'}",
+                            "]"
+                        ],
+                        "readOnly": true,
+                        "value": [
+                            "null"
+                        ]
+                    },
+                    "name": "MyTextField6",
+                    "designerId": "b243a3f3-019a-4b2f-998c-2aae33442e12"
                 },
                 {
                     "type": "Ext.field.DatePicker",
@@ -234,35 +270,6 @@
                     ]
                 },
                 {
-                    "type": "Ext.field.TextArea",
-                    "reference": {
-                        "name": "items",
-                        "type": "array"
-                    },
-                    "codeClass": null,
-                    "userConfig": {
-                        "label": "Text Area",
-                        "value": [
-                            "value"
-                        ]
-                    },
-                    "name": "MyTextArea",
-                    "designerId": "07a813d7-0d9b-43b7-922d-c0eb3ebe8814"
-                },
-                {
-                    "type": "Ext.field.File",
-                    "reference": {
-                        "name": "items",
-                        "type": "array"
-                    },
-                    "codeClass": null,
-                    "userConfig": {
-                        "label": "File"
-                    },
-                    "name": "MyFileField",
-                    "designerId": "3db8b762-9c10-44f1-ba36-fd082225569c"
-                },
-                {
                     "type": "Ext.field.Number",
                     "reference": {
                         "name": "items",
@@ -293,6 +300,73 @@
                     },
                     "name": "MySearchField1",
                     "designerId": "a704b4a4-ad66-4274-9a33-aac6005b8f72"
+                },
+                {
+                    "type": "Ext.field.File",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "label": "File"
+                    },
+                    "name": "MyFileField",
+                    "designerId": "3db8b762-9c10-44f1-ba36-fd082225569c"
+                },
+                {
+                    "type": "Ext.field.TextArea",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "height": null,
+                        "label": "Text Area",
+                        "value": [
+                            "value"
+                        ]
+                    },
+                    "name": "MyTextArea",
+                    "designerId": "07a813d7-0d9b-43b7-922d-c0eb3ebe8814"
+                },
+                {
+                    "type": "Ext.field.TextArea",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "height": null,
+                        "label": "Text Area (read only)",
+                        "readOnly": true,
+                        "value": [
+                            "value"
+                        ]
+                    },
+                    "name": "MyTextArea1",
+                    "designerId": "f7a62763-ab7b-4fd9-9f74-3d041f613618"
+                },
+                {
+                    "type": "Ext.field.TextArea",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "disabled": true,
+                        "height": null,
+                        "label": "Text Area (disabled)",
+                        "readOnly": true,
+                        "value": [
+                            "value"
+                        ]
+                    },
+                    "name": "MyTextArea2",
+                    "designerId": "73d62627-31b8-4965-995e-01fa42d9f1d6"
                 }
             ]
         },
@@ -317,7 +391,7 @@
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "title": "Radio"
+                        "title": null
                     },
                     "name": "MyFieldSet1",
                     "designerId": "ba7f67e3-37e5-4830-8902-4b9f966e01e6",
@@ -366,6 +440,38 @@
                             "designerId": "a963a352-81f5-41b9-a610-3f54782596b4"
                         },
                         {
+                            "type": "Ext.field.Radio",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "checked": true,
+                                "disabled": true,
+                                "label": "Option2 1 (disabled)",
+                                "name": "options2"
+                            },
+                            "name": "MyRadioButton1",
+                            "designerId": "4d424f50-749b-4ca1-a649-a5c7a35e351d"
+                        },
+                        {
+                            "type": "Ext.field.Radio",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "checked": null,
+                                "disabled": true,
+                                "label": "Option2 2 (disabled)",
+                                "name": "options2"
+                            },
+                            "name": "MyRadioButton3",
+                            "designerId": "c3dd1adf-caea-455f-a5d2-3c41fd1b3781"
+                        },
+                        {
                             "type": "Ext.field.Checkbox",
                             "reference": {
                                 "name": "items",
@@ -378,6 +484,21 @@
                             },
                             "name": "MyTextField9",
                             "designerId": "ea808589-e3a4-4ddb-a39e-f30e8c993343"
+                        },
+                        {
+                            "type": "Ext.field.Checkbox",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "checked": true,
+                                "disabled": true,
+                                "label": "Checkbox (disabled)"
+                            },
+                            "name": "MyTextField4",
+                            "designerId": "35e85ff1-11b1-4483-9add-e7dd2e5bd87f"
                         },
                         {
                             "type": "Ext.field.Toggle",
@@ -393,6 +514,22 @@
                             },
                             "name": "MyToggleField1",
                             "designerId": "9afd3b67-9b9e-4d26-9c60-ebffc340eeb6"
+                        },
+                        {
+                            "type": "Ext.field.Toggle",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "disabled": true,
+                                "label": "Toggle (disabled)",
+                                "labelAlign": null,
+                                "value": 1
+                            },
+                            "name": "MyToggleField2",
+                            "designerId": "50083ed4-da71-4a20-8ae5-1f88a59a90f9"
                         }
                     ]
                 },
@@ -404,7 +541,7 @@
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "title": "Sliders"
+                        "title": null
                     },
                     "name": "MyFieldSet2",
                     "designerId": "d606d351-75c5-4725-94f7-d13176176cb5",
@@ -434,6 +571,24 @@
                             },
                             "codeClass": null,
                             "userConfig": {
+                                "disabled": true,
+                                "label": "Single Thumb (disabled)",
+                                "labelAlign": "top",
+                                "value": [
+                                    42
+                                ]
+                            },
+                            "name": "MySliderField1",
+                            "designerId": "6bb38b71-8025-4a35-8a34-620c5f037c2d"
+                        },
+                        {
+                            "type": "Ext.field.Slider",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
                                 "label": "Multiple Thumbs",
                                 "labelAlign": "top",
                                 "value": [
@@ -443,21 +598,6 @@
                             },
                             "name": "MySliderField",
                             "designerId": "31871117-7a14-4c5b-9d13-4a433acb2151"
-                        },
-                        {
-                            "type": "Ext.field.Toggle",
-                            "reference": {
-                                "name": "items",
-                                "type": "array"
-                            },
-                            "codeClass": null,
-                            "userConfig": {
-                                "label": "Toggle",
-                                "labelAlign": "top",
-                                "value": 1
-                            },
-                            "name": "MyToggleField",
-                            "designerId": "5707d595-82db-4422-bb48-88405188ace9"
                         }
                     ]
                 }

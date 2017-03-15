@@ -19,9 +19,6 @@ Ext.Loader.setConfig({
 });
 
 
-Ext.Loader.setPath('Ext.grid.column.Column','packages/sencha-touch-grid/src/grid/column/Column.js');
-Ext.Loader.setPath('Ext.grid.Grid','packages/sencha-touch-grid/src/grid/Grid.js');
-
 Ext.application({
 
     requires: [
@@ -47,7 +44,8 @@ Ext.application({
         'Login',
         'FontAwesome',
         'ListBuffered',
-        'FormsAndPanels'
+        'FormsAndPanels',
+        'Backgrounds'
     ],
     controllers: [
         'MainView'

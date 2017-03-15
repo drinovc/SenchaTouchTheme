@@ -56,9 +56,7 @@
       ".svn$"
    ],
    "archivePath": "archive",
-   "requires": [
-      "sencha-touch-grid"
-   ],
+   "requires": [],
    "cache": {
       "enable": true,
       "deltas": "deltas"
