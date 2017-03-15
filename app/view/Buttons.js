@@ -40,8 +40,9 @@ Ext.define('SenchaTouchTheme.view.Buttons', {
                         width: '100%',
                         defaults: {
                             margin: '0 3',
-                            style: 'font-size: 0.8em;',
-                            height: 45
+                            //style: 'font-size: 0.8em;',
+                            height: 45,
+                            minWidth: 100
                         },
                         layout: {
                             type: 'hbox',
@@ -120,8 +121,9 @@ Ext.define('SenchaTouchTheme.view.Buttons', {
                         width: '100%',
                         defaults: {
                             margin: '0 3',
-                            style: 'font-size: 0.8em;',
-                            height: 45
+                            //style: 'font-size: 0.8em;',
+                            height: 45,
+                            minWidth: 100
                         },
                         layout: {
                             type: 'hbox',
