@@ -7,7 +7,11 @@
     "codeClass": null,
     "userConfig": {
         "centered": false,
-        "designer|userClassName": "ListBuffered"
+        "cls": [
+            "md-shadow"
+        ],
+        "designer|userClassName": "ListBuffered",
+        "margin": 5
     },
     "name": "List1",
     "designerId": "7c5aa494-8465-4df2-b7c3-b9edcaa8e4d6",

@@ -50,6 +50,7 @@ Ext.define('SenchaTouchTheme.view.MainView', {
                 cls: 'border-right',
                 ui: 'dark',
                 width: 300,
+                layout: 'fit',
                 items: [
                     {
                         xtype: 'list',
@@ -77,6 +78,10 @@ Ext.define('SenchaTouchTheme.view.MainView', {
                             {
                                 title: 'List',
                                 view: 'List'
+                            },
+                            {
+                                title: 'List Selection',
+                                view: 'ListSelection'
                             },
                             {
                                 title: 'List Buffered',
@@ -111,7 +116,6 @@ Ext.define('SenchaTouchTheme.view.MainView', {
                                 view: 'Backgrounds'
                             }
                         ],
-                        height: '100%',
                         itemId: 'navList',
                         itemTpl: [
                             '<div>{title}</div>'

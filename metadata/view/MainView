@@ -68,6 +68,7 @@
                     "border-right"
                 ],
                 "designer|displayName": "SideMenu",
+                "layout": "fit",
                 "layout|flex": null,
                 "maxWidth": null,
                 "style": null,
@@ -93,6 +94,7 @@
                             "    {title: 'Font Awesome', view: 'FontAwesome'},",
                             "    {title: 'Forms and Panels', view: 'FormsAndPanels'},",
                             "    {title: 'List', view: 'List'},",
+                            "    {title: 'List Selection', view: 'ListSelection'},",
                             "    {title: 'List Buffered', view: 'ListBuffered'},",
                             "    {title: 'List Round', view: 'ListRound'},",
                             "    {title: 'Login', view: 'Login'},",
@@ -104,7 +106,7 @@
                             "    ",
                             "]"
                         ],
-                        "height": "100%",
+                        "height": null,
                         "itemId": "navList",
                         "maxWidth": null,
                         "width": null

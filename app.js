@@ -34,7 +34,7 @@ Ext.application({
         'Buttons',
         'FieldsAndRadios',
         'Toolbars',
-        'List',
+        'ListSelection',
         'Tabs',
         'Overlays',
         'ListRound',
@@ -44,7 +44,8 @@ Ext.application({
         'FontAwesome',
         'ListBuffered',
         'FormsAndPanels',
-        'Backgrounds'
+        'Backgrounds',
+        'List'
     ],
     controllers: [
         'MainView'

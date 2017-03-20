@@ -24,15 +24,19 @@ Ext.define('SenchaTouchTheme.view.List', {
     config: {
         centered: false,
         layout: 'hbox',
+        defaults: {
+            margin: 10,
+            cls: 'md-shadow'
+        },
         items: [
             {
                 xtype: 'list',
                 flex: 1,
                 cls: [
                     'smaller-padding',
-                    'with-disclosure'
+                    'with-disclosure',
+                    'md-shadow'
                 ],
-                height: '100%',
                 itemTpl: [
                     '<div class="flexbox">',
                     '    <div class="flex1 text">',
@@ -49,17 +53,13 @@ Ext.define('SenchaTouchTheme.view.List', {
                 onItemDisclosure: true
             },
             {
-                xtype: 'container',
-                width: 20
-            },
-            {
                 xtype: 'list',
                 flex: 1,
                 cls: [
                     'with-disclosure',
-                    'smaller-padding'
+                    'smaller-padding',
+                    'md-shadow'
                 ],
-                height: '100%',
                 itemTpl: [
                     '<div class="flexbox">',
                     '    <div class="flex1 text">',
@@ -78,17 +78,13 @@ Ext.define('SenchaTouchTheme.view.List', {
                 onItemDisclosure: true
             },
             {
-                xtype: 'container',
-                width: 20
-            },
-            {
                 xtype: 'list',
                 flex: 1,
                 cls: [
                     'smaller-padding',
-                    'with-disclosure'
+                    'with-disclosure',
+                    'md-shadow'
                 ],
-                height: '100%',
                 itemTpl: [
                     '<div class="strip left bg-{color1}"></div>',
                     '<div class="strip right bg-{color2}"></div>',
@@ -111,20 +107,6 @@ Ext.define('SenchaTouchTheme.view.List', {
                 store: 'countrySmallStore',
                 grouped: false,
                 onItemDisclosure: true
-            },
-            {
-                xtype: 'container',
-                width: 20
-            },
-            {
-                xtype: 'list',
-                flex: 1,
-                deferEmptyText: false,
-                emptyText: 'List is empty',
-                itemTpl: [
-                    '<div>List Item {string}</div>'
-                ],
-                store: 'emptyStore'
             }
         ]
     }

@@ -1,0 +1,117 @@
+{
+    "type": "Ext.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "centered": false,
+        "defaults": [
+            "{",
+            "    margin: 5,",
+            "    cls: 'md-shadow'",
+            "}"
+        ],
+        "designer|userClassName": "ListSelection",
+        "layout": "hbox"
+    },
+    "name": "MyContainer3",
+    "designerId": "1061aa4b-de58-4b04-a909-d3341a9d33bc",
+    "cn": [
+        {
+            "type": "Ext.dataview.List",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "cls": [
+                    "md-shadow",
+                    "radio-selection"
+                ],
+                "data": null,
+                "grouped": null,
+                "height": null,
+                "layout|flex": 1,
+                "onItemDisclosure": null,
+                "selectedCls": null,
+                "store": "countrySmallStore"
+            },
+            "name": "MyList1",
+            "designerId": "a6904e20-16ca-4051-a199-ee9fbee4b2c8",
+            "cn": [
+                {
+                    "type": "Ext.XTemplate",
+                    "reference": {
+                        "name": "itemTpl",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "itemTpl",
+                        "implHandler": [
+                            "<div class=\"flexbox\">",
+                            "    <div class=\"radio\"></div>",
+                            "    <div class=\"flex1 text\">",
+                            "        <div>{name}</div>",
+                            "    </div>",
+                            "</div>"
+                        ]
+                    },
+                    "name": "itemTpl",
+                    "designerId": "2810d985-f9d7-4b84-b8dd-b82b0af556dc"
+                }
+            ]
+        },
+        {
+            "type": "Ext.dataview.List",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "allowDeselect": null,
+                "cls": [
+                    "md-shadow",
+                    "check-selection"
+                ],
+                "data": null,
+                "grouped": null,
+                "height": null,
+                "layout|flex": 1,
+                "mode": "SIMPLE",
+                "onItemDisclosure": null,
+                "selectedCls": null,
+                "store": "countrySmallStore"
+            },
+            "name": "MyList1",
+            "designerId": "9e3fa08e-a1cd-4ce2-8ea6-e2dbc3239c96",
+            "cn": [
+                {
+                    "type": "Ext.XTemplate",
+                    "reference": {
+                        "name": "itemTpl",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "itemTpl",
+                        "implHandler": [
+                            "<div class=\"flexbox\">",
+                            "    <div class=\"tick\"></div>",
+                            "    <div class=\"flex1 text\">",
+                            "        <div>{name}</div>",
+                            "    </div>",
+                            "</div>"
+                        ]
+                    },
+                    "name": "itemTpl",
+                    "designerId": "f591bfde-d065-4782-a51f-082e8202ae5b"
+                }
+            ]
+        }
+    ]
+}

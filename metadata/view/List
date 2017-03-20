@@ -7,11 +7,17 @@
     "codeClass": null,
     "userConfig": {
         "centered": false,
+        "defaults": [
+            "{",
+            "    margin: 10,",
+            "    cls: 'md-shadow'",
+            "}"
+        ],
         "designer|userClassName": "List",
         "layout": "hbox"
     },
-    "name": "MyContainer3",
-    "designerId": "1061aa4b-de58-4b04-a909-d3341a9d33bc",
+    "name": "List1",
+    "designerId": "b97ee57e-9fd5-4021-883e-dde71755f6c4",
     "cn": [
         {
             "type": "Ext.dataview.List",
@@ -23,17 +29,18 @@
             "userConfig": {
                 "cls": [
                     "smaller-padding",
-                    "with-disclosure"
+                    "with-disclosure",
+                    "md-shadow"
                 ],
                 "data": null,
                 "grouped": true,
-                "height": "100%",
+                "height": null,
                 "layout|flex": 1,
                 "onItemDisclosure": true,
                 "store": "countrySmallStore"
             },
             "name": "MyList1",
-            "designerId": "a6904e20-16ca-4051-a199-ee9fbee4b2c8",
+            "designerId": "c143a0cd-3fa4-429f-9d4b-f26284d9bbc3",
             "cn": [
                 {
                     "type": "Ext.XTemplate",
@@ -57,22 +64,9 @@
                         ]
                     },
                     "name": "itemTpl",
-                    "designerId": "2810d985-f9d7-4b84-b8dd-b82b0af556dc"
+                    "designerId": "d8bdc52a-49b1-45a9-b0e4-d09f44c72497"
                 }
             ]
-        },
-        {
-            "type": "Ext.Container",
-            "reference": {
-                "name": "items",
-                "type": "array"
-            },
-            "codeClass": null,
-            "userConfig": {
-                "width": 20
-            },
-            "name": "MyContainer51",
-            "designerId": "f273eba7-581c-4f8f-872e-23fb19355ccf"
         },
         {
             "type": "Ext.dataview.List",
@@ -84,17 +78,18 @@
             "userConfig": {
                 "cls": [
                     "with-disclosure",
-                    "smaller-padding"
+                    "smaller-padding",
+                    "md-shadow"
                 ],
                 "data": null,
                 "grouped": false,
-                "height": "100%",
+                "height": null,
                 "layout|flex": 1,
                 "onItemDisclosure": true,
                 "store": "countrySmallStore"
             },
             "name": "MyList1",
-            "designerId": "9e3fa08e-a1cd-4ce2-8ea6-e2dbc3239c96",
+            "designerId": "04e6da54-cadf-474e-8e04-25a8d23b69ee",
             "cn": [
                 {
                     "type": "Ext.XTemplate",
@@ -120,22 +115,9 @@
                         ]
                     },
                     "name": "itemTpl",
-                    "designerId": "f591bfde-d065-4782-a51f-082e8202ae5b"
+                    "designerId": "33112dcb-e50d-4607-9841-e2d56e5b631f"
                 }
             ]
-        },
-        {
-            "type": "Ext.Container",
-            "reference": {
-                "name": "items",
-                "type": "array"
-            },
-            "codeClass": null,
-            "userConfig": {
-                "width": 20
-            },
-            "name": "MyContainer52",
-            "designerId": "7cdb7b33-6f50-4416-85a1-4e046e4838fe"
         },
         {
             "type": "Ext.dataview.List",
@@ -147,18 +129,19 @@
             "userConfig": {
                 "cls": [
                     "smaller-padding",
-                    "with-disclosure"
+                    "with-disclosure",
+                    "md-shadow"
                 ],
                 "data": null,
                 "grouped": false,
-                "height": "100%",
+                "height": null,
                 "itemHeight": null,
                 "layout|flex": 1,
                 "onItemDisclosure": true,
                 "store": "countrySmallStore"
             },
             "name": "MyList1",
-            "designerId": "f6f0f303-4315-443b-b368-a87445b82e00",
+            "designerId": "b01591c7-a1ac-4a7a-94e9-f645e4da7d76",
             "cn": [
                 {
                     "type": "Ext.XTemplate",
@@ -190,55 +173,7 @@
                         ]
                     },
                     "name": "itemTpl",
-                    "designerId": "47738893-63d3-4c1b-b789-7bf596385b66"
-                }
-            ]
-        },
-        {
-            "type": "Ext.Container",
-            "reference": {
-                "name": "items",
-                "type": "array"
-            },
-            "codeClass": null,
-            "userConfig": {
-                "width": 20
-            },
-            "name": "MyContainer55",
-            "designerId": "60258f25-84c8-48e8-b05e-46b037ca7315"
-        },
-        {
-            "type": "Ext.dataview.List",
-            "reference": {
-                "name": "items",
-                "type": "array"
-            },
-            "codeClass": null,
-            "userConfig": {
-                "data": null,
-                "deferEmptyText": false,
-                "emptyText": "List is empty",
-                "layout|flex": 1,
-                "store": "emptyStore"
-            },
-            "name": "MyList2",
-            "designerId": "d3b0f297-811c-468b-b5a4-d0a3c0dcc07a",
-            "cn": [
-                {
-                    "type": "Ext.XTemplate",
-                    "reference": {
-                        "name": "itemTpl",
-                        "type": "object"
-                    },
-                    "codeClass": null,
-                    "userConfig": {
-                        "designer|displayName": "itemTpl",
-                        "implHandler": [
-                            "<div>List Item {string}</div>"
-                        ]
-                    },
-                    "name": "itemTpl",
-                    "designerId": "3c1e30f7-6325-4ebc-b818-c0488355d5a3"
+                    "designerId": "e256fa51-c454-442b-952b-e7c9b694ce1c"
                 }
             ]
         }

@@ -23,6 +23,8 @@ Ext.define('SenchaTouchTheme.view.ListBuffered', {
 
     config: {
         centered: false,
+        cls: 'md-shadow',
+        margin: 5,
         items: [
             {
                 xtype: 'list',

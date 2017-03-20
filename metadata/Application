@@ -23,7 +23,7 @@
             "Buttons",
             "FieldsAndRadios",
             "Toolbars",
-            "List",
+            "ListSelection",
             "Tabs",
             "Overlays",
             "ListRound",
@@ -33,7 +33,8 @@
             "FontAwesome",
             "ListBuffered",
             "FormsAndPanels",
-            "Backgrounds"
+            "Backgrounds",
+            "List"
         ]
     },
     "name": "Application",
