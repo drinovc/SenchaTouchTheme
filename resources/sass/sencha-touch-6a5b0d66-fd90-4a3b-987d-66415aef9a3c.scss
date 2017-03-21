@@ -1199,6 +1199,22 @@ $person-image-width: 58px;
 }
 /******************************************************************************/
 /* Custom styles - app specific */
+
+/* Waiter Order */
+.guest-no {
+    background-color: $my-toolbar-light-color !important;
+}
+.guest-cat {
+    background-color: lighten($active-color, 45%) !important;
+}
+
+$person-image-width: 58px;
+div.guest-img,
+div.pos-account-img {
+    width: $person-image-width;
+    height: $person-image-width;
+    @include border-radius($person-image-width);
+}
 /* ui mixin: base for of type: sencha-toolbar-ui */
 
 @include sencha-toolbar-ui(
