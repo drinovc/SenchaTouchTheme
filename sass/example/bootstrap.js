@@ -2541,6 +2541,7 @@ Ext.ClassManager.addNameAlternateMappings({
   "SenchaTouchTheme.view.List": [],
   "SenchaTouchTheme.view.ListBuffered": [],
   "SenchaTouchTheme.view.ListRound": [],
+  "SenchaTouchTheme.view.ListSelection": [],
   "SenchaTouchTheme.view.LoadMask": [],
   "SenchaTouchTheme.view.Login": [],
   "SenchaTouchTheme.view.MainView": [],
@@ -3279,6 +3280,7 @@ Ext.ClassManager.addNameAliasMappings({
   "SenchaTouchTheme.view.List": [],
   "SenchaTouchTheme.view.ListBuffered": [],
   "SenchaTouchTheme.view.ListRound": [],
+  "SenchaTouchTheme.view.ListSelection": [],
   "SenchaTouchTheme.view.LoadMask": [],
   "SenchaTouchTheme.view.Login": [],
   "SenchaTouchTheme.view.MainView": [

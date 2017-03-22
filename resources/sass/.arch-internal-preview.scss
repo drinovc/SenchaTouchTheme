@@ -70,6 +70,7 @@ $my-toolbar-neutral-color: lighten($my-toolbar-color, 35%);
 
 $my-border-color: #dedede;
 $my-toolbar-field-border-color: #a6a6a6;
+$my-toolbar-border-width: 0px;
 
 $my-button-color: $almostwhite;
 
@@ -104,6 +105,7 @@ $include-tabbar-uis: false;
 
     $my-border-color: rgba(255, 255, 255, 0.4);
     $my-toolbar-field-border-color: rgba(255, 255, 255, 0.4);
+    $my-toolbar-border-width: 1px;
 
     $my-button-color: $almostwhite;
 
@@ -427,6 +429,15 @@ $include-button-uis: false;
 .md-shadow {
     @include box-shadow($md-shadow);
 }
+.md-shadow-hover {
+    @include box-shadow($md-shadow-hover);
+}
+.md-shadow-pressed {
+    @include box-shadow($md-shadow-pressed);
+}
+.md-shadow-floating {
+    @include box-shadow($md-shadow-floating);
+}
 
 /* base */
 #ext-viewport > .x-body {
@@ -443,8 +454,6 @@ $include-button-uis: false;
 /* buttons */
 .x-button {
     @include toolbar-button($my-button-color, $button-gradient);
-/*     @include my-transition(all 0.2s ease); */
-
     &:not(.x-button-plain) {
         @include box-shadow($md-shadow);
         background-image: none !important;
@@ -456,8 +465,14 @@ $include-button-uis: false;
     }
 }
 .x-desktop {
-    .x-button:hover {
-        @include box-shadow($md-shadow-hover);
+    .x-button {
+        &:hover {
+            @include box-shadow($md-shadow-hover);
+        }
+        &.x-button-pressing,
+        &.x-button-pressed {
+            @include box-shadow($md-shadow-pressed);
+        }
     }
 }
 .x-button.x-button-plain,
@@ -530,6 +545,10 @@ input {
 }
 
 /* toolbar and titlebar and tabbar */
+.x-toolbar,
+.x-tabbar {
+    border-width: $my-toolbar-border-width !important;
+}
 @if $my-theme == 'dark' {
     .x-toolbar-dark,
     .x-tabbar-dark {
@@ -564,21 +583,18 @@ input {
             }
         }
     }
+    .x-toolbar,
+    .x-tabbar {
+        border-color: $my-border-color !important;
+    }
 } @else {
     /* default toolbar uis */
     @include my-toolbar-ui('dark', $my-toolbar-dark-color);
     @include my-toolbar-ui('light', $my-toolbar-light-color);
     @include my-toolbar-ui('neutral', $my-toolbar-neutral-color);
-    @include my-toolbar-ui('gray', $bluegreylight);
+    @include my-toolbar-ui('gray', $my-toolbar-neutral-color);
     @include my-toolbar-ui('green', $green);
     @include my-toolbar-ui('red', $red);
-}
-@if $my-theme == 'dark' {
-    .x-toolbar,
-    .x-tabbar {
-        border-color: $my-border-color !important;
-        /*         border-width: $my-toolbar-border-width !important; */
-    }
 }
 
 /* toolbar buttons */
@@ -705,23 +721,25 @@ input {
         text-shadow: none;
     }
 }
-.x-panel.x-floating,
-.x-form.x-floating {
-    background-color: $white;
-    @include box-shadow($md-shadow-floating);
-    padding: 0;
-    .x-list {
+.x-floating {
+    &.x-panel,
+    &.x-form {
         background-color: $white;
-        .x-list-item {
-            color: $black;
-        }
-        .x-list-item {
-            &.x-list-item-tpl,
-            &.x-list-item-tpl.x-list-footer-wrap {
-                border-color: #dedede;
+        @include box-shadow($md-shadow-floating);
+        padding: 0;
+        .x-list {
+            background-color: $white;
+            .x-list-item {
+                color: $black;
             }
-            &.x-item-selected {
-                @include color-by-background($active-color);
+            .x-list-item {
+                &.x-list-item-tpl,
+                &.x-list-item-tpl.x-list-footer-wrap {
+                    border-color: #dedede;
+                }
+                &.x-item-selected {
+                    @include color-by-background($active-color);
+                }
             }
         }
     }
@@ -1212,11 +1230,17 @@ $person-image-width: 58px;
 
 $person-image-width: 58px;
 div.guest-img,
-div.pos-account-img {
+div.pos-account-img,
+div.table-actions-guest {
     width: $person-image-width;
     height: $person-image-width;
     @include border-radius($person-image-width);
 }
+
+@include my-color-styles('light-green', #92d050);
+@include my-color-styles('light-green-2', #d0ebb3);
+@include my-color-styles('light-blue', #95b3d7);
+@include my-color-styles('light-red', #e89999);
 /* ui mixin: base for of type: sencha-toolbar-ui */
 
 @include sencha-toolbar-ui(
