@@ -7,7 +7,7 @@
 //     },
 // });
 
-Ext.define('rk.ulti.PositionMap',{
+Ext.define('App.override.util.PositionMap',{
     override:'Ext.util.PositionMap',
     config:{
         minimumHeight:0

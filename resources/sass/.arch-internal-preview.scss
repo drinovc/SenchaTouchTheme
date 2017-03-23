@@ -73,6 +73,7 @@ $my-toolbar-field-border-color: #a6a6a6;
 $my-toolbar-border-width: 0px;
 
 $my-button-color: $almostwhite;
+$my-button-flat: false;
 
 $my-list-separator-color: #dedede;
 $my-list-bg-color: transparentize($my-base-color, .5);
@@ -108,6 +109,7 @@ $include-tabbar-uis: false;
     $my-toolbar-border-width: 1px;
 
     $my-button-color: $almostwhite;
+    $my-button-flat: false;
 
     $my-list-separator-color: $my-border-color;
     $my-list-bg-color: rgba(0, 0, 0, 0.23);
@@ -148,10 +150,10 @@ $form-bg-color: rgba(0,0,0,0);
 $panel-border-radius: 0em;
 $sheet-bg-color: $base-color;
 $sheet-bg-gradient: flat;
-$tabs-bar-gradient: flat;
+$tabs-bar-gradient: glossy;
 $tabs-bottom-active-gradient: flat;
 $tabs-dark-active-color: $active-color;
-$toolbar-gradient: flat;
+$toolbar-gradient: glossy;
 $toolbar-input-border-color: transparent;
 $list-active-color: $my-list-active-color;
 $include-button-uis: false;
@@ -456,8 +458,10 @@ $include-button-uis: false;
     @include toolbar-button($my-button-color, $button-gradient);
     &:not(.x-button-plain) {
         @include box-shadow($md-shadow);
-        background-image: none !important;
         border: none !important;
+        @if $my-button-flat == true {
+            background-image: none !important;
+        }
     }
     &.x-button-pressing,
     &.x-button-pressed {
@@ -548,6 +552,7 @@ input {
 .x-toolbar,
 .x-tabbar {
     border-width: $my-toolbar-border-width !important;
+    background-image: none !important;
 }
 @if $my-theme == 'dark' {
     .x-toolbar-dark,
@@ -615,8 +620,9 @@ input {
     .x-field-select {
         .x-component-outer {
             @include box-shadow(none);
-            border: 1px solid $my-toolbar-field-border-color;
-            @include border-radius(0.2em);
+            @include border-radius(0);
+            border: none;
+            background-image: none;
         }
     }
     .x-field-search .x-field-input:before {
@@ -637,9 +643,9 @@ input {
 
 .x-tabbar.x-docked-top .x-tab {
     @include border-radius(0);
-    margin-bottom: -14px;
     @include border-top-left-radius(0.2em);
     @include border-top-right-radius(0.2em);
+    margin-bottom: -14px;
     height: 2.4em;
 }
 .x-tabbar {
@@ -981,6 +987,7 @@ $font-files: url('../font-awesome/fonts/fontawesome-webfont.woff') format("woff"
         height: 2.4em;
         @include border-bottom-left-radius(0);
         @include border-bottom-right-radius(0);
+        background-image: none;
 
         &.x-button-pressed:before {
             content: '';
@@ -1142,7 +1149,7 @@ $person-image-width: 58px;
         top: 50%;
         margin-top: -13px;
         left: 12px;
-        font-size: 1.6em;
+        font-size: 1.3em;
         content: '\f096';
         font-family: 'FontAwesome';
         color: #d0d0d0;
